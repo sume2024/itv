@@ -15,12 +15,12 @@ export interface MergeResult {
     totalSources: number;
     defaultSourceChannelsCount: number;
     subsequentSourcesChannelsCount: number;
-    consolidatedChannelObjectsCount: number;
-    totalDistinctStreamUrls: number;
-    multiServerChannelsCount: number;
+    newChannelsAdded: number;
+    variantStreamsAdded: number;
+    exactDuplicatesSkipped: number;
   };
   channelBreakdownLogs: Array<{
-    type: 'default' | 'multi-server' | 'new';
+    type: 'default' | 'new' | 'variant' | 'duplicate';
     channelName: string;
     sourceName: string;
     url: string;
@@ -29,122 +29,45 @@ export interface MergeResult {
 }
 
 /**
- * Normalizes channel name by stripping server/resolution tags and prefixes.
+ * Normalizes channel name for comparison (removes extra spaces, lowercase)
  */
 function normalizeName(name: string): string {
-  if (!name) return '';
-  let cleaned = name.trim();
-
-  // Remove country/genre prefixes like "BD:", "IN:", "BANGLA:", "01."
-  cleaned = cleaned.replace(/^(bd|in|uk|us|bangla|sports|news|tv|hd|fhd)\s*[:\-\|]\s*/i, '');
-  cleaned = cleaned.replace(/^\d+[\.\-\)]\s*/, '');
-
-  // Remove server tags like "(Server 1)", "(Server 2)", "[Server 2]", "(S1)", "[S2]"
-  cleaned = cleaned.replace(/[\(\[\{]?(server|s)\s*\d+[\)\]\}]?/gi, '');
-
-  // Remove quality/resolution tags like "HD", "FHD", "4K", "1080p", "720p", "SD", "RAW"
-  cleaned = cleaned.replace(/[\(\[\{]?(hd|fhd|uhd|sd|4k|1080p|720p|576p|360p|raw|hevc|h265|h264|vip|backup|alt)[\)\]\}]?/gi, '');
-
-  return cleaned.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return name.trim().toLowerCase().replace(/\s+/g, ' ');
 }
 
 /**
- * Checks if a name is generic like "Channel 106", "Channel 107", "Stream 1"
+ * Normalizes string to a clean alphanumeric slug
+ */
+function toSlug(str: string): string {
+  return str.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+/**
+ * Checks if a channel name is generic (e.g., "Channel 106", "Channel 107", "Ch 101", "Stream 2")
  */
 function isGenericChannelName(name: string): boolean {
-  if (!name) return true;
-  const norm = name.trim().toLowerCase().replace(/\s+/g, ' ');
-  return (
-    /^channel\s*\d*$/i.test(norm) ||
-    /^stream\s*\d*$/i.test(norm) ||
-    /^server\s*\d*$/i.test(norm) ||
-    /^link\s*\d*$/i.test(norm) ||
-    norm === 'channel' ||
-    norm === 'stream' ||
-    norm === 'tv'
-  );
+  const trimmed = name.trim();
+  if (!trimmed) return true;
+  return /^(channel|ch|stream|server|live)\s*[-_]?\s*\d+$/i.test(trimmed);
+}
+
+interface CanonicalInfo {
+  canonicalName: string;
+  logo: string;
+  group: string;
+  slug: string;
 }
 
 /**
- * Extracts a channel keyword slug from URL path
- */
-function extractSlugFromUrl(url: string): string {
-  if (!url) return '';
-  try {
-    const lowerUrl = url.toLowerCase();
-    const pathParts = lowerUrl.split('/');
-    for (let i = pathParts.length - 1; i >= 0; i--) {
-      let part = pathParts[i];
-      part = part.split('?')[0];
-      part = part.replace(/\.(m3u8?|ts|mpd|m3u|flv|mp4|mkv)$/i, '');
-      part = part.replace(/_(abr|720|1080|576|480|360|hls|mono|live|chunks|index|stream|playlist|master)/gi, '');
-      part = part.replace(/(abr|720|1080|576|480|360|hls|mono|live|chunks|index|stream|playlist|master)_/gi, '');
-      const cleanPart = part.replace(/[^a-z0-9]/g, '');
-
-      const genericWords = ['index', 'chunks', 'live', 'playlist', 'stream', 'master', 'mono', '720', '1080', 'hls', 'http', 'https', 'video', 'channel', 'output'];
-      if (cleanPart.length > 2 && !genericWords.includes(cleanPart)) {
-        const baseKeyword = cleanPart.replace(/\d+$/, '');
-        if (baseKeyword.length > 2) {
-          return baseKeyword;
-        }
-        return cleanPart;
-      }
-    }
-  } catch (e) {
-    // Ignore
-  }
-  return '';
-}
-
-/**
- * Extracts a normalized channel key/slug from name and stream URL.
- * Matches channels with same name or channels where URL path contains specific channel keyword.
- */
-function getChannelKey(name: string, url: string): string {
-  const isGeneric = isGenericChannelName(name);
-  const nameSlug = normalizeName(name);
-  const urlSlug = extractSlugFromUrl(url);
-
-  if (!isGeneric && nameSlug.length > 2) {
-    return nameSlug;
-  }
-
-  if (urlSlug.length > 2) {
-    return urlSlug;
-  }
-
-  return nameSlug || urlSlug || 'channel';
-}
-
-/**
- * Collects all URLs from a channel object (url, url_2, url_3, extra_urls...)
- */
-function extractAllUrlsFromChannel(ch: Channel): string[] {
-  const urls: string[] = [];
-  if (ch.url) urls.push(ch.url.trim());
-  if (ch.url_2) urls.push(ch.url_2.trim());
-  if (ch.url_3) urls.push(ch.url_3.trim());
-
-  if (ch.extra_urls && Array.isArray(ch.extra_urls)) {
-    for (const u of ch.extra_urls) {
-      if (u && typeof u === 'string') urls.push(u.trim());
-    }
-  }
-
-  // Check dynamic url_4, url_5... keys
-  for (const key of Object.keys(ch)) {
-    if (/^url_\d+$/i.test(key) && key !== 'url_2' && key !== 'url_3') {
-      const val = ch[key];
-      if (val && typeof val === 'string') urls.push(val.trim());
-    }
-  }
-
-  return Array.from(new Set(urls.filter(Boolean)));
-}
-
-/**
- * Merges multiple playlists and consolidates multi-server URLs for each channel:
- * Outputs channel objects with "url", "url_2", "url_3", "url_4"...
+ * Merges multiple playlists according to the user's rule:
+ * 1. Playlist #1 is the Default Playlist. All channels from it are added first.
+ * 2. Subsequent Playlists (#2, #3...):
+ *    - If channel name matches a channel in the Default Playlist AND has a DIFFERENT stream URL, add it as a new stream entry.
+ *    - If channel name matches AND stream URL is IDENTICAL, skip it as exact duplicate.
+ *    - If channel name is not in the Default Playlist, add it directly.
+ * 3. Smart Resolver:
+ *    - Automatically identifies generic channel names like "Channel 106", "Channel 107" from stream URLs or matches.
+ *    - Inherits the exact SAME channel name, logo, and group from the matching main channel!
  */
 export function mergePlaylistsWithDefaultRule(
   sources: { name: string; channels: Channel[] }[],
@@ -162,168 +85,245 @@ export function mergePlaylistsWithDefaultRule(
         totalSources: 0,
         defaultSourceChannelsCount: 0,
         subsequentSourcesChannelsCount: 0,
-        consolidatedChannelObjectsCount: 0,
-        totalDistinctStreamUrls: 0,
-        multiServerChannelsCount: 0
+        newChannelsAdded: 0,
+        variantStreamsAdded: 0,
+        exactDuplicatesSkipped: 0
       },
       channelBreakdownLogs: []
     };
   }
 
+  const mergedChannels: Channel[] = [];
   const logs: MergeResult['channelBreakdownLogs'] = [];
 
-  // Internal structure to hold grouped channel data
-  interface GroupedChannel {
-    key: string;
-    name: string;
-    logo: string;
-    group: string;
-    urls: string[]; // Distinct list of stream URLs
-    sourceNames: Set<string>;
-    attrs: Record<string, string>;
-    headers?: Record<string, string>;
-    vlc_opts?: string[];
-    kodiprops?: string[];
-    status?: string;
-  }
+  // Map to store stream URLs associated with normalized channel names in the default playlist
+  const defaultChannelUrlsByName = new Map<string, Set<string>>();
+  // Set of all unique stream URLs added to the merged playlist
+  const globalSeenUrls = new Set<string>();
+  // Counter for variants per channel name
+  const channelVariantCounters = new Map<string, number>();
 
-  const groupedMap = new Map<string, GroupedChannel>();
-  const channelOrderKeys: string[] = [];
+  // Canonical channels knowledge map (by normalized name & URL slug)
+  const canonicalByName = new Map<string, CanonicalInfo>();
+  const canonicalBySlug = new Map<string, CanonicalInfo>();
 
-  let defaultSourceChannelsCount = 0;
-  let subsequentSourcesChannelsCount = 0;
-
-  // Process all sources in order (Playlist #1 is Default)
-  for (let sIdx = 0; sIdx < sources.length; sIdx++) {
-    const src = sources[sIdx];
+  // --- PRE-PASS: Build Knowledge Base of Non-Generic Channels ---
+  for (const src of sources) {
     if (!src || !src.channels) continue;
-
-    if (sIdx === 0) {
-      defaultSourceChannelsCount += src.channels.length;
-    } else {
-      subsequentSourcesChannelsCount += src.channels.length;
-    }
-
     for (const ch of src.channels) {
-      const chUrls = extractAllUrlsFromChannel(ch);
-      if (chUrls.length === 0) continue;
+      if (!ch.name || isGenericChannelName(ch.name)) continue;
 
-      const primaryUrl = chUrls[0];
-      const key = getChannelKey(ch.name, primaryUrl);
+      const norm = normalizeName(ch.name);
+      const slug = toSlug(ch.name);
 
-      if (!groupedMap.has(key)) {
-        // Create new grouped channel
-        const newGrouped: GroupedChannel = {
-          key,
-          name: ch.name,
+      if (!canonicalByName.has(norm)) {
+        const info: CanonicalInfo = {
+          canonicalName: ch.name.trim(),
           logo: ch.logo || '',
-          group: ch.group && ch.group !== 'General' ? ch.group : 'General',
-          urls: [...chUrls],
-          sourceNames: new Set([src.name]),
-          attrs: {
-            ...(ch.attrs || {}),
-            'source-playlist': src.name,
-            'playlist-role': sIdx === 0 ? 'default' : 'subsequent'
-          },
-          headers: ch.headers,
-          vlc_opts: ch.vlc_opts,
-          kodiprops: ch.kodiprops,
-          status: ch.status
+          group: ch.group || 'General',
+          slug
         };
-
-        groupedMap.set(key, newGrouped);
-        channelOrderKeys.push(key);
-
-        logs.push({
-          type: sIdx === 0 ? 'default' : 'new',
-          channelName: ch.name,
-          sourceName: src.name,
-          url: primaryUrl,
-          reason: `চ্যানেল '${ch.name}' মূল প্লেলিস্ট হিসেবে যুক্ত করা হয়েছে`
-        });
-      } else {
-        // Group exists: add new distinct URLs to this channel!
-        const existing = groupedMap.get(key)!;
-        existing.sourceNames.add(src.name);
-
-        // Update name/logo/group if existing was generic or empty
-        if (isGenericChannelName(existing.name) && !isGenericChannelName(ch.name)) {
-          existing.name = ch.name;
+        canonicalByName.set(norm, info);
+        if (slug.length >= 3) {
+          canonicalBySlug.set(slug, info);
         }
+      } else {
+        // Update logo if missing
+        const existing = canonicalByName.get(norm)!;
         if (!existing.logo && ch.logo) {
           existing.logo = ch.logo;
         }
         if ((!existing.group || existing.group === 'General') && ch.group && ch.group !== 'General') {
           existing.group = ch.group;
         }
-
-        // Add distinct new URLs
-        let addedCount = 0;
-        for (const u of chUrls) {
-          if (!existing.urls.includes(u)) {
-            existing.urls.push(u);
-            addedCount++;
-
-            logs.push({
-              type: 'multi-server',
-              channelName: existing.name,
-              sourceName: src.name,
-              url: u,
-              reason: `'${existing.name}' চ্যানেলের জন্য অতিরিক্ত সার্ভার লিঙ্ক (url_${existing.urls.length}) হিসেবে যুক্ত করা হয়েছে`
-            });
-          }
-        }
       }
     }
   }
 
-  // Convert grouped map into final Channel list with url, url_2, url_3...
-  const mergedChannels: Channel[] = [];
-  let multiServerCount = 0;
-  let totalDistinctUrls = 0;
+  /**
+   * Helper to resolve a channel (fixing generic names like "Channel 106", inheriting logo & group)
+   */
+  function resolveChannelInfo(ch: Channel): { name: string; logo: string; group: string } {
+    let rawName = ch.name ? ch.name.trim() : '';
+    let logo = ch.logo || '';
+    let group = ch.group || 'General';
 
-  for (const key of channelOrderKeys) {
-    const item = groupedMap.get(key)!;
-    totalDistinctUrls += item.urls.length;
+    const isGeneric = isGenericChannelName(rawName);
+    const norm = normalizeName(rawName);
 
-    if (item.urls.length > 1) {
-      multiServerCount++;
+    // 1. Match by normalized name first
+    if (canonicalByName.has(norm)) {
+      const canonical = canonicalByName.get(norm)!;
+      rawName = canonical.canonicalName;
+      if (!logo) logo = canonical.logo;
+      if (!group || group === 'General') group = canonical.group;
+      return { name: rawName, logo, group };
     }
 
-    const finalChannel: Channel = {
-      name: item.name,
-      logo: item.logo || '',
-      group: item.group || 'General',
-      url: item.urls[0],
-      attrs: {
-        ...item.attrs,
-        'total-servers': String(item.urls.length),
-        'sources': Array.from(item.sourceNames).join(', ')
+    // 2. If generic or unmatched name, try matching URL against canonical slugs
+    if (isGeneric || !canonicalByName.has(norm)) {
+      const urlClean = toSlug(ch.url || '');
+      for (const [slug, canonical] of canonicalBySlug.entries()) {
+        if (slug.length >= 3 && urlClean.includes(slug)) {
+          // Found matching channel via URL! e.g., "Channel 106" with URL containing "zee_bangla"
+          rawName = canonical.canonicalName;
+          if (!logo) logo = canonical.logo;
+          if (!group || group === 'General') group = canonical.group;
+          return { name: rawName, logo, group };
+        }
       }
-    };
+    }
 
-    // Add url_2, url_3, url_4... for additional server streams
-    if (item.urls.length > 1) {
-      finalChannel.url_2 = item.urls[1];
-    }
-    if (item.urls.length > 2) {
-      finalChannel.url_3 = item.urls[2];
-    }
-    if (item.urls.length > 3) {
-      const extra: string[] = [];
-      for (let i = 3; i < item.urls.length; i++) {
-        finalChannel[`url_${i + 1}`] = item.urls[i];
-        extra.push(item.urls[i]);
+    return { name: rawName, logo, group };
+  }
+
+  const defaultSource = sources[0]; // Playlist #1 is the DEFAULT playlist
+  let defaultSourceChannelsCount = 0;
+  let subsequentSourcesChannelsCount = 0;
+  let newChannelsAdded = 0;
+  let variantStreamsAdded = 0;
+  let exactDuplicatesSkipped = 0;
+
+  // --- STEP 1: Add all channels from Playlist #1 (Default Playlist) ---
+  if (defaultSource && defaultSource.channels) {
+    defaultSourceChannelsCount = defaultSource.channels.length;
+    for (const rawCh of defaultSource.channels) {
+      if (!rawCh.url) continue;
+
+      const trimmedUrl = rawCh.url.trim();
+      if (globalSeenUrls.has(trimmedUrl)) {
+        exactDuplicatesSkipped++;
+        continue;
       }
-      finalChannel.extra_urls = extra;
+
+      const resolved = resolveChannelInfo(rawCh);
+      const normName = normalizeName(resolved.name);
+
+      if (!defaultChannelUrlsByName.has(normName)) {
+        defaultChannelUrlsByName.set(normName, new Set());
+      }
+      defaultChannelUrlsByName.get(normName)!.add(trimmedUrl);
+      globalSeenUrls.add(trimmedUrl);
+      
+      const count = (channelVariantCounters.get(normName) || 0) + 1;
+      channelVariantCounters.set(normName, count);
+
+      const displayName = (count > 1 && renameVariantsWithSuffix)
+        ? `${resolved.name} (Server ${count})`
+        : resolved.name;
+
+      mergedChannels.push({
+        ...rawCh,
+        name: displayName,
+        logo: resolved.logo,
+        group: resolved.group,
+        attrs: {
+          ...(rawCh.attrs || {}),
+          'source-playlist': defaultSource.name,
+          'playlist-role': 'default'
+        }
+      });
+
+      logs.push({
+        type: 'default',
+        channelName: displayName,
+        sourceName: defaultSource.name,
+        url: rawCh.url,
+        reason: 'ডিফল্ট প্লেলিস্টের মূল চ্যানেল হিসেবে যুক্ত করা হয়েছে'
+      });
     }
+  }
 
-    if (item.headers) finalChannel.headers = item.headers;
-    if (item.vlc_opts) finalChannel.vlc_opts = item.vlc_opts;
-    if (item.kodiprops) finalChannel.kodiprops = item.kodiprops;
-    if (item.status) finalChannel.status = item.status;
+  // --- STEP 2: Process subsequent playlists (#2, #3, etc.) ---
+  for (let sIdx = 1; sIdx < sources.length; sIdx++) {
+    const src = sources[sIdx];
+    if (!src || !src.channels) continue;
 
-    mergedChannels.push(finalChannel);
+    subsequentSourcesChannelsCount += src.channels.length;
+
+    for (const rawCh of src.channels) {
+      if (!rawCh.url) continue;
+
+      const trimmedUrl = rawCh.url.trim();
+
+      // Check if exact stream URL already exists in merged list
+      if (globalSeenUrls.has(trimmedUrl)) {
+        exactDuplicatesSkipped++;
+        logs.push({
+          type: 'duplicate',
+          channelName: rawCh.name,
+          sourceName: src.name,
+          url: rawCh.url,
+          reason: 'ডিফল্ট বা পূর্ববর্তী প্লেলিস্টে একই চ্যানেল ও স্ট্রিম লিঙ্ক বিদ্যমান থাকায় স্কিপ করা হয়েছে'
+        });
+        continue;
+      }
+
+      const resolved = resolveChannelInfo(rawCh);
+      const normName = normalizeName(resolved.name);
+      const isNameInDefault = defaultChannelUrlsByName.has(normName);
+
+      if (isNameInDefault) {
+        // Channel name matches Default Playlist, BUT has a DIFFERENT stream link!
+        // As requested: "হুবহু মিলে গেলে যদি সে চ্যানেলটি স্ট্রিম লিঙ্ক ভিন্ন হয় তাহলে সেটিকেও এড করবে"
+        variantStreamsAdded++;
+        globalSeenUrls.add(trimmedUrl);
+
+        const currentCount = (channelVariantCounters.get(normName) || 1) + 1;
+        channelVariantCounters.set(normName, currentCount);
+
+        const displayName = renameVariantsWithSuffix
+          ? `${resolved.name} (Server ${currentCount})`
+          : resolved.name;
+
+        mergedChannels.push({
+          ...rawCh,
+          name: displayName,
+          logo: resolved.logo,
+          group: resolved.group,
+          attrs: {
+            ...(rawCh.attrs || {}),
+            'source-playlist': src.name,
+            'playlist-role': 'variant-stream'
+          }
+        });
+
+        logs.push({
+          type: 'variant',
+          channelName: displayName,
+          sourceName: src.name,
+          url: rawCh.url,
+          reason: `ডিফল্ট চ্যানেলের নাম ('${resolved.name}') এক কিন্তু স্ট্রিম লিঙ্ক ভিন্ন হওয়ায় অতিরিক্ত স্ট্রিম লিংক হিসেবে যুক্ত করা হয়েছে (সোর্স: ${src.name})`
+        });
+      } else {
+        // Brand new channel not in Default Playlist
+        newChannelsAdded++;
+        globalSeenUrls.add(trimmedUrl);
+
+        const currentCount = (channelVariantCounters.get(normName) || 0) + 1;
+        channelVariantCounters.set(normName, currentCount);
+
+        mergedChannels.push({
+          ...rawCh,
+          name: resolved.name,
+          logo: resolved.logo,
+          group: resolved.group,
+          attrs: {
+            ...(rawCh.attrs || {}),
+            'source-playlist': src.name,
+            'playlist-role': 'new-channel'
+          }
+        });
+
+        logs.push({
+          type: 'new',
+          channelName: resolved.name,
+          sourceName: src.name,
+          url: rawCh.url,
+          reason: `ডিফল্ট প্লেলিস্টে অনুপস্থিত নতুন চ্যানেল হিসেবে যুক্ত করা হয়েছে (সোর্স: ${src.name})`
+        });
+      }
+    }
   }
 
   const today = new Date().toISOString().split('T')[0];
@@ -343,9 +343,9 @@ export function mergePlaylistsWithDefaultRule(
       totalSources: sources.length,
       defaultSourceChannelsCount,
       subsequentSourcesChannelsCount,
-      consolidatedChannelObjectsCount: mergedChannels.length,
-      totalDistinctStreamUrls: totalDistinctUrls,
-      multiServerChannelsCount: multiServerCount
+      newChannelsAdded,
+      variantStreamsAdded,
+      exactDuplicatesSkipped
     },
     channelBreakdownLogs: logs
   };

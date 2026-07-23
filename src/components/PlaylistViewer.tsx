@@ -166,69 +166,13 @@ ${playlist.channels.map(ch => {
                     )}
                   </div>
                   <div className="min-w-0 flex-grow">
-                    <div className="flex items-center gap-1.5 flex-wrap">
-                      <p className="text-sm font-semibold text-slate-200 truncate group-hover:text-emerald-400 transition" title={ch.name}>
-                        {ch.name}
-                      </p>
-                      {ch.url_2 && (
-                        <span className="text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-1.5 py-0.2 rounded">
-                          {[ch.url, ch.url_2, ch.url_3].filter(Boolean).length} Servers
-                        </span>
-                      )}
-                    </div>
+                    <p className="text-sm font-semibold text-slate-200 truncate group-hover:text-emerald-400 transition" title={ch.name}>
+                      {ch.name}
+                    </p>
                     {ch.group && (
                       <span className="inline-block mt-1 text-[10px] font-medium bg-slate-900 border border-slate-800 text-slate-400 px-1.5 py-0.5 rounded">
                         {ch.group}
                       </span>
-                    )}
-
-                    {/* Multi-server URL list preview */}
-                    {(ch.url_2 || ch.url_3) && (
-                      <div className="mt-2 space-y-1">
-                        <div className="text-[10px] text-slate-400 flex items-center justify-between bg-slate-900/80 px-2 py-0.5 rounded border border-slate-800">
-                          <span className="font-mono text-emerald-400">Server 1 (Primary)</span>
-                          <button
-                            onClick={() => {
-                              navigator.clipboard.writeText(ch.url);
-                              alert('Server 1 URL copied!');
-                            }}
-                            className="hover:text-emerald-400"
-                            title="Copy Server 1 URL"
-                          >
-                            <Copy className="w-3 h-3" />
-                          </button>
-                        </div>
-                        {ch.url_2 && (
-                          <div className="text-[10px] text-slate-400 flex items-center justify-between bg-slate-900/80 px-2 py-0.5 rounded border border-slate-800">
-                            <span className="font-mono text-emerald-400">Server 2</span>
-                            <button
-                              onClick={() => {
-                                navigator.clipboard.writeText(ch.url_2!);
-                                alert('Server 2 URL copied!');
-                              }}
-                              className="hover:text-emerald-400"
-                              title="Copy Server 2 URL"
-                            >
-                              <Copy className="w-3 h-3" />
-                            </button>
-                          </div>
-                        )}
-                        {ch.url_3 && (
-                          <div className="text-[10px] text-slate-400 flex items-center justify-between bg-slate-900/80 px-2 py-0.5 rounded border border-slate-800">
-                            <span className="font-mono text-emerald-400">Server 3</span>
-                            <button
-                              onClick={() => {
-                                navigator.clipboard.writeText(ch.url_3!);
-                                alert('Server 3 URL copied!');
-                              }}
-                              className="hover:text-emerald-400"
-                              title="Copy Server 3 URL"
-                            >
-                              <Copy className="w-3 h-3" />
-                            </button>
-                          </div>
-                        )}
-                      </div>
                     )}
                   </div>
                   
