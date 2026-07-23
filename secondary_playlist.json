@@ -1,0 +1,1038 @@
+{
+  "status": "success",
+  "owner": "MD ANAMUL HOQUE",
+  "telegram": "https://t.me/ireentv",
+  "website": "https://anamul.pages.dev",
+  "developer": "IreenTechnology",
+  "version": "1.0",
+  "name": "secondary_playlist",
+  "channels_amount": 122,
+  "Last_update": "2026-07-23 06:21:46 PM",
+  "channels": [
+    {
+      "name": "Drama 24",
+      "logo": "https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/G-Series_Logo.png",
+      "url": "https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8",
+      "group": "General",
+      "url_raw": "https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8"
+    },
+    {
+      "name": "BTV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778082545894.png",
+      "url": "http://103.165.93.31:8095/btv/tracks-v1a1/mono.m3u8",
+      "group": "Entertainment",
+      "url_raw": "http://103.165.93.31:8095/btv/tracks-v1a1/mono.m3u8",
+      "attrs": {
+        "tvg-id": "240000"
+      }
+    },
+    {
+      "name": "BTV National",
+      "logo": "https://d38ll44lbmt52p.cloudfront.net/cms/channel_poster/1677040358634_BTVogo.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8",
+      "group": "General",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8"
+    },
+    {
+      "name": "Channel 1",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/%E0%A6%9A%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B2_%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "98000"
+      }
+    },
+    {
+      "name": "Somoy TV",
+      "logo": "https://assets-prod.services.toffeelive.com//Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png",
+      "url": "https://live.thebosstv.com:30443/dwlive/Somoy-TV/chunks.m3u8",
+      "group": "General",
+      "url_raw": "https://live.thebosstv.com:30443/dwlive/Somoy-TV/chunks.m3u8"
+    },
+    {
+      "name": "Jamuna TV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560213832.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "97000"
+      }
+    },
+    {
+      "name": "DBC News HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186306600.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "185000"
+      }
+    },
+    {
+      "name": "Maasranga TV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1773680325498.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8",
+      "group": "Entertainment",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "229000"
+      }
+    },
+    {
+      "name": "Ekattor HD",
+      "logo": "https://cdn.ekattorbd.com/contents/cache/images/1200x630x1/uploads/media/2023/08/13/default-f5a63c8327b98eafee564f28c3a9ebdb.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "102000"
+      }
+    },
+    {
+      "name": "Channel 24 HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "94000"
+      }
+    },
+    {
+      "name": "ATN News",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1739962961772.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "93000"
+      }
+    },
+    {
+      "name": "ATN News",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1739962961772.png",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/Channels/908660.m3u8",
+      "group": "News",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/Channels/908660.m3u8",
+      "attrs": {
+        "tvg-id": "93000"
+      }
+    },
+    {
+      "name": "News 24 HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186895850.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "186000"
+      }
+    },
+    {
+      "name": "Star News",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189826301.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "191000"
+      }
+    },
+    {
+      "name": "Islamic TV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1772728412891.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1724/output/index.m3u8",
+      "group": "Infotainment",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1724/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "223000"
+      }
+    },
+    {
+      "name": "Deepto TV HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/index.m3u8",
+      "group": "Entertainment",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "134000"
+      }
+    },
+    {
+      "name": "Channel 9 HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/index.m3u8",
+      "group": "Entertainment",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "188000"
+      }
+    },
+    {
+      "name": "SRK TV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1746005940155.png",
+      "url": "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8",
+      "group": "Entertainment",
+      "url_raw": "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "141000"
+      }
+    },
+    {
+      "name": "Channel I HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8",
+      "group": "Entertainment",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "132000"
+      }
+    },
+    {
+      "name": "Bangla Vision",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735561344354.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8",
+      "group": "Entertainment",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "100000"
+      }
+    },
+    {
+      "name": "NTV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8",
+      "group": "Entertainment",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "99000"
+      }
+    },
+    {
+      "name": "Al Jazeera",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1777454219313.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1721/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1721/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "169000"
+      }
+    },
+    {
+      "name": "Al Quran",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778086065071.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8",
+      "group": "Infotainment",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "245000"
+      }
+    },
+    {
+      "name": "Independent TV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8",
+      "group": "News",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "247000"
+      }
+    },
+    {
+      "name": "Bhi Channel",
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/e/ec/BHI_Channel_logo.png",
+      "url": "http://15.235.185.236/hls/bhi.m3u8",
+      "group": "General",
+      "url_raw": "http://15.235.185.236/hls/bhi.m3u8"
+    },
+    {
+      "name": "Channel S UK",
+      "logo": "https://chsuk.tv/wp-content/uploads/2025/11/CHS-Side-Text.png",
+      "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/chsukoff.stream/playlist.m3u8",
+      "group": "General",
+      "url_raw": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/chsukoff.stream/playlist.m3u8"
+    },
+    {
+      "name": "Channel Europe",
+      "logo": "https://channeleurope.tv/storage/settings/BNyRMyomifMQ7VlzvHKbNwCfzxM7kF4Vq7bj4zxZ.png",
+      "url": "https://stream.channeleuropetvboxlondon.co.uk/live/channeleurope/chunklist_w572284654.m3u8",
+      "group": "General",
+      "url_raw": "https://stream.channeleuropetvboxlondon.co.uk/live/channeleurope/chunklist_w572284654.m3u8"
+    },
+    {
+      "name": "Deepto TV",
+      "logo": "https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/refs/heads/tv/deepto-tv-seeklogo.png",
+      "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
+      "group": "General",
+      "url_raw": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8"
+    },
+    {
+      "name": "Deshi TV",
+      "logo": "https://www.deshitv.com/images//bangla_logo/DeshTV24-BanglaLogo.png",
+      "url": "https://deshitv.deshitv24.net/live/myStream/playlist.m3u8",
+      "group": "General",
+      "url_raw": "https://deshitv.deshitv24.net/live/myStream/playlist.m3u8"
+    },
+    {
+      "name": "Desh TV",
+      "logo": "https://otapp.store/uploads/tv_image/sm/desh-tv.png",
+      "url": "https://bozztv.com/rongo/rongo-DeshTV/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://bozztv.com/rongo/rongo-DeshTV/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Probashi",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzayWMQexbfPV-jTx3ZNoq-XOmlHKSX1SCjg&s",
+      "url": "http://158.69.24.53:8080/probashi_tv/index.m3u8",
+      "group": "General",
+      "url_raw": "http://158.69.24.53:8080/probashi_tv/index.m3u8"
+    },
+    {
+      "name": "Deshe Bideshe",
+      "logo": "https://pbs.twimg.com/profile_images/739539785304281088/zMwNO936_400x400.jpg",
+      "url": "https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8",
+      "group": "General",
+      "url_raw": "https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8"
+    },
+    {
+      "name": "TBN 24",
+      "logo": "https://www.tbn24.com/logo.png",
+      "url": "https://www.tbn24.com/live-tv-stream/20201_0.m3u8",
+      "group": "General",
+      "url_raw": "https://www.tbn24.com/live-tv-stream/20201_0.m3u8"
+    },
+    {
+      "name": "iON TV UK",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2017/10/iontvuk.jpg?x49520",
+      "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/iontvuk.stream/live-orgin/iontvuk.stream/chunks.m3u8",
+      "group": "General",
+      "url_raw": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/iontvuk.stream/live-orgin/iontvuk.stream/chunks.m3u8"
+    },
+    {
+      "name": "Jago News 24",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/jagonews.jpg",
+      "url": "https://app.ncare.live/live-orgin/jagonews24.stream/playlist.m3u8",
+      "group": "General",
+      "url_raw": "https://app.ncare.live/live-orgin/jagonews24.stream/playlist.m3u8"
+    },
+    {
+      "name": "Asian TV",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "G TV",
+      "logo": "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/gtv-hd-bd.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/gazibdz.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/gazibdz.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Global TV",
+      "logo": "https://s3.aynaott.com/storage/bda05e1c2173251baebc20ffe43dea0b",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/Global-tv.stream/playlist.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/Global-tv.stream/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "0ac6af3d-acce-4d9d-9ce5-32d4b53f9326"
+      }
+    },
+    {
+      "name": "NEWS 21 BANGLA",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2024/11/news21.jpg",
+      "url": "http://103.190.133.68:1935/news21live/live/playlist.m3u8",
+      "group": "General",
+      "url_raw": "http://103.190.133.68:1935/news21live/live/playlist.m3u8"
+    },
+    {
+      "name": "NRB HD",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctL8rD_FYfZ1rHUDhs_Q3rJwRYGSDbMX0-XHpHFXLjeTC2D9iYwo8Gq3J&s=10",
+      "url": "https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8",
+      "group": "General",
+      "url_raw": "https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8",
+      "attrs": {
+        "tvg-server": "Server 1"
+      }
+    },
+    {
+      "name": "Ayna TV",
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBhxAik9rvkpRV33kdDl-2drT2X3Y2cU_-lrjlMpmIxzBAGCN50afZnqx8vvxgmbaTVZmYITeOyTW1Fg_CAItfNfgRwsrTcxaB1pecb0Z74oky6LcgXFGIAOz8w8IijqMpMo4dUJ8aMsAF4A0x9Xwt57UCZYxhtEpRfOdqTzmfwVjICILOqg9QPbOFww/s1080/1000021053.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ayna.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ayna.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Channel 16",
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN4JrZ3Ur3BHiD2tQhsQq3WQ5DXpv7HATFyNDT6o-rSNwAZaeQieMBdfPoGPio5UPipGV2ZBb8rLmyYJe5vySfQjEmTE5MLc_6q8CKfXuzb4eRQREjPiyL5tkncb1Xt5pVMJa6t77CT98JvAFozg95IH_9qofXJ2s1ubKCbJ-_JsuRVb458aBztLImQ/s1080/1000015295.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel16bd.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel16bd.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Sananda",
+      "logo": "https://otapp.store/uploads/tv_image/sm/sananda-tv.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/sanandatv.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/sanandatv.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Sanonda Tv",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQrOMsdkfX7iirtL5LHIosFTqpB8hhdpS7zg&usqp=CAU",
+      "url": "http://live-stream.amarbanglatv.in:8080/hls/sanandatv/index.m3u8",
+      "group": "General",
+      "url_raw": "http://live-stream.amarbanglatv.in:8080/hls/sanandatv/index.m3u8"
+    },
+    {
+      "name": "Ananda TV",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2018/04/Anandatvupdate.jpg",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/anandatv.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/anandatv.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Mohona TV",
+      "logo": "https://i.imgur.com/ENyPcL0.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mohonatv.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mohonatv.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Movie Bangla",
+      "logo": "https://i.postimg.cc/wBN1BtXk/20251127_095813.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/moviebanglalink2.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/moviebanglalink2.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "MY TV",
+      "logo": "https://i.postimg.cc/HxGF4V2b/20250529_103226.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mytv-up-off.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mytv-up-off.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Rajdhani TV",
+      "logo": "https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/KECGB54BuUSiBsg_dHyj/posters/58af9c58-ed80-458c-af13-cf381680cec6.png",
+      "url": "https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8",
+      "group": "General",
+      "url_raw": "https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8"
+    },
+    {
+      "name": "Ekushey TV",
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png",
+      "url": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8",
+      "group": "General",
+      "url_raw": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8"
+    },
+    {
+      "name": "Ekhon TV",
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png",
+      "url": "https://stream.ottplus.live/live/ekhon_tv_abr/index.m3u8",
+      "group": "General",
+      "url_raw": "https://stream.ottplus.live/live/ekhon_tv_abr/index.m3u8"
+    },
+    {
+      "name": "Green TV",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Green%20TV.png",
+      "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/playlist.m3u8",
+      "group": "General",
+      "url_raw": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/playlist.m3u8"
+    },
+    {
+      "name": "JonmoBhumi TV",
+      "logo": "https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/jhonmobhumitv.png",
+      "url": "https://jtvs.ncare.live/Gznr84Woj7UEye3OPVeWq2ForboWAgdV/jonmobhumitv.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://jtvs.ncare.live/Gznr84Woj7UEye3OPVeWq2ForboWAgdV/jonmobhumitv.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Mohona TV HD",
+      "logo": "https://i.ibb.co.com/1JMhnC3G/MOHONA-TV-HD.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mohonatv.stream/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mohonatv.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "ME TV",
+      "logo": "https://www.metvbd.com/media/common/logo-fb.png",
+      "url": "https://iptvbd.live/metv1080/1080.m3u8",
+      "group": "General",
+      "url_raw": "https://iptvbd.live/metv1080/1080.m3u8"
+    },
+    {
+      "name": "Movie Bangla",
+      "logo": "https://moviebangla.tv/wp-content/uploads/2024/06/moviebanglatv-logo-2.png",
+      "url": "http://alvetv.com/moviebanglatv/8080/index.m3u8",
+      "group": "General",
+      "url_raw": "http://alvetv.com/moviebanglatv/8080/index.m3u8"
+    },
+    {
+      "name": "NRB TV",
+      "logo": "https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/refs/heads/tv/NRB.png",
+      "url": "https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8",
+      "group": "General",
+      "url_raw": "https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8"
+    },
+    {
+      "name": "Probashi TV",
+      "logo": "https://probashinews24.tv/images/logo.png",
+      "url": "http://158.69.24.53:8080/probashi_tv/tracks-v1a1/mono.m3u8",
+      "group": "General",
+      "url_raw": "http://158.69.24.53:8080/probashi_tv/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "SRKTV Bangla",
+      "logo": "https://www.lyngsat.com/logo/tv/ss/srk-tv-bd.png",
+      "url": "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8",
+      "group": "General",
+      "url_raw": "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8"
+    },
+    {
+      "name": "Bangla Plus",
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/9/9a/Bangla%2B_HD.png",
+      "url": "https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8",
+      "group": "General",
+      "url_raw": "https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8"
+    },
+    {
+      "name": "Enterr 10 Bangla",
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/4c/Enterr10_Bangla_logo_%282020%29.png",
+      "url": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8",
+      "group": "General",
+      "url_raw": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8"
+    },
+    {
+      "name": "T Sports HD",
+      "logo": "https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/tv/T-Sports.png",
+      "url": "http://103.158.133.53:8080/viralclub/index.m3u8",
+      "group": "General",
+      "url_raw": "http://103.158.133.53:8080/viralclub/index.m3u8"
+    },
+    {
+      "name": "Channel 63",
+      "logo": "",
+      "url": "✅✅ BANGLADESHI ✅✅",
+      "group": "General",
+      "url_raw": "✅✅ BANGLADESHI ✅✅"
+    },
+    {
+      "name": "ZB Cartun TV",
+      "logo": "https://iili.io/F8gQjJS.png",
+      "url": "https://server.zillarbarta.com/zbcatun/video.m3u8",
+      "group": "BANGLADESHI",
+      "url_raw": "https://server.zillarbarta.com/zbcatun/video.m3u8"
+    },
+    {
+      "name": "Bhi Channel",
+      "logo": "https://bhichannel.com/wp-content/uploads/2024/11/cropped-WhatsApp-Image-2024-10-30-at-12.25.43-PM-1-120x80.jpeg",
+      "url": "http://15.235.185.236/hls/bhi.m3u8",
+      "group": "BANGLADESHI",
+      "url_raw": "http://15.235.185.236/hls/bhi.m3u8"
+    },
+    {
+      "name": "ZB Cartoon TV",
+      "logo": "https://iili.io/F8gQjJS.png",
+      "url": "https://server.zillarbarta.com/zbcatun/video.m3u8",
+      "group": "BANGLADESHI",
+      "url_raw": "https://server.zillarbarta.com/zbcatun/video.m3u8"
+    },
+    {
+      "name": "Ekushey TV",
+      "logo": "https://s4.gifyu.com/images/image534fa27d7683f33d.png",
+      "url": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8",
+      "group": "BANGLA",
+      "url_raw": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8"
+    },
+    {
+      "name": "Channel I",
+      "logo": "https://cdn.tvpassport.com/image/station/240x135/channel-i-bangla.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8",
+      "group": "BANGLA",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8"
+    },
+    {
+      "name": "Deepto TV",
+      "logo": "https://jcwsw2vt33.gpcdn.net/uploads/images/2022/07/25/logos_1384ea456744d5914ba331fa72df78c8_goplay_deepto_logo_final_white.svg",
+      "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8",
+      "group": "BANGLA",
+      "url_raw": "https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8"
+    },
+    {
+      "name": "Makkah TV",
+      "logo": "http://data.jaagobd.com/media/channel_logos/C16.jpg",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/playlist.m3u8",
+      "group": "Jago Bd",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/playlist.m3u8"
+    },
+    {
+      "name": "Desh Bangla TV",
+      "logo": "http://data.jaagobd.com/media/channel_logos/Desh_Bangla_Tv.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deshbanglatv.stream/playlist.m3u8",
+      "group": "Jago Bd",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deshbanglatv.stream/playlist.m3u8"
+    },
+    {
+      "name": "Music Bangla 2025",
+      "logo": "http://data.jaagobd.com/media/channel_logos/Noboruptvnew.jpeg",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/musicbangla2025.stream/playlist.m3u8",
+      "group": "Jago Bd",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/musicbangla2025.stream/playlist.m3u8"
+    },
+    {
+      "name": "Movie Bangla",
+      "logo": "http://data.jaagobd.com/media/channel_logos/Movie_Bangla_Yi8Lxqy.jpg",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/moviebanglalink2.stream/playlist.m3u8",
+      "group": "Jago Bd",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/moviebanglalink2.stream/playlist.m3u8"
+    },
+    {
+      "name": "Citizen TV",
+      "logo": "http://data.jaagobd.com/media/channel_logos/citigen_tv.jpeg",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/citizentv.stream/playlist.m3u8",
+      "group": "Jago Bd",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/citizentv.stream/playlist.m3u8"
+    },
+    {
+      "name": "Ruposhi Bangla",
+      "logo": "http://data.jaagobd.com/media/channel_logos/rb.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ruposhibangla.stream/playlist.m3u8",
+      "group": "Jago Bd",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ruposhibangla.stream/playlist.m3u8"
+    },
+    {
+      "name": "EP TV",
+      "logo": "http://data.jaagobd.com/media/channel_logos/EPTV-Logo-400x400.png",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/eptv.stream/playlist.m3u8",
+      "group": "Jago Bd",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/eptv.stream/playlist.m3u8"
+    },
+    {
+      "name": "Star Jalsha HD",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Star_Jalsha_HD.png",
+      "url": "https://sm-monirul.top/sm/proxy.php?id=starjalsha&e=.m3u8",
+      "group": "Indian-Bangla",
+      "url_raw": "https://sm-monirul.top/sm/proxy.php?id=starjalsha&e=.m3u8"
+    },
+    {
+      "name": "Jalsha Movies HD",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/0/04/Jalsha_Movies_HD.png",
+      "url": "https://live.bdixbd.net/api/proxy/stream.m3u8?url=https://myco-channels.nurmd2006-official.workers.dev/Jalsha_Movie/tracks-v1a1/mono.m3u8",
+      "group": "Indian-Bangla",
+      "url_raw": "https://live.bdixbd.net/api/proxy/stream.m3u8?url=https://myco-channels.nurmd2006-official.workers.dev/Jalsha_Movie/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Zee Bangla HD",
+      "logo": "https://dl.dropbox.com/s/8z5yuaoyryedp6l/ZB.jpg",
+      "url": "http://103.159.180.34:5001/live/625.m3u8",
+      "group": "Indian-Bangla",
+      "url_raw": "http://103.159.180.34:5001/live/625.m3u8"
+    },
+    {
+      "name": "Channel 80",
+      "logo": "",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1531202.m3u8",
+      "group": "General",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1531202.m3u8"
+    },
+    {
+      "name": "Colors Bangla",
+      "logo": "https://dl.dropbox.com/s/44vdhjj6fja02co/CBHD.jpg",
+      "url": "https://yupptvcatchupire.yuppcdn.net/preview/colorsbanglahd/800.m3u8",
+      "group": "Indian-Bangla",
+      "url_raw": "https://yupptvcatchupire.yuppcdn.net/preview/colorsbanglahd/800.m3u8"
+    },
+    {
+      "name": "Saudi Quran",
+      "logo": "https://yt3.ggpht.com/ytc/AMLnZu_Gxy8ywjMY6_YPX-1uYtUGA56FOfDoBsH62-ekNA=s900-c-k-c0x00ffffff-no-rj",
+      "url": "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8",
+      "group": "Islamic",
+      "url_raw": "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8"
+    },
+    {
+      "name": "beIN sports Xtra HD",
+      "logo": "https://i.imgur.com/ouAva7k.png",
+      "url": "https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8",
+      "group": "Sports",
+      "url_raw": "https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8"
+    },
+    {
+      "name": "beIN sports Xtra",
+      "logo": "https://i.imgur.com/ouAva7k.png",
+      "url": "https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8",
+      "group": "Sports",
+      "url_raw": "https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8"
+    },
+    {
+      "name": "GOAL TV",
+      "logo": "https://i.imgur.com/zsj6tLX.jpeg",
+      "url": "https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8",
+      "group": "Sports",
+      "url_raw": "https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8",
+      "attrs": {
+        "tvg-id": "GOALTV"
+      }
+    },
+    {
+      "name": "Joy",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770378874717.png",
+      "url": "https://nomawnoijl.gpcdn.net/akash/joy/playlist.m3u8",
+      "group": "Kids",
+      "url_raw": "https://nomawnoijl.gpcdn.net/akash/joy/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "211000"
+      }
+    },
+    {
+      "name": "Funny Junior HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770379573329.png",
+      "url": "https://nomawnoijl.gpcdn.net/akash/funnyjunior/playlist.m3u8",
+      "group": "Kids",
+      "url_raw": "https://nomawnoijl.gpcdn.net/akash/funnyjunior/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "213000"
+      }
+    },
+    {
+      "name": "Sports Range",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770380601958.png",
+      "url": "https://nomawnoijl.gpcdn.net/akash/sportrange/playlist.m3u8",
+      "group": "Sports",
+      "url_raw": "https://nomawnoijl.gpcdn.net/akash/sportrange/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "217000"
+      }
+    },
+    {
+      "name": "Fighters",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770380942670.png",
+      "url": "https://nomawnoijl.gpcdn.net/akash/fighter/playlist.m3u8",
+      "group": "Sports",
+      "url_raw": "https://nomawnoijl.gpcdn.net/akash/fighter/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "219000"
+      }
+    },
+    {
+      "name": "Nikki",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778083459294.png",
+      "url": "https://nomawnoijl.gpcdn.net/akash/nikky/playlist.m3u8",
+      "group": "Kids",
+      "url_raw": "https://nomawnoijl.gpcdn.net/akash/nikky/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "242000"
+      }
+    },
+    {
+      "name": "Crazy Ex",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778085745609.png",
+      "url": "https://nomawnoijl.gpcdn.net/akash/crazy_ex/playlist.m3u8",
+      "group": "Sports",
+      "url_raw": "https://nomawnoijl.gpcdn.net/akash/crazy_ex/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "244000"
+      }
+    },
+    {
+      "name": "Delicious",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778086478755.png",
+      "url": "https://nomawnoijl.gpcdn.net/akash/delicious/playlist.m3u8",
+      "group": "Infotainment",
+      "url_raw": "https://nomawnoijl.gpcdn.net/akash/delicious/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "246000"
+      }
+    },
+    {
+      "name": "Program Promo",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087459461.png",
+      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1720/output/index.m3u8",
+      "group": "Infotainment",
+      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1720/output/index.m3u8",
+      "attrs": {
+        "tvg-id": "248000"
+      }
+    },
+    {
+      "name": "Ekushay TV (Local)",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Ekushey%20TV.png",
+      "url": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8",
+      "group": "Bangla",
+      "url_raw": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8",
+      "attrs": {
+        "tvg-id": "ekushey.bd"
+      }
+    },
+    {
+      "name": "Enter10 Bangla HD",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg",
+      "url": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_240p/chunks.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_240p/chunks.m3u8",
+      "attrs": {
+        "tvg-id": "enter10bangla.in"
+      }
+    },
+    {
+      "name": "Movie Bangla TV",
+      "logo": "https://moviebangla.tv/wp-content/uploads/2024/06/moviebanglatv-logo-2.png",
+      "url": "http://alvetv.com/moviebanglatv/8080/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "http://alvetv.com/moviebanglatv/8080/index.m3u8",
+      "attrs": {
+        "tvg-id": "MovieBanglaTV"
+      }
+    },
+    {
+      "name": "R Plus Gold",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/c/c7/RPlus_Gold_logo_%282013%29.png",
+      "url": "https://thelegitpro.in/pntv/rplusnews24x7/tracks-v1a1/mono.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://thelegitpro.in/pntv/rplusnews24x7/tracks-v1a1/mono.m3u8",
+      "attrs": {
+        "tvg-id": "RPlusGould"
+      }
+    },
+    {
+      "name": "SONY AATH HD",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/0/00/SONY_AATH.png",
+      "url": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
+      "attrs": {
+        "tvg-id": "sonyaathhd.in"
+      }
+    },
+    {
+      "name": "IN | Bangla Jago TV",
+      "logo": "https://banglajagotv.com/wp-content/themes/BANGLAJAGOTV/images/logo.png",
+      "url": "http://banglajagotv.livebox.co.in:80/banglajagohls/24x7.m3u8",
+      "group": "Bangla News",
+      "url_raw": "http://banglajagotv.livebox.co.in:80/banglajagohls/24x7.m3u8",
+      "attrs": {
+        "tvg-id": "BanglaJagoTV"
+      }
+    },
+    {
+      "name": "IN | Calcutta News",
+      "logo": "https://assets.calcuttatelevisionnetwork.in/cn.png",
+      "url": "https://akdnetwork.co.in/live/cnnew/index.m3u8",
+      "group": "Bangla News",
+      "url_raw": "https://akdnetwork.co.in/live/cnnew/index.m3u8",
+      "attrs": {
+        "tvg-id": "CalcuttaNews"
+      }
+    },
+    {
+      "name": "IN | R Plus News",
+      "logo": "https://rplus.in/wp-content/uploads/2025/06/RPLUS_NEWS.png",
+      "url": "https://thelegitpro.in/pntv/rplusnews24x7/index.m3u8",
+      "group": "Bangla News",
+      "url_raw": "https://thelegitpro.in/pntv/rplusnews24x7/index.m3u8",
+      "attrs": {
+        "tvg-id": "R Plus News"
+      }
+    },
+    {
+      "name": "IN | Republic Bangla",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/9/93/R.Bangla_logo_with_tagline.jpg",
+      "url": "https://vg-republictvyupp.akamaized.net/ptnr-yuppt/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-613605/93d674ab-f7a0-404e-88b2-b4f163373dbe/0.m3u8",
+      "group": "Bangla News",
+      "url_raw": "https://vg-republictvyupp.akamaized.net/ptnr-yuppt/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-613605/93d674ab-f7a0-404e-88b2-b4f163373dbe/0.m3u8",
+      "attrs": {
+        "tvg-id": "RepublicBangla.in"
+      }
+    },
+    {
+      "name": "IN | TV9 Bangla",
+      "logo": "https://images.tv9bangla.com/wp-content/themes/tv9bangla/images/tv9-bangla-logo.svg",
+      "url": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+      "group": "Bangla News",
+      "url_raw": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "TV9Bangla.in"
+      }
+    },
+    {
+      "name": "ENT | Dangal TV",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/3/36/Dangalv2.png",
+      "url": "https://live-dangal.akamaized.net/liveabr/pub-iodang10p4al/live_720p/chunks.m3u8",
+      "group": "India",
+      "url_raw": "https://live-dangal.akamaized.net/liveabr/pub-iodang10p4al/live_720p/chunks.m3u8",
+      "attrs": {
+        "tvg-id": "DangalTV.in"
+      }
+    },
+    {
+      "name": "ENT | DANGAL2",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/a/ac/Dangal_2.png",
+      "url": "https://live-dangal2.akamaized.net/liveabr/playlist.m3u8",
+      "group": "India",
+      "url_raw": "https://live-dangal2.akamaized.net/liveabr/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "DANGAL2"
+      }
+    },
+    {
+      "name": "ENT | DD Bharati",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/d/db/DD_Bharati_english.png",
+      "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/67cec794d8b14f9ba21f73924ac65797/index.m3u8",
+      "group": "India",
+      "url_raw": "https://d2lk5u59tns74c.cloudfront.net/out/v1/67cec794d8b14f9ba21f73924ac65797/index.m3u8",
+      "attrs": {
+        "tvg-id": "DDBharati.in"
+      }
+    },
+    {
+      "name": "ENT | DD National HD",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/2/2a/Ddnational2023.png",
+      "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/40492a64c1db4a1385ba1a397d357d3a/index.m3u8",
+      "group": "India",
+      "url_raw": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/40492a64c1db4a1385ba1a397d357d3a/index.m3u8",
+      "attrs": {
+        "tvg-id": "DDNational.in@HD"
+      }
+    },
+    {
+      "name": "ENT | DD URDU",
+      "logo": "https://prodcdn1.wavespb.com/shows/poster_url/1423354137DD_URDU______720x960.webp",
+      "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/9b91e9007e754db39a8b32c6bfc5b24a/index.m3u8",
+      "group": "India",
+      "url_raw": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/9b91e9007e754db39a8b32c6bfc5b24a/index.m3u8",
+      "attrs": {
+        "tvg-id": "dd-urdu"
+      }
+    },
+    {
+      "name": "NEWS | Aaj Tak HD",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/9/93/Aaj_Tak_HD_v2.png",
+      "url": "https://aajtaklive-amd.akamaized.net/hls/live/2014416/aajtak/aajtaklive/live_720p/chunks.m3u8",
+      "group": "India",
+      "url_raw": "https://aajtaklive-amd.akamaized.net/hls/live/2014416/aajtak/aajtaklive/live_720p/chunks.m3u8",
+      "attrs": {
+        "tvg-id": "AajTak.in"
+      }
+    },
+    {
+      "name": "NEWS | Aap Ki Adalat",
+      "logo": "https://yt3.googleusercontent.com/-LKDkXmG8y-gkKDzES5aUI8SYFtDXR8F7351cCACb8OP0ap9MkI5moxwFLoAWNRjVEXKJmH3pQ=s72-c-k-c0x00ffffff-no-rj",
+      "url": "https://amg01550-indiatv-indiatv-aapkiadalat-mi-xiaomi-n5tuk.amagi.tv/playlist/amg01550-indiatv-indiatv-aapkiadalat-mi-xiaomi/playlist.m3u8",
+      "group": "India",
+      "url_raw": "https://amg01550-indiatv-indiatv-aapkiadalat-mi-xiaomi-n5tuk.amagi.tv/playlist/amg01550-indiatv-indiatv-aapkiadalat-mi-xiaomi/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "Aap Ki Adalat"
+      }
+    },
+    {
+      "name": "NEWS | India Today",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/2/25/India_Today_TV.jpg",
+      "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/d4435039c7d1433d9b9d0b6cdc9dd4ff/index.m3u8",
+      "group": "India",
+      "url_raw": "https://d2lk5u59tns74c.cloudfront.net/out/v1/d4435039c7d1433d9b9d0b6cdc9dd4ff/index.m3u8",
+      "attrs": {
+        "tvg-id": "indiatoday.in"
+      }
+    },
+    {
+      "name": "NEWS | India TV",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/1/10/India_TV_Orange.jpg",
+      "url": "https://pl-indiatvnews.akamaized.net/out/v1/db79179b608641ceaa5a4d0dd0dca8da/index.m3u8",
+      "group": "India",
+      "url_raw": "https://pl-indiatvnews.akamaized.net/out/v1/db79179b608641ceaa5a4d0dd0dca8da/index.m3u8",
+      "attrs": {
+        "tvg-id": "IndiaTV.in"
+      }
+    },
+    {
+      "name": "NEWS | NDTV English",
+      "logo": "https://yt3.googleusercontent.com/ytc/AIdro_lcj8idHNsaTiTITY2vWQD6gaxZ6ITkpQPaLVskaDMyiml9=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678-b/ndtv24x7/master.m3u8",
+      "group": "India",
+      "url_raw": "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678-b/ndtv24x7/master.m3u8",
+      "attrs": {
+        "tvg-id": "ndtvenglish"
+      }
+    },
+    {
+      "name": "NEWS | NDTV Hindi",
+      "logo": "https://logodix.com/logo/2131933.jpg",
+      "url": "https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8",
+      "group": "India",
+      "url_raw": "https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8",
+      "attrs": {
+        "tvg-id": "ndtvindia"
+      }
+    },
+    {
+      "name": "NEWS | News Nation",
+      "logo": "https://yt3.googleusercontent.com/tWgKmMIT4YwdmT0z5S1MN2bIvoFN8_RvIsAWZbLwQVIpq21RO-_Y4sDzVdpj9l6wWRRz8YeUSg=s72-c-k-c0x00ffffff-no-rj",
+      "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6cd2f649739a45ca9de1daf81cc7d0f2/index.m3u8",
+      "group": "India",
+      "url_raw": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6cd2f649739a45ca9de1daf81cc7d0f2/index.m3u8",
+      "attrs": {
+        "tvg-id": "NewsNation.in@SD"
+      }
+    },
+    {
+      "name": "NEWS | News24",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3900001YE_20250430T011913SQUARE.png",
+      "url": "https://amg13643-amg13643c1-amgplt0016.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg13643-amg13643c1-amgplt0016/playlist.m3u8",
+      "group": "India",
+      "url_raw": "https://amg13643-amg13643c1-amgplt0016.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg13643-amg13643c1-amgplt0016/playlist.m3u8",
+      "attrs": {
+        "tvg-id": "News24"
+      }
+    },
+    {
+      "name": "NEWS | Republic TV",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/f/fe/Republic-logo2.svg",
+      "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2e31d831f08640ff92f65003bdc89991/index.m3u8",
+      "group": "India",
+      "url_raw": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2e31d831f08640ff92f65003bdc89991/index.m3u8",
+      "attrs": {
+        "tvg-id": "RepublicTV.in"
+      }
+    },
+    {
+      "name": "NEWS | ZEE BUSINESS",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/0/07/Zee_Business_%282025%29.svg",
+      "url": "https://dwby15d04agvq.cloudfront.net/index_1.m3u8",
+      "group": "India",
+      "url_raw": "https://dwby15d04agvq.cloudfront.net/index_1.m3u8",
+      "attrs": {
+        "tvg-id": "ZEEBUSINESS"
+      }
+    },
+    {
+      "name": "Radio Bangla Net",
+      "logo": "https://cdn.instant.audio/images/logos/radio-bd-com/bangla-net.png",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R3563475_SC",
+      "group": "FM-Radio",
+      "url_raw": "https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R3563475_SC"
+    },
+    {
+      "name": "BBC Bangla",
+      "logo": "https://cdn.instant.audio/images/logos/radio-bd-com/bbc-bangla.png",
+      "url": "https://a.files.bbci.co.uk/ms6/live/3441A116-B12E-4D2F-ACA8-C1984642FA4B/audio/simulcast/dash/nonuk/cellular_main_sd_abr_v2/cfs/bbc_world_service.mpd",
+      "group": "FM-Radio",
+      "url_raw": "https://a.files.bbci.co.uk/ms6/live/3441A116-B12E-4D2F-ACA8-C1984642FA4B/audio/simulcast/dash/nonuk/cellular_main_sd_abr_v2/cfs/bbc_world_service.mpd"
+    },
+    {
+      "name": "Spice FM",
+      "logo": "https://spicefmbd.com/logospice.png",
+      "url": "https://stream.spicefmbd.com/stream.m3u8",
+      "group": "FM-Radio",
+      "url_raw": "https://stream.spicefmbd.com/stream.m3u8"
+    },
+    {
+      "name": "Radio Mirchi",
+      "logo": "https://m.economictimes.com/thumb/msid-71679942,width-1200,height-900,resizemode-4,imgsize-42753/radio-mirchi-agencies.jpg",
+      "url": "https://eu8.fastcast4u.com/proxy/clyedupq?mp=%2F1?aw_0_req_lsid=2c0fae177108c9a42a7cf24878625444",
+      "group": "FM-Radio",
+      "url_raw": "https://eu8.fastcast4u.com/proxy/clyedupq?mp=%2F1?aw_0_req_lsid=2c0fae177108c9a42a7cf24878625444"
+    }
+  ]
+}
