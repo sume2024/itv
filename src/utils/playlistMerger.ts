@@ -36,6 +36,24 @@ function normalizeName(name: string): string {
 }
 
 /**
+ * Strips common stream quality and country tags from channel name to derive base name
+ * e.g., "Zee Bangla HD (BD)" -> "zee bangla"
+ * "T Sports 1080p" -> "t sports"
+ * Preserves actual channel numbers like "Sony Ten 1", "Sports 18 2"
+ */
+function cleanBaseName(name: string): string {
+  let cleaned = name.trim().toLowerCase();
+  // Remove content inside brackets/parentheses e.g. (BD), [IN], (HD)
+  cleaned = cleaned.replace(/\([^)]*\)|\[[^\]]*\]/g, ' ');
+  // Remove prefixes like "bd:", "in:", "us:", "uk:"
+  cleaned = cleaned.replace(/^(bd|in|us|uk|in-bd|bd-in)\s*:\s*/g, '');
+  // Remove quality and server keywords
+  cleaned = cleaned.replace(/\b(hd|fhd|sd|4k|hevc|raw|vip|premium|backup|server|live|720p|1080p|50fps|60fps|m3u8)\b/g, ' ');
+  // Normalize whitespace
+  return cleaned.replace(/\s+/g, ' ').trim();
+}
+
+/**
  * Normalizes string to a clean alphanumeric slug
  */
 function toSlug(str: string): string {
@@ -43,12 +61,12 @@ function toSlug(str: string): string {
 }
 
 /**
- * Checks if a channel name is generic (e.g., "Channel 106", "Channel 107", "Ch 101", "Stream 2")
+ * Checks if a channel name is generic (e.g., "Channel 106", "Channel 107", "Ch 101", "Stream 2", "Line 1")
  */
 function isGenericChannelName(name: string): boolean {
   const trimmed = name.trim();
   if (!trimmed) return true;
-  return /^(channel|ch|stream|server|live)\s*[-_]?\s*\d+$/i.test(trimmed);
+  return /^(channel|ch|stream|server|live|line|feed)\s*[\.\-_]?\s*\d+$/i.test(trimmed) || /^\d+$/.test(trimmed);
 }
 
 interface CanonicalInfo {
@@ -56,6 +74,7 @@ interface CanonicalInfo {
   logo: string;
   group: string;
   slug: string;
+  baseNameKey: string;
 }
 
 /**
@@ -68,6 +87,7 @@ interface CanonicalInfo {
  * 3. Smart Resolver:
  *    - Automatically identifies generic channel names like "Channel 106", "Channel 107" from stream URLs or matches.
  *    - Inherits the exact SAME channel name, logo, and group from the matching main channel!
+ *    - Longer slug matching prioritization prevents false positive matches.
  */
 export function mergePlaylistsWithDefaultRule(
   sources: { name: string; channels: Channel[] }[],
@@ -103,9 +123,10 @@ export function mergePlaylistsWithDefaultRule(
   // Counter for variants per channel name
   const channelVariantCounters = new Map<string, number>();
 
-  // Canonical channels knowledge map (by normalized name & URL slug)
+  // Knowledge maps for canonical channels
   const canonicalByName = new Map<string, CanonicalInfo>();
-  const canonicalBySlug = new Map<string, CanonicalInfo>();
+  const canonicalByBaseName = new Map<string, CanonicalInfo>();
+  const canonicalBySlugList: CanonicalInfo[] = [];
 
   // --- PRE-PASS: Build Knowledge Base of Non-Generic Channels ---
   for (const src of sources) {
@@ -114,21 +135,29 @@ export function mergePlaylistsWithDefaultRule(
       if (!ch.name || isGenericChannelName(ch.name)) continue;
 
       const norm = normalizeName(ch.name);
-      const slug = toSlug(ch.name);
+      const baseKey = cleanBaseName(ch.name);
+      const slug = toSlug(baseKey || ch.name);
 
       if (!canonicalByName.has(norm)) {
         const info: CanonicalInfo = {
           canonicalName: ch.name.trim(),
           logo: ch.logo || '',
           group: ch.group || 'General',
-          slug
+          slug,
+          baseNameKey: baseKey
         };
+
         canonicalByName.set(norm, info);
-        if (slug.length >= 3) {
-          canonicalBySlug.set(slug, info);
+
+        if (baseKey && !canonicalByBaseName.has(baseKey)) {
+          canonicalByBaseName.set(baseKey, info);
+        }
+
+        if (slug.length >= 3 && !canonicalBySlugList.some(c => c.slug === slug)) {
+          canonicalBySlugList.push(info);
         }
       } else {
-        // Update logo if missing
+        // Enrich logo/group if missing
         const existing = canonicalByName.get(norm)!;
         if (!existing.logo && ch.logo) {
           existing.logo = ch.logo;
@@ -140,6 +169,9 @@ export function mergePlaylistsWithDefaultRule(
     }
   }
 
+  // Sort canonical slugs by length DESCENDING so longer specific names match first (e.g. "zeebangla" before "zee")
+  canonicalBySlugList.sort((a, b) => b.slug.length - a.slug.length);
+
   /**
    * Helper to resolve a channel (fixing generic names like "Channel 106", inheriting logo & group)
    */
@@ -150,8 +182,9 @@ export function mergePlaylistsWithDefaultRule(
 
     const isGeneric = isGenericChannelName(rawName);
     const norm = normalizeName(rawName);
+    const baseKey = cleanBaseName(rawName);
 
-    // 1. Match by normalized name first
+    // 1. Direct match by exact normalized name
     if (canonicalByName.has(norm)) {
       const canonical = canonicalByName.get(norm)!;
       rawName = canonical.canonicalName;
@@ -160,12 +193,21 @@ export function mergePlaylistsWithDefaultRule(
       return { name: rawName, logo, group };
     }
 
-    // 2. If generic or unmatched name, try matching URL against canonical slugs
+    // 2. Match by cleaned base name (e.g., "Zee Bangla HD" matching "Zee Bangla")
+    if (baseKey && canonicalByBaseName.has(baseKey)) {
+      const canonical = canonicalByBaseName.get(baseKey)!;
+      rawName = canonical.canonicalName;
+      if (!logo) logo = canonical.logo;
+      if (!group || group === 'General') group = canonical.group;
+      return { name: rawName, logo, group };
+    }
+
+    // 3. If generic or unmatched name, try matching stream URL against sorted canonical slugs
     if (isGeneric || !canonicalByName.has(norm)) {
       const urlClean = toSlug(ch.url || '');
-      for (const [slug, canonical] of canonicalBySlug.entries()) {
-        if (slug.length >= 3 && urlClean.includes(slug)) {
-          // Found matching channel via URL! e.g., "Channel 106" with URL containing "zee_bangla"
+      for (const canonical of canonicalBySlugList) {
+        if (canonical.slug.length >= 3 && urlClean.includes(canonical.slug)) {
+          // Matched via URL! e.g., "Channel 106" -> "Zee Bangla"
           rawName = canonical.canonicalName;
           if (!logo) logo = canonical.logo;
           if (!group || group === 'General') group = canonical.group;
@@ -265,7 +307,6 @@ export function mergePlaylistsWithDefaultRule(
 
       if (isNameInDefault) {
         // Channel name matches Default Playlist, BUT has a DIFFERENT stream link!
-        // As requested: "হুবহু মিলে গেলে যদি সে চ্যানেলটি স্ট্রিম লিঙ্ক ভিন্ন হয় তাহলে সেটিকেও এড করবে"
         variantStreamsAdded++;
         globalSeenUrls.add(trimmedUrl);
 

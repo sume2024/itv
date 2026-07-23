@@ -393,7 +393,16 @@ def is_generic_channel_name(name):
     if not name:
         return True
     trimmed = name.strip()
-    return bool(re.match(r'^(channel|ch|stream|server|live)\s*[-_]?\s*\d+$', trimmed, re.IGNORECASE))
+    return bool(re.match(r'^(channel|ch|stream|server|live|line|feed)\s*[\.\-_]?\s*\d+$', trimmed, re.IGNORECASE)) or bool(re.match(r'^\d+$', trimmed))
+
+def clean_base_name(name):
+    if not name:
+        return ""
+    cleaned = name.strip().lower()
+    cleaned = re.sub(r'\([^)]*\)|\[[^\]]*\]', ' ', cleaned)
+    cleaned = re.sub(r'^(bd|in|us|uk|in-bd|bd-in)\s*:\s*', '', cleaned)
+    cleaned = re.sub(r'\b(hd|fhd|sd|4k|hevc|raw|vip|premium|backup|server|live|720p|1080p|50fps|60fps|m3u8)\b', ' ', cleaned)
+    return re.sub(r'\s+', ' ', cleaned).strip()
 
 def to_slug(text):
     return re.sub(r'[^a-z0-9]', '', (text or '').lower())
@@ -409,13 +418,15 @@ def merge_all_playlists(parsed_sources):
     3. Smart Resolver:
        - Automatically identifies generic channel names like "Channel 106", "Channel 107" from stream URLs or matches.
        - Inherits the exact SAME channel name, logo, and group from the matching main channel!
+       - Longer slug matching prioritization prevents false positive matches.
     """
     merged_channels = []
     if not parsed_sources:
         return merged_channels
 
     canonical_by_name = {}
-    canonical_by_slug = {}
+    canonical_by_base_name = {}
+    canonical_by_slug_list = []
 
     # Pre-pass to build canonical channel knowledge base
     for src in parsed_sources:
@@ -425,24 +436,33 @@ def merge_all_playlists(parsed_sources):
                 continue
             
             norm_name = re.sub(r'\s+', ' ', raw_name.lower())
-            slug = to_slug(raw_name)
+            base_key = clean_base_name(raw_name)
+            slug = to_slug(base_key or raw_name)
 
             if norm_name not in canonical_by_name:
                 info = {
                     "canonical_name": raw_name,
                     "logo": ch.get("logo") or "",
                     "group": ch.get("group") or "General",
-                    "slug": slug
+                    "slug": slug,
+                    "base_key": base_key
                 }
                 canonical_by_name[norm_name] = info
-                if len(slug) >= 3:
-                    canonical_by_slug[slug] = info
+
+                if base_key and base_key not in canonical_by_base_name:
+                    canonical_by_base_name[base_key] = info
+
+                if len(slug) >= 3 and not any(c["slug"] == slug for c in canonical_by_slug_list):
+                    canonical_by_slug_list.append(info)
             else:
                 existing = canonical_by_name[norm_name]
                 if not existing["logo"] and ch.get("logo"):
                     existing["logo"] = ch.get("logo")
                 if (not existing["group"] or existing["group"] == "General") and ch.get("group") and ch.get("group") != "General":
                     existing["group"] = ch.get("group")
+
+    # Sort canonical slugs by length DESCENDING so longer specific names match first
+    canonical_by_slug_list.sort(key=lambda x: len(x["slug"]), reverse=True)
 
     def resolve_channel_info(ch):
         raw_name = (ch.get("name") or "").strip()
@@ -451,15 +471,23 @@ def merge_all_playlists(parsed_sources):
 
         is_generic = is_generic_channel_name(raw_name)
         norm_name = re.sub(r'\s+', ' ', raw_name.lower())
+        base_key = clean_base_name(raw_name)
 
+        # 1. Direct match by exact normalized name
         if norm_name in canonical_by_name:
             info = canonical_by_name[norm_name]
             return info["canonical_name"], logo or info["logo"], group if group != "General" else info["group"]
 
+        # 2. Match by cleaned base name (e.g. "Zee Bangla HD" -> "Zee Bangla")
+        if base_key and base_key in canonical_by_base_name:
+            info = canonical_by_base_name[base_key]
+            return info["canonical_name"], logo or info["logo"], group if group != "General" else info["group"]
+
+        # 3. Match generic/unmatched names via URL slug against sorted canonical list
         if is_generic or norm_name not in canonical_by_name:
             url_slug = to_slug(ch.get("url") or "")
-            for slug, info in canonical_by_slug.items():
-                if len(slug) >= 3 and slug in url_slug:
+            for info in canonical_by_slug_list:
+                if len(info["slug"]) >= 3 and info["slug"] in url_slug:
                     return info["canonical_name"], logo or info["logo"], group if group != "General" else info["group"]
 
         return raw_name, logo, group
