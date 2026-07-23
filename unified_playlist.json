@@ -7,7 +7,7 @@
   "version": "1.0",
   "name": "unified_playlist",
   "channels_amount": 346,
-  "Last_update": "2026-07-23 07:56:27 PM",
+  "Last_update": "2026-07-23 08:03:50 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -90,10 +90,10 @@
       }
     },
     {
-      "name": "Channel 9",
-      "logo": "",
+      "name": "Channel 9 HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
       "url": "http://103.89.248.130:8082/DBC-NEWS/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/DBC-NEWS/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -185,10 +185,10 @@
       }
     },
     {
-      "name": "Channel 18",
-      "logo": "",
+      "name": "News 24 HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186895850.png",
       "url": "http://103.89.248.130:8082/NEWS-24/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/NEWS-24/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -298,10 +298,10 @@
       }
     },
     {
-      "name": "Channel 29",
-      "logo": "",
+      "name": "MAASRANGA HD",
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png",
       "url": "https://mtv.sunplex.live/MAASRANGA/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://mtv.sunplex.live/MAASRANGA/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -535,10 +535,10 @@
       }
     },
     {
-      "name": "Channel 50",
-      "logo": "",
+      "name": "Channel 9 HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
       "url": "http://103.89.248.130:8082/CHANNEL-9/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/CHANNEL-9/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -568,10 +568,10 @@
       }
     },
     {
-      "name": "Channel 53",
-      "logo": "",
+      "name": "ATN BANGLA HD",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/ATN%20Bangla.png",
       "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1075,10 +1075,10 @@
       }
     },
     {
-      "name": "Channel 100",
-      "logo": "",
+      "name": "Sony Max HD",
+      "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
       "url": "http://103.89.248.130:8082/SONY-MAX/index.m3u8",
-      "group": "General",
+      "group": "Hindi Movies",
       "url_raw": "http://103.89.248.130:8082/SONY-MAX/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1254,10 +1254,10 @@
       }
     },
     {
-      "name": "9XM",
-      "logo": "",
+      "name": "9XM HD",
+      "logo": "https://i.ibb.co/PWs3RPy/20240803-105114.png",
       "url": "https://9xjio.wiseplayout.com/9XM/master.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://9xjio.wiseplayout.com/9XM/master.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1265,10 +1265,10 @@
       }
     },
     {
-      "name": "9XM",
-      "logo": "",
+      "name": "9XM HD",
+      "logo": "https://i.ibb.co/PWs3RPy/20240803-105114.png",
       "url": "https://epiconvh.akamaized.net/live/9XM/master.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://epiconvh.akamaized.net/live/9XM/master.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1276,10 +1276,10 @@
       }
     },
     {
-      "name": "9XM",
-      "logo": "",
+      "name": "9XM HD",
+      "logo": "https://i.ibb.co/PWs3RPy/20240803-105114.png",
       "url": "https://b.jsrdn.com/strm/channels/9xm/master.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://b.jsrdn.com/strm/channels/9xm/master.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1287,10 +1287,10 @@
       }
     },
     {
-      "name": "9XM",
-      "logo": "",
+      "name": "9XM HD",
+      "logo": "https://i.ibb.co/PWs3RPy/20240803-105114.png",
       "url": "http://103.89.248.130:8082/9XM/index.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "http://103.89.248.130:8082/9XM/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1485,10 +1485,10 @@
       }
     },
     {
-      "name": "Vevo 2K",
-      "logo": "",
+      "name": "Vevo 2K (1080p)",
+      "logo": "https://images.pluto.tv/channels/5fd7bca3e0a4ee0007a38e8c/featuredImage.jpg",
       "url": "https://amg00056-vevotv-vevo2kau-samsungnz-tamaq.amagi.tv/playlist/amg00056-vevotv-vevo2kau-samsungnz/playlist.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://amg00056-vevotv-vevo2kau-samsungnz-tamaq.amagi.tv/playlist/amg00056-vevotv-vevo2kau-samsungnz/playlist.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1518,10 +1518,10 @@
       }
     },
     {
-      "name": "Trace Urban",
-      "logo": "",
+      "name": "Trace Urban HD",
+      "logo": "https://i.imgur.com/DLIbUMx.png",
       "url": "https://amg01131-tracetv-traceurbanse-samsungse-ov22d.amagi.tv/playlist/amg01131-tracetv-traceurbanse-samsungse/playlist.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://amg01131-tracetv-traceurbanse-samsungse-ov22d.amagi.tv/playlist/amg01131-tracetv-traceurbanse-samsungse/playlist.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1529,10 +1529,10 @@
       }
     },
     {
-      "name": "Trace Urban",
-      "logo": "",
+      "name": "Trace Urban HD",
+      "logo": "https://i.imgur.com/DLIbUMx.png",
       "url": "https://lightning-traceurban-samsungau.amagi.tv/playlist720p.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://lightning-traceurban-samsungau.amagi.tv/playlist720p.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1887,10 +1887,10 @@
       }
     },
     {
-      "name": "Channel 172",
-      "logo": "",
+      "name": "MBC Bollywood (1080p) [Geo-blocked]",
+      "logo": "https://i.imgur.com/TTAGFHG.png",
       "url": "http://27.124.71.27/MBC-Bollywood/index.m3u8",
-      "group": "General",
+      "group": "Movies",
       "url_raw": "http://27.124.71.27/MBC-Bollywood/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2372,10 +2372,10 @@
       }
     },
     {
-      "name": "Channel 216",
-      "logo": "",
+      "name": "Sony Ten 1 HD",
+      "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "url": "http://103.89.248.130:8082/Sony-TEN-1/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/Sony-TEN-1/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2394,10 +2394,10 @@
       }
     },
     {
-      "name": "Channel 218",
-      "logo": "",
+      "name": "Sony Ten 2 HD",
+      "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
       "url": "http://103.89.248.130:8082/sony-TEN-2/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/sony-TEN-2/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2416,10 +2416,10 @@
       }
     },
     {
-      "name": "Channel 220",
-      "logo": "",
+      "name": "Sony Ten 3 HD",
+      "logo": "https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp",
       "url": "http://103.89.248.130:8082/sony-ten3/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/sony-ten3/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2438,10 +2438,10 @@
       }
     },
     {
-      "name": "Channel 222",
-      "logo": "",
+      "name": "Sony Ten 5 HD",
+      "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "url": "http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=a88b5a9fde25cedeb5f5cb8ca202a4754fe5b034-5499b22cfe75b04843bf08ac3a7c8988-1776169972-1776166372&remote=no_check_ip",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=a88b5a9fde25cedeb5f5cb8ca202a4754fe5b034-5499b22cfe75b04843bf08ac3a7c8988-1776169972-1776166372&remote=no_check_ip",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2614,10 +2614,10 @@
       }
     },
     {
-      "name": "Channel 238",
-      "logo": "",
+      "name": "Euro Sports HD",
+      "logo": "https://imglink.cc/cdn/SZphbKsSMx.png",
       "url": "http://103.89.248.130:8082/Eurosports/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/Eurosports/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2838,10 +2838,10 @@
       }
     },
     {
-      "name": "NTV",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
+      "name": "Animal Planet",
+      "logo": "https://imglink.cc/cdn/ebC033LNf2.png",
       "url": "https://tiger-hub.vercel.app@vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8",
-      "group": "Bangla",
+      "group": "Documentary",
       "url_raw": "https://tiger-hub.vercel.app@vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
