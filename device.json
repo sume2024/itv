@@ -1,16 +1,16 @@
 {
   "playlists": [
     {
-      "name": "tapmad_bd",
-      "url": "https://raw.githubusercontent.com/srhady/tapmad-bd/main/tapmad_bd.m3u"
+      "name": "default_playlist",
+      "url": "https://raw.githubusercontent.com/lotaji/playlist-vip/main/playlist_vip.m3u"
     },
     {
-      "name": "sonyliv",
-      "url": "https://raw.githubusercontent.com/sportlive18/Sonyliv-Playlist-Autoupdate/main/sonyliv.m3u"
+      "name": "secondary_playlist",
+      "url": "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/SM%20All%20TV.m3u"
     },
     {
-      "name": "toffee_channel_data",
-      "url": "https://raw.githubusercontent.com/BINOD-XD/Toffee-Auto-Update-Playlist/main/toffee_channel_data.json"
+      "name": "third_playlist",
+      "url": "https://raw.githubusercontent.com/famelack/famelack-data/main/tv/raw/categories/music.json"
     }
   ]
 }
