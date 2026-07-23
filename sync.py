@@ -389,91 +389,228 @@ def generate_m3u_file(brand, channels, name):
         
     return m3u
 
-def merge_all_playlists(parsed_sources):
-    """
-    Merges multiple parsed sources according to the Default Playlist Rule:
-    1. First source in list is the Default Playlist. All channels added first.
-    2. Subsequent playlists (#2, #3...):
-       - If channel name matches Default Playlist AND stream URL is DIFFERENT, add as a new variant stream.
-       - If channel name & stream URL are identical, skip as exact duplicate.
-       - If channel name is NOT in Default Playlist, add as a new channel.
-    """
-    merged_channels = []
+def generate_m3u_file(branding, channels, custom_name="playlist"):
+    m3u = f"""#EXTM3U
+# Playlist Name: {custom_name}
+# Owner: {branding['owner']}
+# Telegram: {branding['telegram']}
+# Website: {branding['website']}
+# Developer: {branding['developer']}
+# Version: {branding['version']}
+# Channels Amount: {len(channels)}
+# Last Update: {branding['Last_update']}
+
+"""
     
-    if not parsed_sources:
-        return merged_channels
+    for ch in channels:
+        # Collect all unique URLs for this channel (primary url, url_2, url_3...)
+        urls_to_write = []
+        if ch.get("url"):
+            urls_to_write.append(ch["url"].strip())
+        if ch.get("url_2"):
+            urls_to_write.append(ch["url_2"].strip())
+        if ch.get("url_3"):
+            urls_to_write.append(ch["url_3"].strip())
 
-    default_channel_urls_by_name = {}
-    global_seen_urls = set()
-    channel_variant_counters = {}
+        for key, val in ch.items():
+            if re.match(r'^url_\d+$', key, re.I) and key not in ['url_2', 'url_3']:
+                if val and isinstance(val, str):
+                    urls_to_write.append(val.strip())
 
-    default_src = parsed_sources[0]
-    default_name = default_src.get("source_name", "Default Playlist")
-    default_channels = default_src.get("channels", [])
+        # Deduplicate
+        seen_u = set()
+        unique_urls = []
+        for u in urls_to_write:
+            if u and u not in seen_u:
+                seen_u.add(u)
+                unique_urls.append(u)
 
-    # STEP 1: Process Default Playlist (#1)
-    for ch in default_channels:
-        url = (ch.get("url") or "").strip()
-        if not url:
+        if not unique_urls:
             continue
 
-        raw_name = ch.get("name", "Channel").strip()
-        norm_name = re.sub(r'\s+', ' ', raw_name.lower())
+        attrs_to_write = {}
+        if ch.get("attrs") and isinstance(ch["attrs"], dict):
+            attrs_to_write.update(ch["attrs"])
+            
+        if ch.get("logo"):
+            attrs_to_write["tvg-logo"] = ch["logo"]
+        if ch.get("group") and ch.get("group") != "General":
+            attrs_to_write["group-title"] = ch["group"]
+        if ch.get("status"):
+            attrs_to_write["status"] = ch["status"]
+            
+        for key_to_del in ['logo', 'category', 'group', 'name']:
+            if key_to_del in attrs_to_write:
+                del attrs_to_write[key_to_del]
 
-        if norm_name not in default_channel_urls_by_name:
-            default_channel_urls_by_name[norm_name] = set()
-        default_channel_urls_by_name[norm_name].add(url)
-        global_seen_urls.add(url)
-        channel_variant_counters[norm_name] = 1
+        entry_attrs = dict(attrs_to_write)
 
-        ch_copy = dict(ch)
-        if "attrs" not in ch_copy or not isinstance(ch_copy["attrs"], dict):
-            ch_copy["attrs"] = {}
-        ch_copy["attrs"]["source-playlist"] = default_name
-        ch_copy["attrs"]["playlist-role"] = "default"
-        merged_channels.append(ch_copy)
+        attrs_str = ""
+        for k, v in entry_attrs.items():
+            attrs_str += f' {k}="{v}"'
+        m3u += f"#EXTINF:-1{attrs_str},{ch.get('name', 'Channel')}\n"
+        
+        if ch.get("vlc_opts") and isinstance(ch["vlc_opts"], list):
+            for opt in ch["vlc_opts"]:
+                m3u += f"#EXTVLCOPT:{opt}\n"
+        else:
+            if "headers" in ch and isinstance(ch["headers"], dict):
+                for k, v in ch["headers"].items():
+                    if k.lower() == 'user-agent':
+                        m3u += f"#EXTVLCOPT:http-user-agent={v}\n"
+                    elif k.lower() == 'referer':
+                        m3u += f"#EXTVLCOPT:http-referrer={v}\n"
+                    elif k.lower() == 'origin':
+                        m3u += f"#EXTVLCOPT:http-origin={v}\n"
+                        
+        if ch.get("kodiprops") and isinstance(ch["kodiprops"], list):
+            for prop in ch["kodiprops"]:
+                m3u += f"#KODIPROP:{prop}\n"
+                
+        if ch.get("exthttps") and isinstance(ch["exthttps"], list):
+            for http in ch["exthttps"]:
+                m3u += f"#EXTHTTP:{http}\n"
+        elif "headers" in ch and isinstance(ch["headers"], dict) and len(ch["headers"]) > 0:
+            import json
+            m3u += f"#EXTHTTP:{json.dumps(ch['headers'])}\n"
+                
+        for u_str in unique_urls:
+            m3u += f"{u_str}\n"
+        m3u += "\n"
+        
+    return m3u
 
-    # STEP 2: Process Subsequent Playlists (#2, #3, ...)
-    for src in parsed_sources[1:]:
-        src_name = src.get("source_name", "Subsequent Playlist")
+def is_generic_channel_name(name):
+    norm = re.sub(r'\s+', ' ', (name or '').strip().lower())
+    return bool(re.match(r'^channel\s*\d+$', norm, re.I) or re.match(r'^stream\s*\d+$', norm, re.I) or norm == 'channel')
+
+def get_channel_key(name, url):
+    norm_name = re.sub(r'\s+', ' ', (name or '').strip().lower())
+    clean_name_key = re.sub(r'[^a-z0-9]', '', norm_name)
+
+    if not is_generic_channel_name(name) and len(clean_name_key) > 2:
+        return clean_name_key
+
+    lower_url = (url or '').lower()
+    path_parts = lower_url.split('/')
+    for part in path_parts:
+        clean_part = re.sub(r'\.m3u8?.*$', '', part)
+        clean_part = re.sub(r'[^a-z0-9]', '', clean_part)
+        if len(clean_part) > 3 and clean_part not in ['index', 'chunks', 'live', 'playlist', 'stream', 'master', 'mono', '720', '1080', 'hls', 'http', 'https']:
+            base_kw = re.sub(r'\d+$', '', clean_part)
+            if len(base_kw) > 3:
+                return base_kw
+            return clean_part
+
+    return clean_name_key or 'channel'
+
+def extract_urls_from_channel(ch):
+    urls = []
+    if ch.get("url"):
+        urls.append(ch["url"].strip())
+    if ch.get("url_2"):
+        urls.append(ch["url_2"].strip())
+    if ch.get("url_3"):
+        urls.append(ch["url_3"].strip())
+
+    for k, v in ch.items():
+        if re.match(r'^url_\d+$', k, re.I) and k not in ['url_2', 'url_3']:
+            if v and isinstance(v, str):
+                urls.append(v.strip())
+
+    seen = set()
+    res = []
+    for u in urls:
+        if u and u not in seen:
+            seen.add(u)
+            res.append(u)
+    return res
+
+def merge_all_playlists(parsed_sources):
+    """
+    Merges multiple parsed sources and consolidates multi-server URLs into url, url_2, url_3...
+    """
+    if not parsed_sources:
+        return []
+
+    grouped_map = {}
+    channel_order = []
+
+    for s_idx, src in enumerate(parsed_sources):
+        src_name = src.get("source_name", f"Playlist {s_idx + 1}")
         src_channels = src.get("channels", [])
 
         for ch in src_channels:
-            url = (ch.get("url") or "").strip()
-            if not url:
+            ch_urls = extract_urls_from_channel(ch)
+            if not ch_urls:
                 continue
 
-            raw_name = ch.get("name", "Channel").strip()
-            norm_name = re.sub(r'\s+', ' ', raw_name.lower())
-            is_in_default = norm_name in default_channel_urls_by_name
+            primary_url = ch_urls[0]
+            raw_name = ch.get("name", "Channel")
+            key = get_channel_key(raw_name, primary_url)
 
-            if url in global_seen_urls:
-                # Exact duplicate stream URL already added
-                continue
-
-            if is_in_default:
-                # Same name as default playlist, but DIFFERENT stream link!
-                global_seen_urls.add(url)
-                count = channel_variant_counters.get(norm_name, 1) + 1
-                channel_variant_counters[norm_name] = count
-
-                display_name = f"{raw_name} (Server {count})"
-                ch_copy = dict(ch)
-                ch_copy["name"] = display_name
-                if "attrs" not in ch_copy or not isinstance(ch_copy["attrs"], dict):
-                    ch_copy["attrs"] = {}
-                ch_copy["attrs"]["source-playlist"] = src_name
-                ch_copy["attrs"]["playlist-role"] = "variant-stream"
-                merged_channels.append(ch_copy)
+            if key not in grouped_map:
+                grouped_map[key] = {
+                    "key": key,
+                    "name": raw_name,
+                    "logo": ch.get("logo") or "",
+                    "group": ch.get("group") if ch.get("group") != "General" else "General",
+                    "urls": list(ch_urls),
+                    "source_names": {src_name},
+                    "attrs": dict(ch.get("attrs") or {}),
+                    "headers": ch.get("headers"),
+                    "vlc_opts": ch.get("vlc_opts"),
+                    "kodiprops": ch.get("kodiprops"),
+                    "status": ch.get("status")
+                }
+                grouped_map[key]["attrs"]["source-playlist"] = src_name
+                grouped_map[key]["attrs"]["playlist-role"] = "default" if s_idx == 0 else "subsequent"
+                channel_order.append(key)
             else:
-                # New channel not present in default playlist
-                global_seen_urls.add(url)
-                ch_copy = dict(ch)
-                if "attrs" not in ch_copy or not isinstance(ch_copy["attrs"], dict):
-                    ch_copy["attrs"] = {}
-                ch_copy["attrs"]["source-playlist"] = src_name
-                ch_copy["attrs"]["playlist-role"] = "new-channel"
-                merged_channels.append(ch_copy)
+                existing = grouped_map[key]
+                existing["source_names"].add(src_name)
+
+                if is_generic_channel_name(existing["name"]) and not is_generic_channel_name(raw_name):
+                    existing["name"] = raw_name
+                if not existing["logo"] and ch.get("logo"):
+                    existing["logo"] = ch["logo"]
+                if (not existing["group"] or existing["group"] == "General") and ch.get("group") and ch["group"] != "General":
+                    existing["group"] = ch["group"]
+
+                for u in ch_urls:
+                    if u not in existing["urls"]:
+                        existing["urls"].append(u)
+
+    merged_channels = []
+    for key in channel_order:
+        item = grouped_map[key]
+        urls = item["urls"]
+
+        ch_obj = {
+            "name": item["name"],
+            "logo": item["logo"] or "",
+            "group": item["group"] or "General",
+            "url": urls[0]
+        }
+
+        if len(urls) > 1:
+            ch_obj["url_2"] = urls[1]
+        if len(urls) > 2:
+            ch_obj["url_3"] = urls[2]
+        if len(urls) > 3:
+            for idx_u in range(3, len(urls)):
+                ch_obj[f"url_{idx_u + 1}"] = urls[idx_u]
+
+        ch_obj["attrs"] = dict(item["attrs"])
+        ch_obj["attrs"]["total-servers"] = str(len(urls))
+        ch_obj["attrs"]["sources"] = ", ".join(sorted(list(item["source_names"])))
+
+        if item.get("headers"): ch_obj["headers"] = item["headers"]
+        if item.get("vlc_opts"): ch_obj["vlc_opts"] = item["vlc_opts"]
+        if item.get("kodiprops"): ch_obj["kodiprops"] = item["kodiprops"]
+        if item.get("status"): ch_obj["status"] = item["status"]
+
+        merged_channels.append(ch_obj)
 
     return merged_channels
 

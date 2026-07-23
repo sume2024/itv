@@ -3,6 +3,9 @@ export interface Channel {
   name: string;
   logo: string;
   url: string;
+  url_2?: string;
+  url_3?: string;
+  extra_urls?: string[];
   group?: string;
   headers?: Record<string, string>;
   category?: string;
@@ -12,6 +15,7 @@ export interface Channel {
   vlc_opts?: string[];
   url_raw?: string;
   exthttps?: string[];
+  [key: string]: any;
 }
 
 export interface PlaylistBranding {

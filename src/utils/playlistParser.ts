@@ -113,39 +113,59 @@ export function parseM3U(m3uContent: string): Channel[] {
         // Fallback or ignore parse errors
       }
     } else if (line && !line.startsWith('#')) {
-      // This is the stream URL
-      currentChannel.url = line;
-      currentChannel.url_raw = line;
+      // This is a stream URL line
+      let urlVal = line;
+      let inlineHeaders: Record<string, string> | null = null;
       
-      if (!currentChannel.name) {
-        currentChannel.name = `Channel ${channels.length + 1}`;
-      }
-      if (!currentChannel.logo) {
-        currentChannel.logo = '';
-      }
-      if (!currentChannel.group) {
-        currentChannel.group = 'General';
-      }
-      
-      // Handle inline User-Agent or custom header options
       if (line.includes('|')) {
         const parts = line.split('|');
-        currentChannel.url = parts[0];
-        currentChannel.headers = currentChannel.headers || {};
+        urlVal = parts[0];
+        inlineHeaders = {};
         for (let p = 1; p < parts.length; p++) {
           const part = parts[p];
           if (part.includes('=')) {
             const [k, v] = part.split('=');
-            currentChannel.headers[k.trim()] = v.trim();
+            inlineHeaders[k.trim()] = v.trim();
           } else if (part.includes(':')) {
             const [k, v] = part.split(':');
-            currentChannel.headers[k.trim()] = v.trim();
+            inlineHeaders[k.trim()] = v.trim();
           }
         }
       }
       
-      channels.push(currentChannel as Channel);
-      currentChannel = {};
+      if (currentChannel.url) {
+        // Additional server URL under the same #EXTINF block
+        if (!currentChannel.url_2) {
+          currentChannel.url_2 = urlVal;
+        } else if (!currentChannel.url_3) {
+          currentChannel.url_3 = urlVal;
+        } else {
+          let serverNum = 4;
+          while (currentChannel[`url_${serverNum}`]) {
+            serverNum++;
+          }
+          currentChannel[`url_${serverNum}`] = urlVal;
+        }
+      } else {
+        currentChannel.url = urlVal;
+        currentChannel.url_raw = line;
+        
+        if (inlineHeaders) {
+          currentChannel.headers = { ...(currentChannel.headers || {}), ...inlineHeaders };
+        }
+        
+        if (!currentChannel.name) {
+          currentChannel.name = `Channel ${channels.length + 1}`;
+        }
+        if (!currentChannel.logo) {
+          currentChannel.logo = '';
+        }
+        if (!currentChannel.group) {
+          currentChannel.group = 'General';
+        }
+        
+        channels.push(currentChannel as Channel);
+      }
     }
   }
   
@@ -214,7 +234,7 @@ export function parseJSONPlaylist(jsonObj: any): Channel[] {
       }
     }
     
-    // Find stream URL
+    // Find stream URL & extra server URLs (url_2, url_3...)
     const urlKeys = ['video_url', 'videoUrl', 'pub_url', 'pubUrl', 'dai_url', 'daiUrl', 'url', 'link', 'stream', 'stream_url', 'stream_link', 'source', 'uri', 'm3u8', 'm3u8_url', 'streamUrl', 'streamLink'];
     let url = '';
     for (const k of urlKeys) {
@@ -225,8 +245,18 @@ export function parseJSONPlaylist(jsonObj: any): Channel[] {
     }
     
     // Fallback if URL is empty (e.g. upcoming event)
-    if (!url) {
+    if (!url && !item.url_2 && !item.url_3) {
       url = 'https://upcoming-match-no-stream.m3u8';
+    }
+    
+    // Find extra server URLs (url_2, url_3, etc.)
+    const extraServerUrls: Record<string, string> = {};
+    if (item.url_2) extraServerUrls.url_2 = String(item.url_2);
+    if (item.url_3) extraServerUrls.url_3 = String(item.url_3);
+    for (const key of Object.keys(item)) {
+      if (/^url_\d+$/i.test(key) && key !== 'url_2' && key !== 'url_3') {
+        extraServerUrls[key] = String(item[key]);
+      }
     }
     
     // Find logo
@@ -272,12 +302,13 @@ export function parseJSONPlaylist(jsonObj: any): Channel[] {
       }
     }
     
-    // If we have a URL, add it
-    if (url) {
+    // If we have a URL or server URLs, add channel
+    if (url || extraServerUrls.url_2) {
       channels.push({
         name: name || `Channel ${channels.length + 1}`,
         logo: logo || '',
-        url,
+        url: url || extraServerUrls.url_2 || '',
+        ...extraServerUrls,
         group: group || 'General',
         headers,
         status: item.status ? String(item.status) : undefined,
@@ -353,20 +384,39 @@ export function generateM3U(playlist: StandardPlaylist): string {
 `;
 
   for (const ch of playlist.channels) {
+    // Collect all unique stream URLs for this channel (url, url_2, url_3...)
+    const urls: string[] = [];
+    if (ch.url) urls.push(ch.url.trim());
+    if (ch.url_2) urls.push(ch.url_2.trim());
+    if (ch.url_3) urls.push(ch.url_3.trim());
+
+    if (ch.extra_urls && Array.isArray(ch.extra_urls)) {
+      for (const u of ch.extra_urls) {
+        if (u && typeof u === 'string' && u.trim()) urls.push(u.trim());
+      }
+    }
+
+    for (const key of Object.keys(ch)) {
+      if (/^url_\d+$/i.test(key) && key !== 'url_2' && key !== 'url_3') {
+        const val = ch[key];
+        if (val && typeof val === 'string' && val.trim()) urls.push(val.trim());
+      }
+    }
+
+    const uniqueUrls = Array.from(new Set(urls.filter(Boolean)));
+    if (uniqueUrls.length === 0) continue;
+
     const attrsToWrite: Record<string, string> = {};
     if (ch.attrs) {
       Object.assign(attrsToWrite, ch.attrs);
     }
     
-    // Ensure name, logo, group are written with correct standard keys
+    // Ensure logo & group are written with correct standard keys
     if (ch.logo) {
       attrsToWrite['tvg-logo'] = ch.logo;
     }
     if (ch.group && ch.group !== 'General') {
       attrsToWrite['group-title'] = ch.group;
-    }
-    if (ch.name) {
-      attrsToWrite['tvg-name'] = ch.name;
     }
     if (ch.status) {
       attrsToWrite['status'] = ch.status;
@@ -377,9 +427,11 @@ export function generateM3U(playlist: StandardPlaylist): string {
     delete attrsToWrite['category'];
     delete attrsToWrite['group'];
     delete attrsToWrite['name'];
+
+    const entryAttrs = { ...attrsToWrite };
     
     let attrsStr = '';
-    for (const [k, v] of Object.entries(attrsToWrite)) {
+    for (const [k, v] of Object.entries(entryAttrs)) {
       attrsStr += ` ${k}="${v}"`;
     }
     
@@ -421,20 +473,11 @@ export function generateM3U(playlist: StandardPlaylist): string {
       m3u += `#EXTHTTP:${JSON.stringify(ch.headers)}\n`;
     }
     
-    let urlToWrite = ch.url_raw || ch.url || "https://upcoming-match-no-stream.m3u8";
-    if (!ch.url_raw && ch.url && ch.headers) {
-      const inlineHeaders: string[] = [];
-      for (const [hk, hv] of Object.entries(ch.headers)) {
-        if (!['user-agent', 'referer', 'origin'].includes(hk.toLowerCase())) {
-          inlineHeaders.push(`${hk}:${hv}`);
-        }
-      }
-      if (inlineHeaders.length > 0) {
-        urlToWrite = `${ch.url}|${inlineHeaders.join('|')}`;
-      }
+    // Output all stream URLs line-by-line under this single EXTINF line
+    for (const uStr of uniqueUrls) {
+      m3u += `${uStr}\n`;
     }
-    
-    m3u += `${urlToWrite}\n\n`;
+    m3u += `\n`;
   }
   
   return m3u;
@@ -450,9 +493,23 @@ export function generateJSON(playlist: StandardPlaylist): any {
     const cleanCh: any = {
       name: ch.name,
       logo: ch.logo || '',
-      url: ch.url,
-      group: ch.group || 'General'
+      group: ch.group || 'General',
+      url: ch.url
     };
+
+    // Add multi-server URLs url_2, url_3, url_4...
+    if (ch.url_2) {
+      cleanCh.url_2 = ch.url_2;
+    }
+    if (ch.url_3) {
+      cleanCh.url_3 = ch.url_3;
+    }
+
+    for (const key of Object.keys(ch)) {
+      if (/^url_\d+$/i.test(key) && key !== 'url_2' && key !== 'url_3') {
+        cleanCh[key] = ch[key];
+      }
+    }
     
     // Add other fields in exact ordered sequence, keeping it clean
     if (ch.url_raw) {
