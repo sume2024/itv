@@ -29,18 +29,71 @@ export interface MergeResult {
 }
 
 /**
- * Normalizes channel name for comparison
+ * Normalizes channel name by stripping server/resolution tags and prefixes.
  */
 function normalizeName(name: string): string {
-  return name.trim().toLowerCase().replace(/\s+/g, ' ');
+  if (!name) return '';
+  let cleaned = name.trim();
+
+  // Remove country/genre prefixes like "BD:", "IN:", "BANGLA:", "01."
+  cleaned = cleaned.replace(/^(bd|in|uk|us|bangla|sports|news|tv|hd|fhd)\s*[:\-\|]\s*/i, '');
+  cleaned = cleaned.replace(/^\d+[\.\-\)]\s*/, '');
+
+  // Remove server tags like "(Server 1)", "(Server 2)", "[Server 2]", "(S1)", "[S2]"
+  cleaned = cleaned.replace(/[\(\[\{]?(server|s)\s*\d+[\)\]\}]?/gi, '');
+
+  // Remove quality/resolution tags like "HD", "FHD", "4K", "1080p", "720p", "SD", "RAW"
+  cleaned = cleaned.replace(/[\(\[\{]?(hd|fhd|uhd|sd|4k|1080p|720p|576p|360p|raw|hevc|h265|h264|vip|backup|alt)[\)\]\}]?/gi, '');
+
+  return cleaned.toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
 /**
  * Checks if a name is generic like "Channel 106", "Channel 107", "Stream 1"
  */
 function isGenericChannelName(name: string): boolean {
-  const norm = normalizeName(name);
-  return /^channel\s*\d+$/i.test(norm) || /^stream\s*\d+$/i.test(norm) || norm === 'channel';
+  if (!name) return true;
+  const norm = name.trim().toLowerCase().replace(/\s+/g, ' ');
+  return (
+    /^channel\s*\d*$/i.test(norm) ||
+    /^stream\s*\d*$/i.test(norm) ||
+    /^server\s*\d*$/i.test(norm) ||
+    /^link\s*\d*$/i.test(norm) ||
+    norm === 'channel' ||
+    norm === 'stream' ||
+    norm === 'tv'
+  );
+}
+
+/**
+ * Extracts a channel keyword slug from URL path
+ */
+function extractSlugFromUrl(url: string): string {
+  if (!url) return '';
+  try {
+    const lowerUrl = url.toLowerCase();
+    const pathParts = lowerUrl.split('/');
+    for (let i = pathParts.length - 1; i >= 0; i--) {
+      let part = pathParts[i];
+      part = part.split('?')[0];
+      part = part.replace(/\.(m3u8?|ts|mpd|m3u|flv|mp4|mkv)$/i, '');
+      part = part.replace(/_(abr|720|1080|576|480|360|hls|mono|live|chunks|index|stream|playlist|master)/gi, '');
+      part = part.replace(/(abr|720|1080|576|480|360|hls|mono|live|chunks|index|stream|playlist|master)_/gi, '');
+      const cleanPart = part.replace(/[^a-z0-9]/g, '');
+
+      const genericWords = ['index', 'chunks', 'live', 'playlist', 'stream', 'master', 'mono', '720', '1080', 'hls', 'http', 'https', 'video', 'channel', 'output'];
+      if (cleanPart.length > 2 && !genericWords.includes(cleanPart)) {
+        const baseKeyword = cleanPart.replace(/\d+$/, '');
+        if (baseKeyword.length > 2) {
+          return baseKeyword;
+        }
+        return cleanPart;
+      }
+    }
+  } catch (e) {
+    // Ignore
+  }
+  return '';
 }
 
 /**
@@ -48,32 +101,19 @@ function isGenericChannelName(name: string): boolean {
  * Matches channels with same name or channels where URL path contains specific channel keyword.
  */
 function getChannelKey(name: string, url: string): string {
-  const normName = normalizeName(name);
-  const cleanNameKey = normName.replace(/[^a-z0-9]/g, '');
+  const isGeneric = isGenericChannelName(name);
+  const nameSlug = normalizeName(name);
+  const urlSlug = extractSlugFromUrl(url);
 
-  if (!isGenericChannelName(name) && cleanNameKey.length > 2) {
-    return cleanNameKey;
+  if (!isGeneric && nameSlug.length > 2) {
+    return nameSlug;
   }
 
-  // If generic name, try extracting keyword from URL path
-  const lowerUrl = url.toLowerCase();
-  const pathParts = lowerUrl.split('/');
-  for (const part of pathParts) {
-    const cleanPart = part.replace(/\.m3u8?.*$/, '').replace(/[^a-z0-9]/g, '');
-    if (
-      cleanPart.length > 3 &&
-      !['index', 'chunks', 'live', 'playlist', 'stream', 'master', 'mono', '720', '1080', 'hls', 'http', 'https'].includes(cleanPart)
-    ) {
-      // Remove trailing digits if part was like zee_bangla_720 -> zeebangla
-      const baseKeyword = cleanPart.replace(/\d+$/, '');
-      if (baseKeyword.length > 3) {
-        return baseKeyword;
-      }
-      return cleanPart;
-    }
+  if (urlSlug.length > 2) {
+    return urlSlug;
   }
 
-  return cleanNameKey || 'channel';
+  return nameSlug || urlSlug || 'channel';
 }
 
 /**

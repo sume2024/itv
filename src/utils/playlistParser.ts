@@ -113,39 +113,59 @@ export function parseM3U(m3uContent: string): Channel[] {
         // Fallback or ignore parse errors
       }
     } else if (line && !line.startsWith('#')) {
-      // This is the stream URL
-      currentChannel.url = line;
-      currentChannel.url_raw = line;
+      // This is a stream URL line
+      let urlVal = line;
+      let inlineHeaders: Record<string, string> | null = null;
       
-      if (!currentChannel.name) {
-        currentChannel.name = `Channel ${channels.length + 1}`;
-      }
-      if (!currentChannel.logo) {
-        currentChannel.logo = '';
-      }
-      if (!currentChannel.group) {
-        currentChannel.group = 'General';
-      }
-      
-      // Handle inline User-Agent or custom header options
       if (line.includes('|')) {
         const parts = line.split('|');
-        currentChannel.url = parts[0];
-        currentChannel.headers = currentChannel.headers || {};
+        urlVal = parts[0];
+        inlineHeaders = {};
         for (let p = 1; p < parts.length; p++) {
           const part = parts[p];
           if (part.includes('=')) {
             const [k, v] = part.split('=');
-            currentChannel.headers[k.trim()] = v.trim();
+            inlineHeaders[k.trim()] = v.trim();
           } else if (part.includes(':')) {
             const [k, v] = part.split(':');
-            currentChannel.headers[k.trim()] = v.trim();
+            inlineHeaders[k.trim()] = v.trim();
           }
         }
       }
       
-      channels.push(currentChannel as Channel);
-      currentChannel = {};
+      if (currentChannel.url) {
+        // Additional server URL under the same #EXTINF block
+        if (!currentChannel.url_2) {
+          currentChannel.url_2 = urlVal;
+        } else if (!currentChannel.url_3) {
+          currentChannel.url_3 = urlVal;
+        } else {
+          let serverNum = 4;
+          while (currentChannel[`url_${serverNum}`]) {
+            serverNum++;
+          }
+          currentChannel[`url_${serverNum}`] = urlVal;
+        }
+      } else {
+        currentChannel.url = urlVal;
+        currentChannel.url_raw = line;
+        
+        if (inlineHeaders) {
+          currentChannel.headers = { ...(currentChannel.headers || {}), ...inlineHeaders };
+        }
+        
+        if (!currentChannel.name) {
+          currentChannel.name = `Channel ${channels.length + 1}`;
+        }
+        if (!currentChannel.logo) {
+          currentChannel.logo = '';
+        }
+        if (!currentChannel.group) {
+          currentChannel.group = 'General';
+        }
+        
+        channels.push(currentChannel as Channel);
+      }
     }
   }
   
@@ -364,25 +384,34 @@ export function generateM3U(playlist: StandardPlaylist): string {
 `;
 
   for (const ch of playlist.channels) {
-    // Collect all URLs for this channel (primary url, url_2, url_3, etc.)
-    const urlsToWrite: { label: string; urlStr: string }[] = [];
-    if (ch.url) urlsToWrite.push({ label: ch.name, urlStr: ch.url });
-    if (ch.url_2) urlsToWrite.push({ label: `${ch.name} (Server 2)`, urlStr: ch.url_2 });
-    if (ch.url_3) urlsToWrite.push({ label: `${ch.name} (Server 3)`, urlStr: ch.url_3 });
+    // Collect all unique stream URLs for this channel (url, url_2, url_3...)
+    const urls: string[] = [];
+    if (ch.url) urls.push(ch.url.trim());
+    if (ch.url_2) urls.push(ch.url_2.trim());
+    if (ch.url_3) urls.push(ch.url_3.trim());
+
+    if (ch.extra_urls && Array.isArray(ch.extra_urls)) {
+      for (const u of ch.extra_urls) {
+        if (u && typeof u === 'string' && u.trim()) urls.push(u.trim());
+      }
+    }
 
     for (const key of Object.keys(ch)) {
       if (/^url_\d+$/i.test(key) && key !== 'url_2' && key !== 'url_3') {
-        const num = key.replace('url_', '');
-        urlsToWrite.push({ label: `${ch.name} (Server ${num})`, urlStr: String(ch[key]) });
+        const val = ch[key];
+        if (val && typeof val === 'string' && val.trim()) urls.push(val.trim());
       }
     }
+
+    const uniqueUrls = Array.from(new Set(urls.filter(Boolean)));
+    if (uniqueUrls.length === 0) continue;
 
     const attrsToWrite: Record<string, string> = {};
     if (ch.attrs) {
       Object.assign(attrsToWrite, ch.attrs);
     }
     
-    // Ensure name, logo, group are written with correct standard keys
+    // Ensure logo & group are written with correct standard keys
     if (ch.logo) {
       attrsToWrite['tvg-logo'] = ch.logo;
     }
@@ -399,60 +428,56 @@ export function generateM3U(playlist: StandardPlaylist): string {
     delete attrsToWrite['group'];
     delete attrsToWrite['name'];
 
-    for (let uIdx = 0; uIdx < urlsToWrite.length; uIdx++) {
-      const uItem = urlsToWrite[uIdx];
-      const entryAttrs = { ...attrsToWrite, 'tvg-name': uItem.label };
-      
-      let attrsStr = '';
-      for (const [k, v] of Object.entries(entryAttrs)) {
-        attrsStr += ` ${k}="${v}"`;
-      }
-      
-      m3u += `#EXTINF:-1${attrsStr},${uItem.label}\n`;
-      
-      // Write custom VLC options if present
-      if (ch.vlc_opts && Array.isArray(ch.vlc_opts)) {
-        for (const opt of ch.vlc_opts) {
-          m3u += `#EXTVLCOPT:${opt}\n`;
-        }
-      }
-      
-      // Write standard HTTP headers from ch.headers as EXTVLCOPT
-      if (ch.headers) {
-        for (const [key, val] of Object.entries(ch.headers)) {
-          if (key.toLowerCase() === 'user-agent') {
-            m3u += `#EXTVLCOPT:http-user-agent=${val}\n`;
-          } else if (key.toLowerCase() === 'referer') {
-            m3u += `#EXTVLCOPT:http-referrer=${val}\n`;
-          } else if (key.toLowerCase() === 'origin') {
-            m3u += `#EXTVLCOPT:http-origin=${val}\n`;
-          }
-        }
-      }
-      
-      // Write custom KODIPROP lines if present
-      if (ch.kodiprops && Array.isArray(ch.kodiprops)) {
-        for (const prop of ch.kodiprops) {
-          m3u += `#KODIPROP:${prop}\n`;
-        }
-      }
-      
-      // Write custom EXTHTTP lines if present, or generate from ch.headers if present
-      if (ch.exthttps && Array.isArray(ch.exthttps)) {
-        for (const http of ch.exthttps) {
-          m3u += `#EXTHTTP:${http}\n`;
-        }
-      } else if (ch.headers && Object.keys(ch.headers).length > 0) {
-        m3u += `#EXTHTTP:${JSON.stringify(ch.headers)}\n`;
-      }
-      
-      let urlToWrite = uItem.urlStr;
-      if (uIdx === 0 && ch.url_raw) {
-        urlToWrite = ch.url_raw;
-      }
-      
-      m3u += `${urlToWrite}\n\n`;
+    const entryAttrs = { ...attrsToWrite };
+    
+    let attrsStr = '';
+    for (const [k, v] of Object.entries(entryAttrs)) {
+      attrsStr += ` ${k}="${v}"`;
     }
+    
+    m3u += `#EXTINF:-1${attrsStr},${ch.name}\n`;
+    
+    // Write custom VLC options if present
+    if (ch.vlc_opts && Array.isArray(ch.vlc_opts)) {
+      for (const opt of ch.vlc_opts) {
+        m3u += `#EXTVLCOPT:${opt}\n`;
+      }
+    }
+    
+    // Write standard HTTP headers from ch.headers as EXTVLCOPT
+    if (ch.headers) {
+      for (const [key, val] of Object.entries(ch.headers)) {
+        if (key.toLowerCase() === 'user-agent') {
+          m3u += `#EXTVLCOPT:http-user-agent=${val}\n`;
+        } else if (key.toLowerCase() === 'referer') {
+          m3u += `#EXTVLCOPT:http-referrer=${val}\n`;
+        } else if (key.toLowerCase() === 'origin') {
+          m3u += `#EXTVLCOPT:http-origin=${val}\n`;
+        }
+      }
+    }
+    
+    // Write custom KODIPROP lines if present
+    if (ch.kodiprops && Array.isArray(ch.kodiprops)) {
+      for (const prop of ch.kodiprops) {
+        m3u += `#KODIPROP:${prop}\n`;
+      }
+    }
+    
+    // Write custom EXTHTTP lines if present, or generate from ch.headers if present
+    if (ch.exthttps && Array.isArray(ch.exthttps)) {
+      for (const http of ch.exthttps) {
+        m3u += `#EXTHTTP:${http}\n`;
+      }
+    } else if (ch.headers && Object.keys(ch.headers).length > 0) {
+      m3u += `#EXTHTTP:${JSON.stringify(ch.headers)}\n`;
+    }
+    
+    // Output all stream URLs line-by-line under this single EXTINF line
+    for (const uStr of uniqueUrls) {
+      m3u += `${uStr}\n`;
+    }
+    m3u += `\n`;
   }
   
   return m3u;

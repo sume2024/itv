@@ -403,19 +403,30 @@ def generate_m3u_file(branding, channels, custom_name="playlist"):
 """
     
     for ch in channels:
-        # Collect all URLs for this channel (primary url, url_2, url_3...)
+        # Collect all unique URLs for this channel (primary url, url_2, url_3...)
         urls_to_write = []
         if ch.get("url"):
-            urls_to_write.append({"label": ch.get("name", "Channel"), "url": ch["url"]})
+            urls_to_write.append(ch["url"].strip())
         if ch.get("url_2"):
-            urls_to_write.append({"label": f"{ch.get('name', 'Channel')} (Server 2)", "url": ch["url_2"]})
+            urls_to_write.append(ch["url_2"].strip())
         if ch.get("url_3"):
-            urls_to_write.append({"label": f"{ch.get('name', 'Channel')} (Server 3)", "url": ch["url_3"]})
+            urls_to_write.append(ch["url_3"].strip())
 
         for key, val in ch.items():
             if re.match(r'^url_\d+$', key, re.I) and key not in ['url_2', 'url_3']:
-                num = key.replace('url_', '')
-                urls_to_write.append({"label": f"{ch.get('name', 'Channel')} (Server {num})", "url": val})
+                if val and isinstance(val, str):
+                    urls_to_write.append(val.strip())
+
+        # Deduplicate
+        seen_u = set()
+        unique_urls = []
+        for u in urls_to_write:
+            if u and u not in seen_u:
+                seen_u.add(u)
+                unique_urls.append(u)
+
+        if not unique_urls:
+            continue
 
         attrs_to_write = {}
         if ch.get("attrs") and isinstance(ch["attrs"], dict):
@@ -432,70 +443,102 @@ def generate_m3u_file(branding, channels, custom_name="playlist"):
             if key_to_del in attrs_to_write:
                 del attrs_to_write[key_to_del]
 
-        for u_idx, u_item in enumerate(urls_to_write):
-            entry_attrs = dict(attrs_to_write)
-            entry_attrs["tvg-name"] = u_item["label"]
+        entry_attrs = dict(attrs_to_write)
 
-            attrs_str = ""
-            for k, v in entry_attrs.items():
-                attrs_str += f' {k}="{v}"'
-            m3u += f"#EXTINF:-1{attrs_str},{u_item['label']}\n"
-            
-            if ch.get("vlc_opts") and isinstance(ch["vlc_opts"], list):
-                for opt in ch["vlc_opts"]:
-                    m3u += f"#EXTVLCOPT:{opt}\n"
-            else:
-                if "headers" in ch and isinstance(ch["headers"], dict):
-                    for k, v in ch["headers"].items():
-                        if k.lower() == 'user-agent':
-                            m3u += f"#EXTVLCOPT:http-user-agent={v}\n"
-                        elif k.lower() == 'referer':
-                            m3u += f"#EXTVLCOPT:http-referrer={v}\n"
-                        elif k.lower() == 'origin':
-                            m3u += f"#EXTVLCOPT:http-origin={v}\n"
-                            
-            if ch.get("kodiprops") and isinstance(ch["kodiprops"], list):
-                for prop in ch["kodiprops"]:
-                    m3u += f"#KODIPROP:{prop}\n"
-                    
-            if ch.get("exthttps") and isinstance(ch["exthttps"], list):
-                for http in ch["exthttps"]:
-                    m3u += f"#EXTHTTP:{http}\n"
-            elif "headers" in ch and isinstance(ch["headers"], dict) and len(ch["headers"]) > 0:
-                import json
-                m3u += f"#EXTHTTP:{json.dumps(ch['headers'])}\n"
-                    
-            url_to_write = u_item["url"]
-            if u_idx == 0 and ch.get('url_raw'):
-                url_to_write = ch['url_raw']
-
-            m3u += f"{url_to_write}\n\n"
+        attrs_str = ""
+        for k, v in entry_attrs.items():
+            attrs_str += f' {k}="{v}"'
+        m3u += f"#EXTINF:-1{attrs_str},{ch.get('name', 'Channel')}\n"
+        
+        if ch.get("vlc_opts") and isinstance(ch["vlc_opts"], list):
+            for opt in ch["vlc_opts"]:
+                m3u += f"#EXTVLCOPT:{opt}\n"
+        else:
+            if "headers" in ch and isinstance(ch["headers"], dict):
+                for k, v in ch["headers"].items():
+                    if k.lower() == 'user-agent':
+                        m3u += f"#EXTVLCOPT:http-user-agent={v}\n"
+                    elif k.lower() == 'referer':
+                        m3u += f"#EXTVLCOPT:http-referrer={v}\n"
+                    elif k.lower() == 'origin':
+                        m3u += f"#EXTVLCOPT:http-origin={v}\n"
+                        
+        if ch.get("kodiprops") and isinstance(ch["kodiprops"], list):
+            for prop in ch["kodiprops"]:
+                m3u += f"#KODIPROP:{prop}\n"
+                
+        if ch.get("exthttps") and isinstance(ch["exthttps"], list):
+            for http in ch["exthttps"]:
+                m3u += f"#EXTHTTP:{http}\n"
+        elif "headers" in ch and isinstance(ch["headers"], dict) and len(ch["headers"]) > 0:
+            import json
+            m3u += f"#EXTHTTP:{json.dumps(ch['headers'])}\n"
+                
+        for u_str in unique_urls:
+            m3u += f"{u_str}\n"
+        m3u += "\n"
         
     return m3u
 
+def normalize_name(name):
+    if not name:
+        return ''
+    cleaned = name.strip()
+    cleaned = re.sub(r'^(bd|in|uk|us|bangla|sports|news|tv|hd|fhd)\s*[:\-\|]\s*', '', cleaned, flags=re.I)
+    cleaned = re.sub(r'^\d+[\.\-\)]\s*', '', cleaned)
+    cleaned = re.sub(r'[\(\[\{]?(server|s)\s*\d+[\)\]\}]?', '', cleaned, flags=re.I)
+    cleaned = re.sub(r'[\(\[\{]?(hd|fhd|uhd|sd|4k|1080p|720p|576p|360p|raw|hevc|h265|h264|vip|backup|alt)[\)\]\}]?', '', cleaned, flags=re.I)
+    return re.sub(r'[^a-z0-9]', '', cleaned.lower())
+
 def is_generic_channel_name(name):
-    norm = re.sub(r'\s+', ' ', (name or '').strip().lower())
-    return bool(re.match(r'^channel\s*\d+$', norm, re.I) or re.match(r'^stream\s*\d+$', norm, re.I) or norm == 'channel')
+    if not name:
+        return True
+    norm = re.sub(r'\s+', ' ', name.strip().lower())
+    return bool(
+        re.match(r'^channel\s*\d*$', norm, re.I) or
+        re.match(r'^stream\s*\d*$', norm, re.I) or
+        re.match(r'^server\s*\d*$', norm, re.I) or
+        re.match(r'^link\s*\d*$', norm, re.I) or
+        norm == 'channel' or
+        norm == 'stream' or
+        norm == 'tv'
+    )
+
+def extract_slug_from_url(url):
+    if not url:
+        return ''
+    try:
+        lower_url = url.lower()
+        path_parts = lower_url.split('/')
+        for part in reversed(path_parts):
+            part = part.split('?')[0]
+            part = re.sub(r'\.(m3u8?|ts|mpd|m3u|flv|mp4|mkv)$', '', part, flags=re.I)
+            part = re.sub(r'_(abr|720|1080|576|480|360|hls|mono|live|chunks|index|stream|playlist|master)', '', part, flags=re.I)
+            part = re.sub(r'(abr|720|1080|576|480|360|hls|mono|live|chunks|index|stream|playlist|master)_', '', part, flags=re.I)
+            clean_part = re.sub(r'[^a-z0-9]', '', part)
+
+            generic_words = ['index', 'chunks', 'live', 'playlist', 'stream', 'master', 'mono', '720', '1080', 'hls', 'http', 'https', 'video', 'channel', 'output']
+            if len(clean_part) > 2 and clean_part not in generic_words:
+                base_kw = re.sub(r'\d+$', '', clean_part)
+                if len(base_kw) > 2:
+                    return base_kw
+                return clean_part
+    except Exception:
+        pass
+    return ''
 
 def get_channel_key(name, url):
-    norm_name = re.sub(r'\s+', ' ', (name or '').strip().lower())
-    clean_name_key = re.sub(r'[^a-z0-9]', '', norm_name)
+    is_gen = is_generic_channel_name(name)
+    name_slug = normalize_name(name)
+    url_slug = extract_slug_from_url(url)
 
-    if not is_generic_channel_name(name) and len(clean_name_key) > 2:
-        return clean_name_key
+    if not is_gen and len(name_slug) > 2:
+        return name_slug
 
-    lower_url = (url or '').lower()
-    path_parts = lower_url.split('/')
-    for part in path_parts:
-        clean_part = re.sub(r'\.m3u8?.*$', '', part)
-        clean_part = re.sub(r'[^a-z0-9]', '', clean_part)
-        if len(clean_part) > 3 and clean_part not in ['index', 'chunks', 'live', 'playlist', 'stream', 'master', 'mono', '720', '1080', 'hls', 'http', 'https']:
-            base_kw = re.sub(r'\d+$', '', clean_part)
-            if len(base_kw) > 3:
-                return base_kw
-            return clean_part
+    if len(url_slug) > 2:
+        return url_slug
 
-    return clean_name_key or 'channel'
+    return name_slug or url_slug or 'channel'
 
 def extract_urls_from_channel(ch):
     urls = []
