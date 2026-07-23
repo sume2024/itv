@@ -403,30 +403,19 @@ def generate_m3u_file(branding, channels, custom_name="playlist"):
 """
     
     for ch in channels:
-        # Collect all unique URLs for this channel (primary url, url_2, url_3...)
+        # Collect all URLs for this channel (primary url, url_2, url_3...)
         urls_to_write = []
         if ch.get("url"):
-            urls_to_write.append(ch["url"].strip())
+            urls_to_write.append({"label": ch.get("name", "Channel"), "url": ch["url"]})
         if ch.get("url_2"):
-            urls_to_write.append(ch["url_2"].strip())
+            urls_to_write.append({"label": f"{ch.get('name', 'Channel')} (Server 2)", "url": ch["url_2"]})
         if ch.get("url_3"):
-            urls_to_write.append(ch["url_3"].strip())
+            urls_to_write.append({"label": f"{ch.get('name', 'Channel')} (Server 3)", "url": ch["url_3"]})
 
         for key, val in ch.items():
             if re.match(r'^url_\d+$', key, re.I) and key not in ['url_2', 'url_3']:
-                if val and isinstance(val, str):
-                    urls_to_write.append(val.strip())
-
-        # Deduplicate
-        seen_u = set()
-        unique_urls = []
-        for u in urls_to_write:
-            if u and u not in seen_u:
-                seen_u.add(u)
-                unique_urls.append(u)
-
-        if not unique_urls:
-            continue
+                num = key.replace('url_', '')
+                urls_to_write.append({"label": f"{ch.get('name', 'Channel')} (Server {num})", "url": val})
 
         attrs_to_write = {}
         if ch.get("attrs") and isinstance(ch["attrs"], dict):
@@ -443,40 +432,44 @@ def generate_m3u_file(branding, channels, custom_name="playlist"):
             if key_to_del in attrs_to_write:
                 del attrs_to_write[key_to_del]
 
-        entry_attrs = dict(attrs_to_write)
+        for u_idx, u_item in enumerate(urls_to_write):
+            entry_attrs = dict(attrs_to_write)
+            entry_attrs["tvg-name"] = u_item["label"]
 
-        attrs_str = ""
-        for k, v in entry_attrs.items():
-            attrs_str += f' {k}="{v}"'
-        m3u += f"#EXTINF:-1{attrs_str},{ch.get('name', 'Channel')}\n"
-        
-        if ch.get("vlc_opts") and isinstance(ch["vlc_opts"], list):
-            for opt in ch["vlc_opts"]:
-                m3u += f"#EXTVLCOPT:{opt}\n"
-        else:
-            if "headers" in ch and isinstance(ch["headers"], dict):
-                for k, v in ch["headers"].items():
-                    if k.lower() == 'user-agent':
-                        m3u += f"#EXTVLCOPT:http-user-agent={v}\n"
-                    elif k.lower() == 'referer':
-                        m3u += f"#EXTVLCOPT:http-referrer={v}\n"
-                    elif k.lower() == 'origin':
-                        m3u += f"#EXTVLCOPT:http-origin={v}\n"
-                        
-        if ch.get("kodiprops") and isinstance(ch["kodiprops"], list):
-            for prop in ch["kodiprops"]:
-                m3u += f"#KODIPROP:{prop}\n"
-                
-        if ch.get("exthttps") and isinstance(ch["exthttps"], list):
-            for http in ch["exthttps"]:
-                m3u += f"#EXTHTTP:{http}\n"
-        elif "headers" in ch and isinstance(ch["headers"], dict) and len(ch["headers"]) > 0:
-            import json
-            m3u += f"#EXTHTTP:{json.dumps(ch['headers'])}\n"
-                
-        for u_str in unique_urls:
-            m3u += f"{u_str}\n"
-        m3u += "\n"
+            attrs_str = ""
+            for k, v in entry_attrs.items():
+                attrs_str += f' {k}="{v}"'
+            m3u += f"#EXTINF:-1{attrs_str},{u_item['label']}\n"
+            
+            if ch.get("vlc_opts") and isinstance(ch["vlc_opts"], list):
+                for opt in ch["vlc_opts"]:
+                    m3u += f"#EXTVLCOPT:{opt}\n"
+            else:
+                if "headers" in ch and isinstance(ch["headers"], dict):
+                    for k, v in ch["headers"].items():
+                        if k.lower() == 'user-agent':
+                            m3u += f"#EXTVLCOPT:http-user-agent={v}\n"
+                        elif k.lower() == 'referer':
+                            m3u += f"#EXTVLCOPT:http-referrer={v}\n"
+                        elif k.lower() == 'origin':
+                            m3u += f"#EXTVLCOPT:http-origin={v}\n"
+                            
+            if ch.get("kodiprops") and isinstance(ch["kodiprops"], list):
+                for prop in ch["kodiprops"]:
+                    m3u += f"#KODIPROP:{prop}\n"
+                    
+            if ch.get("exthttps") and isinstance(ch["exthttps"], list):
+                for http in ch["exthttps"]:
+                    m3u += f"#EXTHTTP:{http}\n"
+            elif "headers" in ch and isinstance(ch["headers"], dict) and len(ch["headers"]) > 0:
+                import json
+                m3u += f"#EXTHTTP:{json.dumps(ch['headers'])}\n"
+                    
+            url_to_write = u_item["url"]
+            if u_idx == 0 and ch.get('url_raw'):
+                url_to_write = ch['url_raw']
+
+            m3u += f"{url_to_write}\n\n"
         
     return m3u
 
