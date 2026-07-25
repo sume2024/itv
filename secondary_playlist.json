@@ -7,7 +7,7 @@
   "version": "1.0",
   "name": "secondary_playlist",
   "channels_amount": 122,
-  "Last_update": "2026-07-25 06:01:24 AM",
+  "Last_update": "2026-07-25 08:31:30 AM",
   "channels": [
     {
       "name": "Drama 24",
@@ -613,16 +613,16 @@
     {
       "name": "Star Jalsha HD",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Star_Jalsha_HD.png",
-      "url": "https://sm-monirul.top/sm/proxy.php?id=starjalsha&e=.m3u8",
+      "url": "http://103.191.99.248:5550/302/index.m3u8",
       "group": "Indian-Bangla",
-      "url_raw": "https://sm-monirul.top/sm/proxy.php?id=starjalsha&e=.m3u8"
+      "url_raw": "http://103.191.99.248:5550/302/index.m3u8"
     },
     {
       "name": "Jalsha Movies HD",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/0/04/Jalsha_Movies_HD.png",
-      "url": "https://live.bdixbd.net/api/proxy/stream.m3u8?url=https://myco-channels.nurmd2006-official.workers.dev/Jalsha_Movie/tracks-v1a1/mono.m3u8",
+      "url": "http://103.191.99.248:5550/303/index.m3u8",
       "group": "Indian-Bangla",
-      "url_raw": "https://live.bdixbd.net/api/proxy/stream.m3u8?url=https://myco-channels.nurmd2006-official.workers.dev/Jalsha_Movie/tracks-v1a1/mono.m3u8"
+      "url_raw": "http://103.191.99.248:5550/303/index.m3u8"
     },
     {
       "name": "Zee Bangla HD",
