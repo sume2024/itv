@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "default_playlist",
-  "channels_amount": 260,
-  "Last_update": "2026-07-25 02:11:19 PM",
+  "channels_amount": 266,
+  "Last_update": "2026-07-25 03:42:34 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -670,6 +670,13 @@
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155771.m3u8"
     },
     {
+      "name": "AAKASH AATH",
+      "logo": "https://karthavya.com/wp-content/uploads/2022/12/akash-bangla.jpg",
+      "url": "https://live.thebosstv.com:30443/dwlive/AAKAASH-AATH/chunks.m3u8",
+      "group": "Indian Bangla",
+      "url_raw": "https://live.thebosstv.com:30443/dwlive/AAKAASH-AATH/chunks.m3u8"
+    },
+    {
       "name": "Enter 10 Bangla",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg",
       "url": "http://103.89.248.130:8082/ENTER-10-BANGLA/index.m3u8",
@@ -714,12 +721,19 @@
     {
       "name": "Colors Bangla",
       "logo": "https://i.ibb.co.com/2p677yw/Colors-Bangla-logo-svg.webp",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8",
+      "url": "http://103.89.248.130:8082/Colors-Bangla/index.m3u8",
       "group": "Indian Bangla",
+      "url_raw": "http://103.89.248.130:8082/Colors-Bangla/index.m3u8"
+    },
+    {
+      "name": "Channel 91",
+      "logo": "",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8",
+      "group": "General",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8"
     },
     {
-      "name": "Channel 90",
+      "name": "Channel 92",
       "logo": "",
       "url": "http://180.94.28.28:8097//COLORS-BANGLA/index.fmp4.m3u8?token=429a387b63ac8a32c732fefb835365ad92425ccc-92e5b67b31a4719886a661390e8c1554-1776169972-1776166372&remote=no_check_ip",
       "group": "General",
@@ -740,7 +754,7 @@
       "url_raw": "http://27.124.71.27/Sun_Bangla/index.m3u8"
     },
     {
-      "name": "Channel 93",
+      "name": "Channel 95",
       "logo": "",
       "url": "http://180.94.28.28:8097//SUN-BANGLA/index.fmp4.m3u8?token=ddf83cdff5d2a3215579fa2d1303886e18ab6d5c-749917c00731c4d6f44b52a2cfc14557-1776169972-1776166372&remote=no_check_ip",
       "group": "General",
@@ -761,7 +775,7 @@
       "url_raw": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8"
     },
     {
-      "name": "Channel 96",
+      "name": "Channel 98",
       "logo": "",
       "url": "https://stream.ottplus.bd/live/zee_cinema_hd_abr/live/zee_cinema_hd_720/chunks.m3u8",
       "group": "General",
@@ -775,7 +789,7 @@
       "url_raw": "https://stream.ottplus.bd/live/sony_max_sd_abr/live/sony_max_sd_720/chunks.m3u8"
     },
     {
-      "name": "Channel 98",
+      "name": "Channel 100",
       "logo": "",
       "url": "http://103.89.248.130:8082/SONY-MAX/index.m3u8",
       "group": "General",
@@ -801,6 +815,53 @@
       "url": "https://stream.ottplus.bd/live/zee_action_abr/index.m3u8",
       "group": "MOVIE",
       "url_raw": "https://stream.ottplus.bd/live/zee_action_abr/index.m3u8"
+    },
+    {
+      "name": "Star Gold HD",
+      "logo": "https://imgur.com/56bLnJP.png",
+      "url": "http://103.89.248.130:8082/star-gold/index.m3u8",
+      "group": "MOVIES",
+      "url_raw": "http://103.89.248.130:8082/star-gold/index.m3u8"
+    },
+    {
+      "name": "STAR GOLD 2 HD",
+      "logo": "http://monirul.bro.bd/assets/images/STAR GOLD 2 HD1745043441.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=star_gold_2_hd&e=.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_gold_2_hd&e=.m3u8",
+      "attrs": {
+        "tvg-id": "star_gold_2_hd"
+      }
+    },
+    {
+      "name": "STAR GOLD SELECT HD",
+      "logo": "http://monirul.bro.bd/assets/images/STAR GOLD SELECT HD1745043508.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=star_gold_select_hd&e=.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_gold_select_hd&e=.m3u8",
+      "attrs": {
+        "tvg-id": "star_gold_select_hd"
+      }
+    },
+    {
+      "name": "STAR MOVIES HD",
+      "logo": "http://monirul.bro.bd/assets/images/STAR MOVIES HD1745040174.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=star_movies_hd&e=.m3u8",
+      "group": "English",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_movies_hd&e=.m3u8",
+      "attrs": {
+        "tvg-id": "star_movies_hd"
+      }
+    },
+    {
+      "name": "STAR MOVIES SELECT HD",
+      "logo": "http://monirul.bro.bd/assets/images/STAR MOVIES SELECT HD1745038723.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=star_movies_select_hd&e=.m3u8",
+      "group": "English",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_movies_select_hd&e=.m3u8",
+      "attrs": {
+        "tvg-id": "star_movies_select_hd"
+      }
     },
     {
       "name": "Hum TV HD",
@@ -896,28 +957,28 @@
       "url_raw": "https://wiselp.wiseplayout.com/9XM/HD1080/HD1080.m3u8"
     },
     {
-      "name": "Channel 114",
+      "name": "Channel 121",
       "logo": "",
       "url": "https://9xjio.wiseplayout.com/9XM/master.m3u8",
       "group": "General",
       "url_raw": "https://9xjio.wiseplayout.com/9XM/master.m3u8"
     },
     {
-      "name": "Channel 115",
+      "name": "Channel 122",
       "logo": "",
       "url": "https://epiconvh.akamaized.net/live/9XM/master.m3u8",
       "group": "General",
       "url_raw": "https://epiconvh.akamaized.net/live/9XM/master.m3u8"
     },
     {
-      "name": "Channel 116",
+      "name": "Channel 123",
       "logo": "",
       "url": "https://b.jsrdn.com/strm/channels/9xm/master.m3u8",
       "group": "General",
       "url_raw": "https://b.jsrdn.com/strm/channels/9xm/master.m3u8"
     },
     {
-      "name": "Channel 117",
+      "name": "Channel 124",
       "logo": "",
       "url": "http://103.89.248.130:8082/9XM/index.m3u8",
       "group": "General",
@@ -959,7 +1020,7 @@
       "url_raw": "https://wiselp.wiseplayout.com/9X_Jalwa/master.m3u8"
     },
     {
-      "name": "Channel 123",
+      "name": "Channel 130",
       "logo": "",
       "url": "https://mumt03.tangotv.in/Dsly5z3H9XJALWA/index.m3u8",
       "group": "General",
@@ -1043,7 +1104,7 @@
       "url_raw": "https://d1s6jz7jeei17.cloudfront.net/playlist/amg00056-vevotv-vevo2kau-samsungau/playlist.m3u8"
     },
     {
-      "name": "Channel 135",
+      "name": "Channel 142",
       "logo": "",
       "url": "https://amg00056-vevotv-vevo2kau-samsungnz-tamaq.amagi.tv/playlist/amg00056-vevotv-vevo2kau-samsungnz/playlist.m3u8",
       "group": "General",
@@ -1064,14 +1125,14 @@
       "url_raw": "https://lightning-traceurban-samsungau.amagi.tv/playlist1080p.m3u8"
     },
     {
-      "name": "Channel 138",
+      "name": "Channel 145",
       "logo": "",
       "url": "https://amg01131-tracetv-traceurbanse-samsungse-ov22d.amagi.tv/playlist/amg01131-tracetv-traceurbanse-samsungse/playlist.m3u8",
       "group": "General",
       "url_raw": "https://amg01131-tracetv-traceurbanse-samsungse-ov22d.amagi.tv/playlist/amg01131-tracetv-traceurbanse-samsungse/playlist.m3u8"
     },
     {
-      "name": "Channel 139",
+      "name": "Channel 146",
       "logo": "",
       "url": "https://lightning-traceurban-samsungau.amagi.tv/playlist720p.m3u8",
       "group": "General",
@@ -1222,13 +1283,6 @@
       }
     },
     {
-      "name": "Star Gold HD",
-      "logo": "https://imgur.com/56bLnJP.png",
-      "url": "http://103.89.248.130:8082/star-gold/index.m3u8",
-      "group": "MOVIES",
-      "url_raw": "http://103.89.248.130:8082/star-gold/index.m3u8"
-    },
-    {
       "name": "HBO",
       "logo": "https://i.ibb.co.com/8D4tGtyb/6451.png",
       "url": "http://103.213.31.111/HBOHD/index.m3u8",
@@ -1239,7 +1293,7 @@
       }
     },
     {
-      "name": "Channel 160",
+      "name": "Channel 166",
       "logo": "",
       "url": "http://27.124.71.27/HBO/index.m3u8",
       "group": "General",
@@ -1337,7 +1391,7 @@
       "url_raw": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8"
     },
     {
-      "name": "Channel 170",
+      "name": "Channel 176",
       "logo": "",
       "url": "http://27.124.71.27/MBC-Bollywood/index.m3u8",
       "group": "General",
@@ -1574,7 +1628,7 @@
       "url_raw": "http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8"
     },
     {
-      "name": "Channel 203",
+      "name": "Channel 209",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282677.m3u8",
       "group": "General",
@@ -1595,7 +1649,7 @@
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282675.m3u8"
     },
     {
-      "name": "Channel 206",
+      "name": "Channel 212",
       "logo": "",
       "url": "http://103.89.248.130:8082/Star-sports-select-1/index.m3u8",
       "group": "General",
@@ -1616,7 +1670,7 @@
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156017.m3u8"
     },
     {
-      "name": "Channel 209",
+      "name": "Channel 215",
       "logo": "",
       "url": "http://103.89.248.130:8082/Sony-TEN-1/index.m3u8",
       "group": "General",
@@ -1630,7 +1684,7 @@
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156010.m3u8"
     },
     {
-      "name": "Channel 211",
+      "name": "Channel 217",
       "logo": "",
       "url": "http://103.89.248.130:8082/sony-TEN-2/index.m3u8",
       "group": "General",
@@ -1644,7 +1698,7 @@
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156024.m3u8"
     },
     {
-      "name": "Channel 213",
+      "name": "Channel 219",
       "logo": "",
       "url": "http://103.89.248.130:8082/sony-ten3/index.m3u8",
       "group": "General",
@@ -1658,7 +1712,7 @@
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1104671.m3u8"
     },
     {
-      "name": "Channel 215",
+      "name": "Channel 221",
       "logo": "",
       "url": "http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=a88b5a9fde25cedeb5f5cb8ca202a4754fe5b034-5499b22cfe75b04843bf08ac3a7c8988-1776169972-1776166372&remote=no_check_ip",
       "group": "General",
@@ -1763,7 +1817,7 @@
       "url_raw": "https://stream.ottplus.bd/live/euro_sports_hd_abr/live/euro_sports_hd/chunks.m3u8"
     },
     {
-      "name": "Channel 230",
+      "name": "Channel 236",
       "logo": "",
       "url": "http://103.89.248.130:8082/Eurosports/index.m3u8",
       "group": "General",
@@ -1915,14 +1969,14 @@
       "url_raw": "https://stream.ottplus.bd/live/animal_planet_sd_abr/live/animal_plnet_sd/chunks.m3u8"
     },
     {
-      "name": "Channel 250",
+      "name": "Channel 256",
       "logo": "",
       "url": "http://27.124.71.27/Animal_Planet/index.m3u8",
       "group": "General",
       "url_raw": "http://27.124.71.27/Animal_Planet/index.m3u8"
     },
     {
-      "name": "Channel 251",
+      "name": "Channel 257",
       "logo": "",
       "url": "https://tiger-hub.vercel.app@vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8",
       "group": "General",
@@ -1950,7 +2004,7 @@
       "url_raw": "https://stream8.cinerama.uz/1041/tracks-v1a1/mono.m3u8"
     },
     {
-      "name": "Channel 255",
+      "name": "Channel 261",
       "logo": "",
       "url": "http://103.89.248.130:8082/National-geo-graphy-bangla/index.m3u8",
       "group": "General",

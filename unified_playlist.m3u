@@ -5,8 +5,8 @@
 # Website: https://anamul.pages.dev
 # Developer: IreenTechnology
 # Version: 1.0
-# Channels Amount: 338
-# Last Update: 2026-07-25 02:11:19 PM
+# Channels Amount: 344
+# Last Update: 2026-07-25 03:42:34 PM
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co/Gfw89mC/20240804-033102.png" group-title="Relagion Channel" tvg-name="Peace TV Bangla",Peace TV Bangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8
@@ -245,6 +245,9 @@ http://103.89.248.130:8082/JALSHA-MOVIES/index.m3u8
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co.com/XxGdDXJV/JALSHA-MOVIES-HD.png" group-title="Indian Bangla" tvg-name="Jalsha Movies",Jalsha Movies
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155771.m3u8
 
+#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://karthavya.com/wp-content/uploads/2022/12/akash-bangla.jpg" group-title="Indian Bangla" tvg-name="AAKASH AATH",AAKASH AATH
+https://live.thebosstv.com:30443/dwlive/AAKAASH-AATH/chunks.m3u8
+
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg" group-title="Indian Bangla" tvg-name="Enter 10 Bangla",Enter 10 Bangla
 http://103.89.248.130:8082/ENTER-10-BANGLA/index.m3u8
 
@@ -264,6 +267,9 @@ https://stream.ottplus.bd/live/sony_aath_abr/live/sony_aath_720/chunks.m3u8
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1112197.m3u8
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co.com/2p677yw/Colors-Bangla-logo-svg.webp" group-title="Indian Bangla" tvg-name="Colors Bangla",Colors Bangla
+http://103.89.248.130:8082/Colors-Bangla/index.m3u8
+
+#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-name="Channel 91",Channel 91
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co.com/2p677yw/Colors-Bangla-logo-svg.webp" group-title="Indian Bangla" tvg-name="Colors Bangla",Colors Bangla
@@ -298,6 +304,21 @@ https://cc-r5hupcym5oehh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://ah-media-eug.pages.dev/logos/ZeeAction.png" group-title="MOVIE" tvg-name="ZEE ACTION",ZEE ACTION
 https://stream.ottplus.bd/live/zee_action_abr/index.m3u8
+
+#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://imgur.com/56bLnJP.png" group-title="MOVIES" tvg-name="Star Gold HD",Star Gold HD
+http://103.89.248.130:8082/star-gold/index.m3u8
+
+#EXTINF:-1 tvg-id="star_gold_2_hd" source-playlist="default_playlist" playlist-role="default" tvg-logo="http://monirul.bro.bd/assets/images/STAR GOLD 2 HD1745043441.png" group-title="Hindi" tvg-name="STAR GOLD 2 HD",STAR GOLD 2 HD
+https://monirul.bro.bd/sm/stream.php?id=star_gold_2_hd&e=.m3u8
+
+#EXTINF:-1 tvg-id="star_gold_select_hd" source-playlist="default_playlist" playlist-role="default" tvg-logo="http://monirul.bro.bd/assets/images/STAR GOLD SELECT HD1745043508.png" group-title="Hindi" tvg-name="STAR GOLD SELECT HD",STAR GOLD SELECT HD
+https://monirul.bro.bd/sm/stream.php?id=star_gold_select_hd&e=.m3u8
+
+#EXTINF:-1 tvg-id="star_movies_hd" source-playlist="default_playlist" playlist-role="default" tvg-logo="http://monirul.bro.bd/assets/images/STAR MOVIES HD1745040174.png" group-title="English" tvg-name="STAR MOVIES HD",STAR MOVIES HD
+https://monirul.bro.bd/sm/stream.php?id=star_movies_hd&e=.m3u8
+
+#EXTINF:-1 tvg-id="star_movies_select_hd" source-playlist="default_playlist" playlist-role="default" tvg-logo="http://monirul.bro.bd/assets/images/STAR MOVIES SELECT HD1745038723.png" group-title="English" tvg-name="STAR MOVIES SELECT HD",STAR MOVIES SELECT HD
+https://monirul.bro.bd/sm/stream.php?id=star_movies_select_hd&e=.m3u8
 
 #EXTINF:-1 tvg-id="207" source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co.com/Z6HYNVsD/download.jpg" group-title="Hindi" tvg-name="Hum TV HD",Hum TV HD
 https://g4wlkwx8l23a-hls-live.5centscdn.com/HUM/271ddf829afeece44d8732757fba1a66.sdp/HUM/TV1/chunks.m3u8
@@ -467,9 +488,6 @@ http://27.124.71.27/AXN/index.m3u8
 #EXTINF:-1 tvg-id="197000" source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.imgur.com/tJQckal.png" group-title="Movies" tvg-name="AXN Movies",AXN Movies
 http://50.7.120.34:8080/AXN_BLACK/index.m3u8
 
-#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://imgur.com/56bLnJP.png" group-title="MOVIES" tvg-name="Star Gold HD",Star Gold HD
-http://103.89.248.130:8082/star-gold/index.m3u8
-
 #EXTINF:-1 tvg-id="325" source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co.com/8D4tGtyb/6451.png" group-title="Movies" tvg-name="HBO",HBO
 http://103.213.31.111/HBOHD/index.m3u8
 
@@ -602,7 +620,7 @@ https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png" group-title="Sports" tvg-name="Star Sports 1",Star Sports 1
 http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8
 
-#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-name="Channel 203",Channel 203
+#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-name="Channel 209",Channel 209
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282677.m3u8
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co.com/kV7KtjH0/star2.png" group-title="Sports" tvg-name="Star Sports 2",Star Sports 2

@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "unified_playlist",
-  "channels_amount": 338,
-  "Last_update": "2026-07-25 02:11:19 PM",
+  "channels_amount": 344,
+  "Last_update": "2026-07-25 03:42:34 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -907,6 +907,17 @@
       }
     },
     {
+      "name": "AAKASH AATH",
+      "logo": "https://karthavya.com/wp-content/uploads/2022/12/akash-bangla.jpg",
+      "url": "https://live.thebosstv.com:30443/dwlive/AAKAASH-AATH/chunks.m3u8",
+      "group": "Indian Bangla",
+      "url_raw": "https://live.thebosstv.com:30443/dwlive/AAKAASH-AATH/chunks.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
       "name": "Enter 10 Bangla",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg",
       "url": "http://103.89.248.130:8082/ENTER-10-BANGLA/index.m3u8",
@@ -975,8 +986,19 @@
     {
       "name": "Colors Bangla",
       "logo": "https://i.ibb.co.com/2p677yw/Colors-Bangla-logo-svg.webp",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8",
+      "url": "http://103.89.248.130:8082/Colors-Bangla/index.m3u8",
       "group": "Indian Bangla",
+      "url_raw": "http://103.89.248.130:8082/Colors-Bangla/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Channel 91",
+      "logo": "",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8",
+      "group": "General",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1100,6 +1122,65 @@
       "group": "MOVIE",
       "url_raw": "https://stream.ottplus.bd/live/zee_action_abr/index.m3u8",
       "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Star Gold HD",
+      "logo": "https://imgur.com/56bLnJP.png",
+      "url": "http://103.89.248.130:8082/star-gold/index.m3u8",
+      "group": "MOVIES",
+      "url_raw": "http://103.89.248.130:8082/star-gold/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "STAR GOLD 2 HD",
+      "logo": "http://monirul.bro.bd/assets/images/STAR GOLD 2 HD1745043441.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=star_gold_2_hd&e=.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_gold_2_hd&e=.m3u8",
+      "attrs": {
+        "tvg-id": "star_gold_2_hd",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "STAR GOLD SELECT HD",
+      "logo": "http://monirul.bro.bd/assets/images/STAR GOLD SELECT HD1745043508.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=star_gold_select_hd&e=.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_gold_select_hd&e=.m3u8",
+      "attrs": {
+        "tvg-id": "star_gold_select_hd",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "STAR MOVIES HD",
+      "logo": "http://monirul.bro.bd/assets/images/STAR MOVIES HD1745040174.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=star_movies_hd&e=.m3u8",
+      "group": "English",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_movies_hd&e=.m3u8",
+      "attrs": {
+        "tvg-id": "star_movies_hd",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "STAR MOVIES SELECT HD",
+      "logo": "http://monirul.bro.bd/assets/images/STAR MOVIES SELECT HD1745038723.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=star_movies_select_hd&e=.m3u8",
+      "group": "English",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_movies_select_hd&e=.m3u8",
+      "attrs": {
+        "tvg-id": "star_movies_select_hd",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -1730,17 +1811,6 @@
       }
     },
     {
-      "name": "Star Gold HD",
-      "logo": "https://imgur.com/56bLnJP.png",
-      "url": "http://103.89.248.130:8082/star-gold/index.m3u8",
-      "group": "MOVIES",
-      "url_raw": "http://103.89.248.130:8082/star-gold/index.m3u8",
-      "attrs": {
-        "source-playlist": "default_playlist",
-        "playlist-role": "default"
-      }
-    },
-    {
       "name": "HBO",
       "logo": "https://i.ibb.co.com/8D4tGtyb/6451.png",
       "url": "http://103.213.31.111/HBOHD/index.m3u8",
@@ -2240,7 +2310,7 @@
       }
     },
     {
-      "name": "Channel 203",
+      "name": "Channel 209",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282677.m3u8",
       "group": "General",
