@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "unified_playlist",
-  "channels_amount": 344,
-  "Last_update": "2026-07-25 03:42:34 PM",
+  "channels_amount": 347,
+  "Last_update": "2026-07-25 05:05:49 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -1006,17 +1006,6 @@
       }
     },
     {
-      "name": "Colors Bangla",
-      "logo": "https://i.ibb.co.com/2p677yw/Colors-Bangla-logo-svg.webp",
-      "url": "http://180.94.28.28:8097//COLORS-BANGLA/index.fmp4.m3u8?token=429a387b63ac8a32c732fefb835365ad92425ccc-92e5b67b31a4719886a661390e8c1554-1776169972-1776166372&remote=no_check_ip",
-      "group": "Indian Bangla",
-      "url_raw": "http://180.94.28.28:8097//COLORS-BANGLA/index.fmp4.m3u8?token=429a387b63ac8a32c732fefb835365ad92425ccc-92e5b67b31a4719886a661390e8c1554-1776169972-1776166372&remote=no_check_ip",
-      "attrs": {
-        "source-playlist": "default_playlist",
-        "playlist-role": "default"
-      }
-    },
-    {
       "name": "Color Bangla Cinema",
       "logo": "https://i.ibb.co.com/vxg5pDdJ/Colors-Bangla-Cinema.png",
       "url": "http://103.89.248.130:8082/COLORS-BANGLA-CINEMA/index.m3u8",
@@ -1127,6 +1116,17 @@
       }
     },
     {
+      "name": "& Pictures HD",
+      "logo": "https://images.toffeelive.com/images/program/4570/logo/240x240/mobile_logo_000080001675856893.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=and_picturs_hd&e=.m3u8",
+      "group": "MOVIE",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=and_picturs_hd&e=.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
       "name": "Star Gold HD",
       "logo": "https://imgur.com/56bLnJP.png",
       "url": "http://103.89.248.130:8082/star-gold/index.m3u8",
@@ -1145,18 +1145,6 @@
       "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_gold_2_hd&e=.m3u8",
       "attrs": {
         "tvg-id": "star_gold_2_hd",
-        "source-playlist": "default_playlist",
-        "playlist-role": "default"
-      }
-    },
-    {
-      "name": "STAR GOLD SELECT HD",
-      "logo": "http://monirul.bro.bd/assets/images/STAR GOLD SELECT HD1745043508.png",
-      "url": "https://monirul.bro.bd/sm/stream.php?id=star_gold_select_hd&e=.m3u8",
-      "group": "Hindi",
-      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_gold_select_hd&e=.m3u8",
-      "attrs": {
-        "tvg-id": "star_gold_select_hd",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -1221,6 +1209,41 @@
       }
     },
     {
+      "name": "ZEE TV",
+      "logo": "https://ah-media-eug.pages.dev/logos/ZeeTV.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=zee_tv_hd&e=.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=zee_tv_hd&e=.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "AND XPLORE",
+      "logo": "http://monirul.bro.bd/assets/images/AND XPLORE1745043080.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=and_xplore&e=.m3u8",
+      "group": "English",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=and_xplore&e=.m3u8",
+      "attrs": {
+        "tvg-id": "and_xplore",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "COLORS HD",
+      "logo": "http://monirul.bro.bd/assets/images/COLORS HD1745031404.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=colors_hd&e=.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=colors_hd&e=.m3u8",
+      "attrs": {
+        "tvg-id": "colors_hd",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
       "name": "&TV International (1080p)",
       "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png",
       "url": "https://3f56f997.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9BbmRUVl9ITFM/playlist.m3u8",
@@ -1271,6 +1294,17 @@
       "url": "http://41.205.77.102/STAR-PLUS/index.m3u8",
       "group": "Hindi",
       "url_raw": "http://41.205.77.102/STAR-PLUS/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Star Plus",
+      "logo": "https://i.ibb.co.com/RTsxJDrx/Star-Plus-HD.png",
+      "url": "https://monirul.bro.bd/sm/stream.php?id=star_plus_hd&e=.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://monirul.bro.bd/sm/stream.php?id=star_plus_hd&e=.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
         "playlist-role": "default"
@@ -2310,7 +2344,7 @@
       }
     },
     {
-      "name": "Channel 209",
+      "name": "Channel 212",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282677.m3u8",
       "group": "General",

@@ -5,8 +5,8 @@
 # Website: https://anamul.pages.dev
 # Developer: IreenTechnology
 # Version: 1.0
-# Channels Amount: 266
-# Last Update: 2026-07-25 03:42:34 PM
+# Channels Amount: 269
+# Last Update: 2026-07-25 05:05:49 PM
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/Gfw89mC/20240804-033102.png" group-title="Relagion Channel" tvg-name="Peace TV Bangla",Peace TV Bangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8
@@ -281,16 +281,13 @@ http://103.89.248.130:8082/Colors-Bangla/index.m3u8
 #EXTINF:-1 tvg-name="Channel 91",Channel 91
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8
 
-#EXTINF:-1 tvg-name="Channel 92",Channel 92
-http://180.94.28.28:8097//COLORS-BANGLA/index.fmp4.m3u8?token=429a387b63ac8a32c732fefb835365ad92425ccc-92e5b67b31a4719886a661390e8c1554-1776169972-1776166372&remote=no_check_ip
-
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/vxg5pDdJ/Colors-Bangla-Cinema.png" group-title="Indian Bangla" tvg-name="Color Bangla Cinema",Color Bangla Cinema
 http://103.89.248.130:8082/COLORS-BANGLA-CINEMA/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/0Vr6dQCx/Sun-Bangla-HD-logo-2023.webp" group-title="Indian Bangla" tvg-name="Sun Bangla",Sun Bangla
 http://27.124.71.27/Sun_Bangla/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 95",Channel 95
+#EXTINF:-1 tvg-name="Channel 94",Channel 94
 http://180.94.28.28:8097//SUN-BANGLA/index.fmp4.m3u8?token=ddf83cdff5d2a3215579fa2d1303886e18ab6d5c-749917c00731c4d6f44b52a2cfc14557-1776169972-1776166372&remote=no_check_ip
 
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxW1Tk5YcPMJtI5hh47SGGuJnQWY9YwkYZS9vOt_dJtQ5lRsS1vXarCGc6ixKgdEBAp2Y-K8xJyVSdiv3D62oWv_E5An9kHP_wSawaYiflPVttCjb8BW8ayfJV0JfR-TzcMD75P5hsyNzYGmHe6BK2KvXABCLMtYBANLhYQ8RUyZVXTNQHqggCb42qYg/s1080/1000023429.png" group-title="Indian Bangla" tvg-name="Rongeen TV",Rongeen TV
@@ -299,13 +296,13 @@ https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/list/09zeecinemahdzeecinemahd.jpg" group-title="Hindi Movies" tvg-name="Zee Cinema",Zee Cinema
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
 
-#EXTINF:-1 tvg-name="Channel 98",Channel 98
+#EXTINF:-1 tvg-name="Channel 97",Channel 97
 https://stream.ottplus.bd/live/zee_cinema_hd_abr/live/zee_cinema_hd_720/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp" group-title="Hindi Movies" tvg-name="Sony Max HD",Sony Max HD
 https://stream.ottplus.bd/live/sony_max_sd_abr/live/sony_max_sd_720/chunks.m3u8
 
-#EXTINF:-1 tvg-name="Channel 100",Channel 100
+#EXTINF:-1 tvg-name="Channel 99",Channel 99
 http://103.89.248.130:8082/SONY-MAX/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/subirkumarpaul/Logo/56e54462053b1b278b80b532c89c01f17e360fd5/Sony%20Pix.jpeg" group-title="Movies" tvg-name="Sony Pix",Sony Pix
@@ -317,14 +314,14 @@ https://cc-r5hupcym5oehh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 #EXTINF:-1 tvg-logo="https://ah-media-eug.pages.dev/logos/ZeeAction.png" group-title="MOVIE" tvg-name="ZEE ACTION",ZEE ACTION
 https://stream.ottplus.bd/live/zee_action_abr/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://images.toffeelive.com/images/program/4570/logo/240x240/mobile_logo_000080001675856893.png" group-title="MOVIE" tvg-name="& Pictures HD",& Pictures HD
+https://monirul.bro.bd/sm/stream.php?id=and_picturs_hd&e=.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/56bLnJP.png" group-title="MOVIES" tvg-name="Star Gold HD",Star Gold HD
 http://103.89.248.130:8082/star-gold/index.m3u8
 
 #EXTINF:-1 tvg-id="star_gold_2_hd" tvg-logo="http://monirul.bro.bd/assets/images/STAR GOLD 2 HD1745043441.png" group-title="Hindi" tvg-name="STAR GOLD 2 HD",STAR GOLD 2 HD
 https://monirul.bro.bd/sm/stream.php?id=star_gold_2_hd&e=.m3u8
-
-#EXTINF:-1 tvg-id="star_gold_select_hd" tvg-logo="http://monirul.bro.bd/assets/images/STAR GOLD SELECT HD1745043508.png" group-title="Hindi" tvg-name="STAR GOLD SELECT HD",STAR GOLD SELECT HD
-https://monirul.bro.bd/sm/stream.php?id=star_gold_select_hd&e=.m3u8
 
 #EXTINF:-1 tvg-id="star_movies_hd" tvg-logo="http://monirul.bro.bd/assets/images/STAR MOVIES HD1745040174.png" group-title="English" tvg-name="STAR MOVIES HD",STAR MOVIES HD
 https://monirul.bro.bd/sm/stream.php?id=star_movies_hd&e=.m3u8
@@ -341,6 +338,15 @@ https://stream.ottplus.bd/live/sub_hd_abr/live/sony_sub_hd_720/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://ah-media-eug.pages.dev/logos/Sonytv.png" group-title="Hindi" tvg-name="SONY TV",SONY TV
 https://stream.ottplus.bd/live/sony_ent_sd_abr/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://ah-media-eug.pages.dev/logos/ZeeTV.png" group-title="Hindi" tvg-name="ZEE TV",ZEE TV
+https://monirul.bro.bd/sm/stream.php?id=zee_tv_hd&e=.m3u8
+
+#EXTINF:-1 tvg-id="and_xplore" tvg-logo="http://monirul.bro.bd/assets/images/AND XPLORE1745043080.png" group-title="English" tvg-name="AND XPLORE",AND XPLORE
+https://monirul.bro.bd/sm/stream.php?id=and_xplore&e=.m3u8
+
+#EXTINF:-1 tvg-id="colors_hd" tvg-logo="http://monirul.bro.bd/assets/images/COLORS HD1745031404.png" group-title="Hindi" tvg-name="COLORS HD",COLORS HD
+https://monirul.bro.bd/sm/stream.php?id=colors_hd&e=.m3u8
+
 #EXTINF:-1 tvg-id="AndTV.in@International" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png" group-title="Hindi" tvg-name="&TV International (1080p)",&TV International (1080p)
 https://3f56f997.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9BbmRUVl9ITFM/playlist.m3u8
 
@@ -356,6 +362,9 @@ https://e77bef9b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctY2
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/RTsxJDrx/Star-Plus-HD.png" group-title="Hindi" tvg-name="Star Plus",Star Plus
 http://41.205.77.102/STAR-PLUS/index.m3u8
 
+#EXTINF:-1 tvg-name="Channel 119",Channel 119
+https://monirul.bro.bd/sm/stream.php?id=star_plus_hd&e=.m3u8
+
 #EXTINF:-1 tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/5/56/9X_Tashan_Logo.jpg" group-title="Music" tvg-name="9X Tashan",9X Tashan
 https://wiselp.wiseplayout.com/9X_Tashan/master.m3u8
 
@@ -368,16 +377,16 @@ http://a-edge.bliscdn.com/Visionbeats/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/PWs3RPy/20240803-105114.png" group-title="Music" tvg-name="9XM HD",9XM HD
 https://wiselp.wiseplayout.com/9XM/HD1080/HD1080.m3u8
 
-#EXTINF:-1 tvg-name="Channel 121",Channel 121
+#EXTINF:-1 tvg-name="Channel 124",Channel 124
 https://9xjio.wiseplayout.com/9XM/master.m3u8
 
-#EXTINF:-1 tvg-name="Channel 122",Channel 122
+#EXTINF:-1 tvg-name="Channel 125",Channel 125
 https://epiconvh.akamaized.net/live/9XM/master.m3u8
 
-#EXTINF:-1 tvg-name="Channel 123",Channel 123
+#EXTINF:-1 tvg-name="Channel 126",Channel 126
 https://b.jsrdn.com/strm/channels/9xm/master.m3u8
 
-#EXTINF:-1 tvg-name="Channel 124",Channel 124
+#EXTINF:-1 tvg-name="Channel 127",Channel 127
 http://103.89.248.130:8082/9XM/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/E3Mw-3r_cEYc29ivD-rRlhF9RkpgfhZ5BLgi9uFdnyImiUGLNVBv2s8rOxC3ig4iVfxrtxSE=s900-c-k-c0x00ffffff-no-rj" group-title="Music" tvg-name="Saga Music Hindi",Saga Music Hindi
@@ -395,7 +404,7 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/pl
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/XrwCkDY0/9x-jalwa.png" group-title="Music" tvg-name="9X Jalwa",9X Jalwa
 https://wiselp.wiseplayout.com/9X_Jalwa/master.m3u8
 
-#EXTINF:-1 tvg-name="Channel 130",Channel 130
+#EXTINF:-1 tvg-name="Channel 133",Channel 133
 https://mumt03.tangotv.in/Dsly5z3H9XJALWA/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/f9Y7fyx/Picsart-23-07-17-01-06-02-939.png" group-title="Music" tvg-name="9X Jhakaas",9X Jhakaas
@@ -431,7 +440,7 @@ https://d128y56w6v2kax.cloudfront.net/playlist/amg00056-vevotv-vevopopau-samsung
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5fd7bca3e0a4ee0007a38e8c/featuredImage.jpg" group-title="Music" tvg-name="Vevo 2K (1080p)",Vevo 2K (1080p)
 https://d1s6jz7jeei17.cloudfront.net/playlist/amg00056-vevotv-vevo2kau-samsungau/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Channel 142",Channel 142
+#EXTINF:-1 tvg-name="Channel 145",Channel 145
 https://amg00056-vevotv-vevo2kau-samsungnz-tamaq.amagi.tv/playlist/amg00056-vevotv-vevo2kau-samsungnz/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23073/trace-uk/logo_20240627_183320_70.png" group-title="Music" tvg-name="Trace UK (1080p)",Trace UK (1080p)
@@ -440,10 +449,10 @@ https://d2l4tng0wskzvn.cloudfront.net/Trace_GB.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DLIbUMx.png" group-title="Music" tvg-name="Trace Urban HD",Trace Urban HD
 https://lightning-traceurban-samsungau.amagi.tv/playlist1080p.m3u8
 
-#EXTINF:-1 tvg-name="Channel 145",Channel 145
+#EXTINF:-1 tvg-name="Channel 148",Channel 148
 https://amg01131-tracetv-traceurbanse-samsungse-ov22d.amagi.tv/playlist/amg01131-tracetv-traceurbanse-samsungse/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Channel 146",Channel 146
+#EXTINF:-1 tvg-name="Channel 149",Channel 149
 https://lightning-traceurban-samsungau.amagi.tv/playlist720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/l3X9Gg4.png" group-title="Music" tvg-name="Trace Mziki",Trace Mziki
@@ -503,7 +512,7 @@ http://50.7.120.34:8080/AXN_BLACK/index.m3u8
 #EXTINF:-1 tvg-id="325" tvg-logo="https://i.ibb.co.com/8D4tGtyb/6451.png" group-title="Movies" tvg-name="HBO",HBO
 http://103.213.31.111/HBOHD/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 166",Channel 166
+#EXTINF:-1 tvg-name="Channel 169",Channel 169
 http://27.124.71.27/HBO/index.m3u8
 
 #EXTINF:-1 tvg-id="55" tvg-country="IN" tvg-chno="55" tvg-logo="https://stmify.com/wp-content/uploads/2024/12/370-s.webp" group-title="Movies" tvg-name="HBO 2▶️",HBO 2▶️
@@ -533,7 +542,7 @@ https://aenetworks-worldwartv-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/TTAGFHG.png" group-title="Movies" tvg-name="MBC Bollywood (1080p) [Geo-blocked]",MBC Bollywood (1080p) [Geo-blocked]
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 176",Channel 176
+#EXTINF:-1 tvg-name="Channel 179",Channel 179
 http://27.124.71.27/MBC-Bollywood/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/1ENdbZn.png" group-title="Movies" tvg-name="Mix Hollywood (1080p)",Mix Hollywood (1080p)
@@ -632,7 +641,7 @@ https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png" group-title="Sports" tvg-name="Star Sports 1",Star Sports 1
 http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 209",Channel 209
+#EXTINF:-1 tvg-name="Channel 212",Channel 212
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282677.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/kV7KtjH0/star2.png" group-title="Sports" tvg-name="Star Sports 2",Star Sports 2
@@ -641,7 +650,7 @@ https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/2826
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp" group-title="Sports" tvg-name="StarSports Select 1",StarSports Select 1
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282675.m3u8
 
-#EXTINF:-1 tvg-name="Channel 212",Channel 212
+#EXTINF:-1 tvg-name="Channel 215",Channel 215
 http://103.89.248.130:8082/Star-sports-select-1/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp" group-title="Sports" tvg-name="Star Sports Select 2",Star Sports Select 2
@@ -650,25 +659,25 @@ https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/2826
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports" tvg-name="Sony Ten 1 HD",Sony Ten 1 HD
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156017.m3u8
 
-#EXTINF:-1 tvg-name="Channel 215",Channel 215
+#EXTINF:-1 tvg-name="Channel 218",Channel 218
 http://103.89.248.130:8082/Sony-TEN-1/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp" group-title="Sports" tvg-name="Sony Ten 2 HD",Sony Ten 2 HD
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156010.m3u8
 
-#EXTINF:-1 tvg-name="Channel 217",Channel 217
+#EXTINF:-1 tvg-name="Channel 220",Channel 220
 http://103.89.248.130:8082/sony-TEN-2/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp" group-title="Sports" tvg-name="Sony Ten 3 HD",Sony Ten 3 HD
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156024.m3u8
 
-#EXTINF:-1 tvg-name="Channel 219",Channel 219
+#EXTINF:-1 tvg-name="Channel 222",Channel 222
 http://103.89.248.130:8082/sony-ten3/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports" tvg-name="Sony Ten 5 HD",Sony Ten 5 HD
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1104671.m3u8
 
-#EXTINF:-1 tvg-name="Channel 221",Channel 221
+#EXTINF:-1 tvg-name="Channel 224",Channel 224
 http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=a88b5a9fde25cedeb5f5cb8ca202a4754fe5b034-5499b22cfe75b04843bf08ac3a7c8988-1776169972-1776166372&remote=no_check_ip
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png" group-title="Sports" tvg-name="PTV Sports",PTV Sports
@@ -713,7 +722,7 @@ https://andro.226503.xyz/checklist/androstreamlivebs4.m3u8
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/SZphbKsSMx.png" group-title="Sports" tvg-name="Euro Sports HD",Euro Sports HD
 https://stream.ottplus.bd/live/euro_sports_hd_abr/live/euro_sports_hd/chunks.m3u8
 
-#EXTINF:-1 tvg-name="Channel 236",Channel 236
+#EXTINF:-1 tvg-name="Channel 239",Channel 239
 http://103.89.248.130:8082/Eurosports/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/HMfImxTUXS.jpg" group-title="Sports" tvg-name="Cricket Gold",Cricket Gold
@@ -773,10 +782,10 @@ https://wildearth-plex.amagi.tv/master.m3u8
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/ebC033LNf2.png" group-title="Documentary" tvg-name="Animal Planet",Animal Planet
 https://stream.ottplus.bd/live/animal_planet_sd_abr/live/animal_plnet_sd/chunks.m3u8
 
-#EXTINF:-1 tvg-name="Channel 256",Channel 256
+#EXTINF:-1 tvg-name="Channel 259",Channel 259
 http://27.124.71.27/Animal_Planet/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 257",Channel 257
+#EXTINF:-1 tvg-name="Channel 260",Channel 260
 https://tiger-hub.vercel.app@vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/ebC033LNf2.png" group-title="Documentary" tvg-name="Animal Planet 2 ru",Animal Planet 2 ru
@@ -788,7 +797,7 @@ https://stream.ottplus.bd/live/discovery_sd_abr/live/discovery_sd/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/v4Vs7JJ6/ns.webp" group-title="Documentary" tvg-name="National Geography",National Geography
 https://stream8.cinerama.uz/1041/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-name="Channel 261",Channel 261
+#EXTINF:-1 tvg-name="Channel 264",Channel 264
 http://103.89.248.130:8082/National-geo-graphy-bangla/index.m3u8
 
 #EXTINF:-1 tvg-id="nat-geo-wild" tvg-logo="https://iptvx.one/picons/nat-geo-wild.png" group-title="Documentary" tvg-name="Nat Geo Wild ru",Nat Geo Wild ru
