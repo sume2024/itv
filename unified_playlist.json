@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "unified_playlist",
-  "channels_amount": 347,
-  "Last_update": "2026-07-25 06:28:28 PM",
+  "channels_amount": 355,
+  "Last_update": "2026-07-25 07:48:01 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -1868,6 +1868,17 @@
       }
     },
     {
+      "name": "Channel 170",
+      "logo": "",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732928.m3u8",
+      "group": "General",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732928.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
       "name": "HBO 2▶️",
       "logo": "https://stmify.com/wp-content/uploads/2024/12/370-s.webp",
       "url": "https://cdn01.medialive.one:2096/HBO2FHD/index.m3u8",
@@ -1882,6 +1893,17 @@
       }
     },
     {
+      "name": "Channel 172",
+      "logo": "",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732927.m3u8",
+      "group": "General",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732927.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
       "name": "HBO 3▶️",
       "logo": "https://i.ibb.co.com/nqJh4SkK/hbo3hd.jpg",
       "url": "https://cdn01.medialive.one:2096/HBO3FHD/index.m3u8",
@@ -1891,6 +1913,17 @@
         "tvg-id": "55",
         "tvg-country": "IN",
         "tvg-chno": "55",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Channel 174",
+      "logo": "",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732926.m3u8",
+      "group": "General",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732926.m3u8",
+      "attrs": {
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -2232,6 +2265,61 @@
       }
     },
     {
+      "name": "PREMIERE LEAGUE 1▶️ Mobile+TV",
+      "logo": "http://picons.cmshulk.com/picons/1660493.png",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1660493.m3u8",
+      "group": "TH| THAILAND",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1660493.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "PREMIERE LEAGUE 2▶️ Mobile+TV",
+      "logo": "http://picons.cmshulk.com/picons/1660493.png",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1660492.m3u8",
+      "group": "TH| THAILAND",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1660492.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "MATCH-2 Laliga▶️ Mobile+TV",
+      "logo": "https://i.ibb.co.com/1Y6wGcWs/olz.png",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/132562.m3u8",
+      "group": "RU| RUSSIA",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/132562.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "ASTRO Football▶️ Mobile+TV",
+      "logo": "https://i.ibb.co.com/LhJkvnMM/Astro-Football-2024.png",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571246.m3u8",
+      "group": "MY| MALAYSIA",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571246.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "CRICKET▶️ Mobile+TV",
+      "logo": "http://picons.cmshulk.com/picons/571244.png",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571244.m3u8",
+      "group": "MY| MALAYSIA",
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571244.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
       "name": "Sky Sports",
       "logo": "https://i.ibb.co.com/ZRTSsqGS/sky-sports-cricket.png",
       "url": "https://atc.hopto.org/sly-sprts-cricket-hd-sport/playlist.m3u8",
@@ -2344,7 +2432,7 @@
       }
     },
     {
-      "name": "Channel 212",
+      "name": "Channel 220",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282677.m3u8",
       "group": "General",

@@ -5,8 +5,8 @@
 # Website: https://anamul.pages.dev
 # Developer: IreenTechnology
 # Version: 1.0
-# Channels Amount: 269
-# Last Update: 2026-07-25 06:28:28 PM
+# Channels Amount: 277
+# Last Update: 2026-07-25 07:48:01 PM
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/Gfw89mC/20240804-033102.png" group-title="Relagion Channel" tvg-name="Peace TV Bangla",Peace TV Bangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8
@@ -515,11 +515,20 @@ http://103.213.31.111/HBOHD/index.m3u8
 #EXTINF:-1 tvg-name="Channel 169",Channel 169
 http://27.124.71.27/HBO/index.m3u8
 
+#EXTINF:-1 tvg-name="Channel 170",Channel 170
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732928.m3u8
+
 #EXTINF:-1 tvg-id="55" tvg-country="IN" tvg-chno="55" tvg-logo="https://stmify.com/wp-content/uploads/2024/12/370-s.webp" group-title="Movies" tvg-name="HBO 2▶️",HBO 2▶️
 https://cdn01.medialive.one:2096/HBO2FHD/index.m3u8
 
+#EXTINF:-1 tvg-name="Channel 172",Channel 172
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732927.m3u8
+
 #EXTINF:-1 tvg-id="55" tvg-country="IN" tvg-chno="55" tvg-logo="https://i.ibb.co.com/nqJh4SkK/hbo3hd.jpg" group-title="Movies" tvg-name="HBO 3▶️",HBO 3▶️
 https://cdn01.medialive.one:2096/HBO3FHD/index.m3u8
+
+#EXTINF:-1 tvg-name="Channel 174",Channel 174
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732926.m3u8
 
 #EXTINF:-1 tvg-id="197000" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770347851305.png" group-title="Movies" tvg-name="Cineedge HD",Cineedge HD
 https://nomawnoijl.gpcdn.net/akash/cineedge/playlist.m3u8
@@ -542,7 +551,7 @@ https://aenetworks-worldwartv-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/TTAGFHG.png" group-title="Movies" tvg-name="MBC Bollywood (1080p) [Geo-blocked]",MBC Bollywood (1080p) [Geo-blocked]
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 179",Channel 179
+#EXTINF:-1 tvg-name="Channel 182",Channel 182
 http://27.124.71.27/MBC-Bollywood/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/1ENdbZn.png" group-title="Movies" tvg-name="Mix Hollywood (1080p)",Mix Hollywood (1080p)
@@ -611,6 +620,21 @@ https://4f2a3e1ff5274297b115cf0f7da1c2cd.mediatailor.us-west-2.amazonaws.com/v1/
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pXsZEsR.png" group-title="Movies" tvg-name="Sony One Series Thriller (1080p)",Sony One Series Thriller (1080p)
 https://483a1e90c18641c9a6d27becd41ad892.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-821-FR-SONYONESRIESTHRILLER-LG_FR/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="http://picons.cmshulk.com/picons/1660493.png" group-title="TH| THAILAND" tvg-name="PREMIERE LEAGUE 1▶️ Mobile+TV",PREMIERE LEAGUE 1▶️ Mobile+TV
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1660493.m3u8
+
+#EXTINF:-1 tvg-logo="http://picons.cmshulk.com/picons/1660493.png" group-title="TH| THAILAND" tvg-name="PREMIERE LEAGUE 2▶️ Mobile+TV",PREMIERE LEAGUE 2▶️ Mobile+TV
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1660492.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/1Y6wGcWs/olz.png" group-title="RU| RUSSIA" tvg-name="MATCH-2 Laliga▶️ Mobile+TV",MATCH-2 Laliga▶️ Mobile+TV
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/132562.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/LhJkvnMM/Astro-Football-2024.png" group-title="MY| MALAYSIA" tvg-name="ASTRO Football▶️ Mobile+TV",ASTRO Football▶️ Mobile+TV
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571246.m3u8
+
+#EXTINF:-1 tvg-logo="http://picons.cmshulk.com/picons/571244.png" group-title="MY| MALAYSIA" tvg-name="CRICKET▶️ Mobile+TV",CRICKET▶️ Mobile+TV
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571244.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/ZRTSsqGS/sky-sports-cricket.png" group-title="Cricket 🏏" tvg-name="Sky Sports",Sky Sports
 https://atc.hopto.org/sly-sprts-cricket-hd-sport/playlist.m3u8
 
@@ -641,7 +665,7 @@ https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png" group-title="Sports" tvg-name="Star Sports 1",Star Sports 1
 http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 212",Channel 212
+#EXTINF:-1 tvg-name="Channel 220",Channel 220
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282677.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/kV7KtjH0/star2.png" group-title="Sports" tvg-name="Star Sports 2",Star Sports 2
@@ -650,7 +674,7 @@ https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/2826
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp" group-title="Sports" tvg-name="StarSports Select 1",StarSports Select 1
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282675.m3u8
 
-#EXTINF:-1 tvg-name="Channel 215",Channel 215
+#EXTINF:-1 tvg-name="Channel 223",Channel 223
 http://103.89.248.130:8082/Star-sports-select-1/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp" group-title="Sports" tvg-name="Star Sports Select 2",Star Sports Select 2
@@ -659,25 +683,25 @@ https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/2826
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports" tvg-name="Sony Ten 1 HD",Sony Ten 1 HD
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156017.m3u8
 
-#EXTINF:-1 tvg-name="Channel 218",Channel 218
+#EXTINF:-1 tvg-name="Channel 226",Channel 226
 http://103.89.248.130:8082/Sony-TEN-1/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp" group-title="Sports" tvg-name="Sony Ten 2 HD",Sony Ten 2 HD
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156010.m3u8
 
-#EXTINF:-1 tvg-name="Channel 220",Channel 220
+#EXTINF:-1 tvg-name="Channel 228",Channel 228
 http://103.89.248.130:8082/sony-TEN-2/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp" group-title="Sports" tvg-name="Sony Ten 3 HD",Sony Ten 3 HD
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156024.m3u8
 
-#EXTINF:-1 tvg-name="Channel 222",Channel 222
+#EXTINF:-1 tvg-name="Channel 230",Channel 230
 http://103.89.248.130:8082/sony-ten3/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports" tvg-name="Sony Ten 5 HD",Sony Ten 5 HD
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1104671.m3u8
 
-#EXTINF:-1 tvg-name="Channel 224",Channel 224
+#EXTINF:-1 tvg-name="Channel 232",Channel 232
 http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=a88b5a9fde25cedeb5f5cb8ca202a4754fe5b034-5499b22cfe75b04843bf08ac3a7c8988-1776169972-1776166372&remote=no_check_ip
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png" group-title="Sports" tvg-name="PTV Sports",PTV Sports
@@ -722,7 +746,7 @@ https://andro.226503.xyz/checklist/androstreamlivebs4.m3u8
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/SZphbKsSMx.png" group-title="Sports" tvg-name="Euro Sports HD",Euro Sports HD
 https://stream.ottplus.bd/live/euro_sports_hd_abr/live/euro_sports_hd/chunks.m3u8
 
-#EXTINF:-1 tvg-name="Channel 239",Channel 239
+#EXTINF:-1 tvg-name="Channel 247",Channel 247
 http://103.89.248.130:8082/Eurosports/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/HMfImxTUXS.jpg" group-title="Sports" tvg-name="Cricket Gold",Cricket Gold
@@ -782,10 +806,10 @@ https://wildearth-plex.amagi.tv/master.m3u8
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/ebC033LNf2.png" group-title="Documentary" tvg-name="Animal Planet",Animal Planet
 https://stream.ottplus.bd/live/animal_planet_sd_abr/live/animal_plnet_sd/chunks.m3u8
 
-#EXTINF:-1 tvg-name="Channel 259",Channel 259
+#EXTINF:-1 tvg-name="Channel 267",Channel 267
 http://27.124.71.27/Animal_Planet/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 260",Channel 260
+#EXTINF:-1 tvg-name="Channel 268",Channel 268
 https://tiger-hub.vercel.app@vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/ebC033LNf2.png" group-title="Documentary" tvg-name="Animal Planet 2 ru",Animal Planet 2 ru
@@ -797,7 +821,7 @@ https://stream.ottplus.bd/live/discovery_sd_abr/live/discovery_sd/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/v4Vs7JJ6/ns.webp" group-title="Documentary" tvg-name="National Geography",National Geography
 https://stream8.cinerama.uz/1041/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-name="Channel 264",Channel 264
+#EXTINF:-1 tvg-name="Channel 272",Channel 272
 http://103.89.248.130:8082/National-geo-graphy-bangla/index.m3u8
 
 #EXTINF:-1 tvg-id="nat-geo-wild" tvg-logo="https://iptvx.one/picons/nat-geo-wild.png" group-title="Documentary" tvg-name="Nat Geo Wild ru",Nat Geo Wild ru
