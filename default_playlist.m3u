@@ -5,8 +5,8 @@
 # Website: https://anamul.pages.dev
 # Developer: IreenTechnology
 # Version: 1.0
-# Channels Amount: 277
-# Last Update: 2026-07-25 07:48:01 PM
+# Channels Amount: 270
+# Last Update: 2026-07-25 08:58:52 PM
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/Gfw89mC/20240804-033102.png" group-title="Relagion Channel" tvg-name="Peace TV Bangla",Peace TV Bangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8
@@ -635,95 +635,74 @@ https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571246
 #EXTINF:-1 tvg-logo="http://picons.cmshulk.com/picons/571244.png" group-title="MY| MALAYSIA" tvg-name="CRICKET▶️ Mobile+TV",CRICKET▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571244.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/ZRTSsqGS/sky-sports-cricket.png" group-title="Cricket 🏏" tvg-name="Sky Sports",Sky Sports
-https://atc.hopto.org/sly-sprts-cricket-hd-sport/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/ASIA/PAKISTAN/tensports.png" group-title="┃PK┃ SPORTS" tvg-name="┃PK┃ TEN SPORTS HD",┃PK┃ TEN SPORTS HD
+#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/ASIA/PAKISTAN/tensports.png" group-title="┃PK┃ SPORTS" tvg-name="TEN SPORTS ▶️ Mobile+TV",TEN SPORTS ▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/373119.m3u8
 
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/ASIA/PAKISTAN/tensports.png" group-title="┃PK┃ SPORTS" tvg-name="┃PK┃ TEN SPORTS HD",┃PK┃ TEN SPORTS HD
-https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/911327.m3u8
-
-#EXTINF:-1 tvg-id="GEO_SUPER" tvg-logo="https://images.seeklogo.com/logo-png/19/1/geo-super-logo-png_seeklogo-198639.png" group-title="Sports" tvg-name="GEO Super",GEO Super
+#EXTINF:-1 tvg-id="GEO_SUPER" tvg-logo="https://images.seeklogo.com/logo-png/19/1/geo-super-logo-png_seeklogo-198639.png" group-title="Sports" tvg-name="GEO Super ▶️ Mobile+TV",GEO Super ▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/373118.m3u8
 
-#EXTINF:-1 tvg-id="GEO_SUPER" tvg-logo="https://images.seeklogo.com/logo-png/19/1/geo-super-logo-png_seeklogo-198639.png" group-title="Sports" tvg-name="GEO Super",GEO Super
-https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/809399.m3u8
-
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/PREMIERSPORTS.png" group-title="┃UK┃ SPORT" tvg-name="┃UK┃ PREMIER SPORTS 1 8K",┃UK┃ PREMIER SPORTS 1 8K
+#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/PREMIERSPORTS.png" group-title="┃UK┃ SPORT" tvg-name="PREMIER SPORTS 1▶️ Mobile+TV",PREMIER SPORTS 1▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827990.m3u8
 
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/PREMIERSPORTS.png" group-title="┃UK┃ SPORT" tvg-name="┃UK┃ PREMIER SPORTS 2 8K",┃UK┃ PREMIER SPORTS 2 8K
+#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/PREMIERSPORTS.png" group-title="┃UK┃ SPORT" tvg-name="PREMIER SPORTS 2▶️ Mobile+TV",PREMIER SPORTS 2▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827989.m3u8
 
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/SPAIN/LALIGA.png" group-title="┃UK┃ SPORT" tvg-name="┃UK┃ LA LIGA TV 8K",┃UK┃ LA LIGA TV 8K
-https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827985.m3u8
-
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/MUTV.png" group-title="┃UK┃ SPORT" tvg-name="┃UK┃ MUTV 8K",┃UK┃ MUTV 8K
+#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/MUTV.png" group-title="┃UK┃ SPORT" tvg-name="MUTV ▶️ Mobile+TV",MUTV ▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827988.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png" group-title="Sports" tvg-name="Star Sports 1",Star Sports 1
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png" group-title="Sports" tvg-name="Star Sports 1▶️ Mobile+TV",Star Sports 1▶️ Mobile+TV
 http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 220",Channel 220
+#EXTINF:-1 tvg-name="Channel 216",Channel 216
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282677.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/kV7KtjH0/star2.png" group-title="Sports" tvg-name="Star Sports 2",Star Sports 2
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/kV7KtjH0/star2.png" group-title="Sports" tvg-name="Star Sports 2▶️ Mobile+TV",Star Sports 2▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282673.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp" group-title="Sports" tvg-name="StarSports Select 1",StarSports Select 1
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp" group-title="Sports" tvg-name="StarSports Select 1▶️ Mobile+TV",StarSports Select 1▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282675.m3u8
 
-#EXTINF:-1 tvg-name="Channel 223",Channel 223
+#EXTINF:-1 tvg-name="Channel 219",Channel 219
 http://103.89.248.130:8082/Star-sports-select-1/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp" group-title="Sports" tvg-name="Star Sports Select 2",Star Sports Select 2
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp" group-title="Sports" tvg-name="Star Sports Select 2▶️ Mobile+TV",Star Sports Select 2▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282676.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports" tvg-name="Sony Ten 1 HD",Sony Ten 1 HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports" tvg-name="Sony Ten 1▶️ Mobile+TV",Sony Ten 1▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156017.m3u8
 
-#EXTINF:-1 tvg-name="Channel 226",Channel 226
+#EXTINF:-1 tvg-name="Channel 222",Channel 222
 http://103.89.248.130:8082/Sony-TEN-1/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp" group-title="Sports" tvg-name="Sony Ten 2 HD",Sony Ten 2 HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp" group-title="Sports" tvg-name="Sony Ten 2▶️ Mobile+TV",Sony Ten 2▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156010.m3u8
 
-#EXTINF:-1 tvg-name="Channel 228",Channel 228
+#EXTINF:-1 tvg-name="Channel 224",Channel 224
 http://103.89.248.130:8082/sony-TEN-2/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp" group-title="Sports" tvg-name="Sony Ten 3 HD",Sony Ten 3 HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp" group-title="Sports" tvg-name="Sony Ten 3▶️ Mobile+TV",Sony Ten 3▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156024.m3u8
 
-#EXTINF:-1 tvg-name="Channel 230",Channel 230
+#EXTINF:-1 tvg-name="Channel 226",Channel 226
 http://103.89.248.130:8082/sony-ten3/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports" tvg-name="Sony Ten 5 HD",Sony Ten 5 HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports" tvg-name="Sony Ten 5▶️ Mobile+TV",Sony Ten 5▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1104671.m3u8
 
-#EXTINF:-1 tvg-name="Channel 232",Channel 232
-http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=a88b5a9fde25cedeb5f5cb8ca202a4754fe5b034-5499b22cfe75b04843bf08ac3a7c8988-1776169972-1776166372&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png" group-title="Sports" tvg-name="PTV Sports",PTV Sports
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png" group-title="Sports" tvg-name="PTV Sports ▶️ Mobile+TV",PTV Sports ▶️ Mobile+TV
 http://103.89.248.130:8082/PTV/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png" group-title="Sports" tvg-name="PTV Sports",PTV Sports
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png" group-title="Sports" tvg-name="PTV Sports ▶️ Mobile+TV",PTV Sports ▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/911324.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png" group-title="Sports" tvg-name="PTV Sports",PTV Sports
-https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/911325.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/35GSmGVJ/download.jpg" group-title="Sports" tvg-name="A Sports",A Sports
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/35GSmGVJ/download.jpg" group-title="Sports" tvg-name="A Sports ▶️ Mobile+TV",A Sports ▶️ Mobile+TV
 http://103.89.248.130:8082/A-SPORTS/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/Kcj16KG3/unnamed.png" group-title="Sports" tvg-name="WILLOW_SPORTS",WILLOW_SPORTS
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/Kcj16KG3/unnamed.png" group-title="Sports" tvg-name="WILLOW_SPORTS ▶️ Mobile+TV",WILLOW_SPORTS ▶️ Mobile+TV
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/809386.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/Kcj16KG3/unnamed.png" group-title="Sports" tvg-name="WILLOW_SPORTS",WILLOW_SPORTS
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/Kcj16KG3/unnamed.png" group-title="Sports" tvg-name="WILLOW_SPORTS ▶️ Mobile+TV",WILLOW_SPORTS ▶️ Mobile+TV
 http://27.124.71.27/Willow_Extra/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/sqeIrMo.jpeg" tvg-name="sporttv1",sporttv1
-http://94.130.32.19:8080/sporttv1/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg" group-title="Sports" tvg-name="Bein Sports Extra",Bein Sports Extra
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
@@ -746,7 +725,7 @@ https://andro.226503.xyz/checklist/androstreamlivebs4.m3u8
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/SZphbKsSMx.png" group-title="Sports" tvg-name="Euro Sports HD",Euro Sports HD
 https://stream.ottplus.bd/live/euro_sports_hd_abr/live/euro_sports_hd/chunks.m3u8
 
-#EXTINF:-1 tvg-name="Channel 247",Channel 247
+#EXTINF:-1 tvg-name="Channel 240",Channel 240
 http://103.89.248.130:8082/Eurosports/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/HMfImxTUXS.jpg" group-title="Sports" tvg-name="Cricket Gold",Cricket Gold
@@ -806,10 +785,10 @@ https://wildearth-plex.amagi.tv/master.m3u8
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/ebC033LNf2.png" group-title="Documentary" tvg-name="Animal Planet",Animal Planet
 https://stream.ottplus.bd/live/animal_planet_sd_abr/live/animal_plnet_sd/chunks.m3u8
 
-#EXTINF:-1 tvg-name="Channel 267",Channel 267
+#EXTINF:-1 tvg-name="Channel 260",Channel 260
 http://27.124.71.27/Animal_Planet/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 268",Channel 268
+#EXTINF:-1 tvg-name="Channel 261",Channel 261
 https://tiger-hub.vercel.app@vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imglink.cc/cdn/ebC033LNf2.png" group-title="Documentary" tvg-name="Animal Planet 2 ru",Animal Planet 2 ru
@@ -821,7 +800,7 @@ https://stream.ottplus.bd/live/discovery_sd_abr/live/discovery_sd/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/v4Vs7JJ6/ns.webp" group-title="Documentary" tvg-name="National Geography",National Geography
 https://stream8.cinerama.uz/1041/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-name="Channel 272",Channel 272
+#EXTINF:-1 tvg-name="Channel 265",Channel 265
 http://103.89.248.130:8082/National-geo-graphy-bangla/index.m3u8
 
 #EXTINF:-1 tvg-id="nat-geo-wild" tvg-logo="https://iptvx.one/picons/nat-geo-wild.png" group-title="Documentary" tvg-name="Nat Geo Wild ru",Nat Geo Wild ru
