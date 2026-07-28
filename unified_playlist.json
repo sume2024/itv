@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "unified_playlist",
-  "channels_amount": 348,
-  "Last_update": "2026-07-28 05:39:49 PM",
+  "channels_amount": 350,
+  "Last_update": "2026-07-28 07:40:23 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -3125,6 +3125,17 @@
       }
     },
     {
+      "name": "Star movies",
+      "logo": "https://i.postimg.cc/yNvkbdL4/1000114150.png",
+      "url": "http://66.102.126.10:8000/play/a021/index.m3u8",
+      "group": "General",
+      "url_raw": "http://66.102.126.10:8000/play/a021/index.m3u8",
+      "attrs": {
+        "source-playlist": "secondary_playlist",
+        "playlist-role": "new-channel"
+      }
+    },
+    {
       "name": "iON TV UK",
       "logo": "https://www.jagobd.com/wp-content/uploads/2017/10/iontvuk.jpg?x49520",
       "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/iontvuk.stream/live-orgin/iontvuk.stream/chunks.m3u8",
@@ -3336,7 +3347,7 @@
       }
     },
     {
-      "name": "Channel 63",
+      "name": "Channel 64",
       "logo": "",
       "url": "✅✅ BANGLADESHI ✅✅",
       "group": "General",
@@ -3468,7 +3479,7 @@
       }
     },
     {
-      "name": "Channel 80",
+      "name": "Channel 81",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1531202.m3u8",
       "group": "General",
@@ -3487,6 +3498,17 @@
       "attrs": {
         "source-playlist": "secondary_playlist",
         "playlist-role": "variant-stream"
+      }
+    },
+    {
+      "name": "Star Gold",
+      "logo": "https://www.tbn24.com/logo.png",
+      "url": "http://66.102.126.10:8000/play/a00f/index.m3u8",
+      "group": "General",
+      "url_raw": "http://66.102.126.10:8000/play/a00f/index.m3u8",
+      "attrs": {
+        "source-playlist": "secondary_playlist",
+        "playlist-role": "new-channel"
       }
     },
     {

@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "secondary_playlist",
-  "channels_amount": 122,
-  "Last_update": "2026-07-28 05:39:49 PM",
+  "channels_amount": 124,
+  "Last_update": "2026-07-28 07:40:23 PM",
   "channels": [
     {
       "name": "G-Series",
@@ -304,6 +304,13 @@
       "url_raw": "https://www.tbn24.com/live-tv-stream/20201_0.m3u8"
     },
     {
+      "name": "Star movies",
+      "logo": "https://i.postimg.cc/yNvkbdL4/1000114150.png",
+      "url": "http://66.102.126.10:8000/play/a021/index.m3u8",
+      "group": "General",
+      "url_raw": "http://66.102.126.10:8000/play/a021/index.m3u8"
+    },
+    {
       "name": "iON TV UK",
       "logo": "https://www.jagobd.com/wp-content/uploads/2017/10/iontvuk.jpg?x49520",
       "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/iontvuk.stream/live-orgin/iontvuk.stream/chunks.m3u8",
@@ -513,7 +520,7 @@
       "url_raw": "http://103.158.133.53:8080/viralclub/index.m3u8"
     },
     {
-      "name": "Channel 63",
+      "name": "Channel 64",
       "logo": "",
       "url": "✅✅ BANGLADESHI ✅✅",
       "group": "General",
@@ -632,7 +639,7 @@
       "url_raw": "http://103.159.180.34:5001/live/625.m3u8"
     },
     {
-      "name": "Channel 80",
+      "name": "Channel 81",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1531202.m3u8",
       "group": "General",
@@ -644,6 +651,13 @@
       "url": "https://yupptvcatchupire.yuppcdn.net/preview/colorsbanglahd/800.m3u8",
       "group": "Indian-Bangla",
       "url_raw": "https://yupptvcatchupire.yuppcdn.net/preview/colorsbanglahd/800.m3u8"
+    },
+    {
+      "name": "Star Gold",
+      "logo": "https://www.tbn24.com/logo.png",
+      "url": "http://66.102.126.10:8000/play/a00f/index.m3u8",
+      "group": "General",
+      "url_raw": "http://66.102.126.10:8000/play/a00f/index.m3u8"
     },
     {
       "name": "Saudi Quran",
