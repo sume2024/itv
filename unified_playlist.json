@@ -7,7 +7,7 @@
   "version": "1.0",
   "name": "unified_playlist",
   "channels_amount": 350,
-  "Last_update": "2026-07-29 12:05:30 PM",
+  "Last_update": "2026-07-29 02:52:52 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -2993,7 +2993,7 @@
       "name": "BTV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778082545894.png",
       "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1725/output/index.m3u8",
-      "group": "Entertainment",
+      "group": "Bangla",
       "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1725/output/index.m3u8",
       "attrs": {
         "tvg-id": "240000",
@@ -3005,7 +3005,7 @@
       "name": "BTV National",
       "logo": "https://d38ll44lbmt52p.cloudfront.net/cms/channel_poster/1677040358634_BTVogo.png",
       "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3016,7 +3016,7 @@
       "name": "Channel 1",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/%E0%A6%9A%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B2_%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg",
       "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8",
-      "group": "News",
+      "group": "Bangla",
       "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8",
       "attrs": {
         "tvg-id": "98000",
@@ -3039,7 +3039,7 @@
       "name": "ATN News",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1739962961772.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/Channels/908660.m3u8",
-      "group": "News",
+      "group": "Bangla",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/Channels/908660.m3u8",
       "attrs": {
         "tvg-id": "93000",
@@ -3051,7 +3051,7 @@
       "name": "Bhi Channel",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/e/ec/BHI_Channel_logo.png",
       "url": "http://15.235.185.236/hls/bhi.m3u8",
-      "group": "BANGLADESHI",
+      "group": "Bangla",
       "url_raw": "http://15.235.185.236/hls/bhi.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3062,7 +3062,7 @@
       "name": "Channel S UK",
       "logo": "https://chsuk.tv/wp-content/uploads/2025/11/CHS-Side-Text.png",
       "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/chsukoff.stream/playlist.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/chsukoff.stream/playlist.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3073,7 +3073,7 @@
       "name": "Channel Europe",
       "logo": "https://channeleurope.tv/storage/settings/BNyRMyomifMQ7VlzvHKbNwCfzxM7kF4Vq7bj4zxZ.png",
       "url": "https://stream.channeleuropetvboxlondon.co.uk/live/channeleurope/chunklist_w572284654.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://stream.channeleuropetvboxlondon.co.uk/live/channeleurope/chunklist_w572284654.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3084,7 +3084,7 @@
       "name": "Deepto TV",
       "logo": "https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/refs/heads/tv/deepto-tv-seeklogo.png",
       "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
-      "group": "BANGLA",
+      "group": "Bangla",
       "url_raw": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3095,7 +3095,7 @@
       "name": "Probashi",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzayWMQexbfPV-jTx3ZNoq-XOmlHKSX1SCjg&s",
       "url": "http://158.69.24.53:8080/probashi_tv/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://158.69.24.53:8080/probashi_tv/index.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3106,7 +3106,7 @@
       "name": "Deshe Bideshe",
       "logo": "https://pbs.twimg.com/profile_images/739539785304281088/zMwNO936_400x400.jpg",
       "url": "https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3117,7 +3117,7 @@
       "name": "TBN 24",
       "logo": "https://www.tbn24.com/logo.png",
       "url": "https://www.tbn24.com/live-tv-stream/20201_0.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://www.tbn24.com/live-tv-stream/20201_0.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3128,7 +3128,7 @@
       "name": "Star movies",
       "logo": "https://i.postimg.cc/yNvkbdL4/1000114150.png",
       "url": "http://66.102.126.10:8000/play/a021/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://66.102.126.10:8000/play/a021/index.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3139,7 +3139,7 @@
       "name": "iON TV UK",
       "logo": "https://www.jagobd.com/wp-content/uploads/2017/10/iontvuk.jpg?x49520",
       "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/iontvuk.stream/live-orgin/iontvuk.stream/chunks.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/iontvuk.stream/live-orgin/iontvuk.stream/chunks.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3161,7 +3161,7 @@
       "name": "Asian TV",
       "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg",
       "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/tracks-v1a1/mono.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/tracks-v1a1/mono.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3184,7 +3184,7 @@
       "name": "NEWS 21 BANGLA",
       "logo": "https://www.jagobd.com/wp-content/uploads/2024/11/news21.jpg",
       "url": "http://103.190.133.68:1935/news21live/live/playlist.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://103.190.133.68:1935/news21live/live/playlist.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3195,7 +3195,7 @@
       "name": "NRB HD",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctL8rD_FYfZ1rHUDhs_Q3rJwRYGSDbMX0-XHpHFXLjeTC2D9iYwo8Gq3J&s=10",
       "url": "https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8",
       "attrs": {
         "tvg-server": "Server 1",
@@ -3207,7 +3207,7 @@
       "name": "Sananda",
       "logo": "https://otapp.store/uploads/tv_image/sm/sananda-tv.png",
       "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/sanandatv.stream/tracks-v1a1/mono.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/sanandatv.stream/tracks-v1a1/mono.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3218,7 +3218,7 @@
       "name": "Sanonda Tv",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQrOMsdkfX7iirtL5LHIosFTqpB8hhdpS7zg&usqp=CAU",
       "url": "http://live-stream.amarbanglatv.in:8080/hls/sanandatv/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://live-stream.amarbanglatv.in:8080/hls/sanandatv/index.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3229,7 +3229,7 @@
       "name": "Ananda TV",
       "logo": "https://www.jagobd.com/wp-content/uploads/2018/04/Anandatvupdate.jpg",
       "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/anandatv.stream/tracks-v1a1/mono.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/anandatv.stream/tracks-v1a1/mono.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3251,7 +3251,7 @@
       "name": "My TV",
       "logo": "https://i.postimg.cc/HxGF4V2b/20250529_103226.png",
       "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mytv-up-off.stream/tracks-v1a1/mono.m3u8",
-      "group": "BANGLA",
+      "group": "Bangla",
       "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mytv-up-off.stream/tracks-v1a1/mono.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3262,7 +3262,7 @@
       "name": "Rajdhani TV",
       "logo": "https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/KECGB54BuUSiBsg_dHyj/posters/58af9c58-ed80-458c-af13-cf381680cec6.png",
       "url": "https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3295,7 +3295,7 @@
       "name": "JonmoBhumi TV",
       "logo": "https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/jhonmobhumitv.png",
       "url": "https://jtvs.ncare.live/Gznr84Woj7UEye3OPVeWq2ForboWAgdV/jonmobhumitv.stream/tracks-v1a1/mono.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://jtvs.ncare.live/Gznr84Woj7UEye3OPVeWq2ForboWAgdV/jonmobhumitv.stream/tracks-v1a1/mono.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3306,7 +3306,7 @@
       "name": "ME TV",
       "logo": "https://www.metvbd.com/media/common/logo-fb.png",
       "url": "https://iptvbd.live/metv1080/1080.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://iptvbd.live/metv1080/1080.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3317,7 +3317,7 @@
       "name": "Probashi TV",
       "logo": "https://probashinews24.tv/images/logo.png",
       "url": "http://158.69.24.53:8080/probashi_tv/tracks-v1a1/mono.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://158.69.24.53:8080/probashi_tv/tracks-v1a1/mono.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3328,7 +3328,7 @@
       "name": "Bangla Plus",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/9/9a/Bangla%2B_HD.png",
       "url": "https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3339,7 +3339,7 @@
       "name": "T Sports HD",
       "logo": "https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/tv/T-Sports.png",
       "url": "http://103.158.133.53:8080/viralclub/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://103.158.133.53:8080/viralclub/index.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
