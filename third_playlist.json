@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "third_playlist",
-  "channels_amount": 552,
-  "Last_update": "2026-07-30 01:08:39 PM",
+  "channels_amount": 542,
+  "Last_update": "2026-07-30 03:33:25 PM",
   "channels": [
     {
       "name": "3ABN Praise Him Music Network",
@@ -74,6 +74,13 @@
     },
     {
       "name": "9XM",
+      "logo": "",
+      "url": "https://upcoming-match-no-stream.m3u8",
+      "group": "General",
+      "url_raw": "https://upcoming-match-no-stream.m3u8"
+    },
+    {
+      "name": "13 Festival",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -213,13 +220,6 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "AMusic Channel",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
       "name": "Andy Haryana",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -262,6 +262,13 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
+      "name": "ATN Music",
+      "logo": "",
+      "url": "https://upcoming-match-no-stream.m3u8",
+      "group": "General",
+      "url_raw": "https://upcoming-match-no-stream.m3u8"
+    },
+    {
       "name": "Atomic Academy TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -291,6 +298,13 @@
     },
     {
       "name": "AXS TV",
+      "logo": "",
+      "url": "https://upcoming-match-no-stream.m3u8",
+      "group": "General",
+      "url_raw": "https://upcoming-match-no-stream.m3u8"
+    },
+    {
+      "name": "Azahares Radiovisual Multimedia",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -340,13 +354,6 @@
     },
     {
       "name": "Belmedia TV",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "Best of Dance TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -437,6 +444,13 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
+      "name": "Cadena Elite",
+      "logo": "",
+      "url": "https://upcoming-match-no-stream.m3u8",
+      "group": "General",
+      "url_raw": "https://upcoming-match-no-stream.m3u8"
+    },
+    {
       "name": "CADENA HEAT 91.9 FM",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -473,13 +487,6 @@
     },
     {
       "name": "Chocolate FM",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "City Eden Birma Play",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -612,21 +619,7 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "Dance Television",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
       "name": "DanceTV Algorhythm",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "DanceTV Deep House District",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -682,13 +675,6 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "Deluxe Dance",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
       "name": "Deluxe Music",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -696,7 +682,7 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "Deluxe Rap",
+      "name": "Dismar Radio TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -795,20 +781,6 @@
     },
     {
       "name": "Farra Play",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "Fiesta TV",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "Finest TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -934,14 +906,14 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "Gigant FM",
+      "name": "Gex TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "GO TV",
+      "name": "Gigant FM",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -1025,28 +997,7 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "Impact TV Dance",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "Impact TV Manele",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
       "name": "Infinita TV",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "InRating TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -1179,6 +1130,13 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
+      "name": "KpopTV Play",
+      "logo": "",
+      "url": "https://upcoming-match-no-stream.m3u8",
+      "group": "General",
+      "url_raw": "https://upcoming-match-no-stream.m3u8"
+    },
+    {
       "name": "KPVM-LD 25.8",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -1257,13 +1215,6 @@
     },
     {
       "name": "La Top 107.7",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "La Voz del Tropico",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -1431,6 +1382,13 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
+      "name": "Maimon TV Canal 3",
+      "logo": "",
+      "url": "https://upcoming-match-no-stream.m3u8",
+      "group": "General",
+      "url_raw": "https://upcoming-match-no-stream.m3u8"
+    },
+    {
       "name": "Makao TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -1564,13 +1522,6 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "Millenium 109 FM",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
       "name": "Mohammed Abdo",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -1677,13 +1628,6 @@
     },
     {
       "name": "Muz-TV",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "Muzangala TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -2159,6 +2103,13 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
+      "name": "Radio Ciudad 98.9 FM TV",
+      "logo": "",
+      "url": "https://upcoming-match-no-stream.m3u8",
+      "group": "General",
+      "url_raw": "https://upcoming-match-no-stream.m3u8"
+    },
+    {
       "name": "Radio Clasica TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -2356,13 +2307,6 @@
     },
     {
       "name": "Radio Tele Hit",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "Rádio Temas de Novelas",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -2656,13 +2600,6 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "Shemaroo Filmi Gaane",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
       "name": "ShowVen TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -2705,13 +2642,6 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "SONGTV Russia",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
       "name": "SOY Plancha TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -2734,6 +2664,13 @@
     },
     {
       "name": "Star 101 FM",
+      "logo": "",
+      "url": "https://upcoming-match-no-stream.m3u8",
+      "group": "General",
+      "url_raw": "https://upcoming-match-no-stream.m3u8"
+    },
+    {
+      "name": "Steelbird Music",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -2979,13 +2916,6 @@
     },
     {
       "name": "Stryk TV",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
-      "name": "Super Q Panama",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
@@ -3496,13 +3426,6 @@
       "url_raw": "https://upcoming-match-no-stream.m3u8"
     },
     {
-      "name": "V Classic TV",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8"
-    },
-    {
       "name": "V2BEAT TV",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
@@ -3826,6 +3749,13 @@
     },
     {
       "name": "Yulduz Usmanova",
+      "logo": "",
+      "url": "https://upcoming-match-no-stream.m3u8",
+      "group": "General",
+      "url_raw": "https://upcoming-match-no-stream.m3u8"
+    },
+    {
+      "name": "ZB Music",
       "logo": "",
       "url": "https://upcoming-match-no-stream.m3u8",
       "group": "General",
