@@ -5,8 +5,8 @@
 # Website: https://anamul.pages.dev
 # Developer: IreenTechnology
 # Version: 1.0
-# Channels Amount: 542
-# Last Update: 2026-07-31 10:07:18 AM
+# Channels Amount: 545
+# Last Update: 2026-07-31 12:28:52 PM
 
 #EXTINF:-1 tvg-name="3ABN Praise Him Music Network",3ABN Praise Him Music Network
 https://upcoming-match-no-stream.m3u8
@@ -65,7 +65,7 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="1062 Mad Radio Live",1062 Mad Radio Live
 https://upcoming-match-no-stream.m3u8
 
-#EXTINF:-1 tvg-name="A2i Music",A2i Music
+#EXTINF:-1 tvg-name="Aaryaa TV",Aaryaa TV
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Abdulmajeed Abdullah",Abdulmajeed Abdullah
@@ -98,6 +98,9 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="AMC",AMC
 https://upcoming-match-no-stream.m3u8
 
+#EXTINF:-1 tvg-name="AMusic Channel",AMusic Channel
+https://upcoming-match-no-stream.m3u8
+
 #EXTINF:-1 tvg-name="Andy Haryana",Andy Haryana
 https://upcoming-match-no-stream.m3u8
 
@@ -114,9 +117,6 @@ https://upcoming-match-no-stream.m3u8
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Arirang Radio K-Pop",Arirang Radio K-Pop
-https://upcoming-match-no-stream.m3u8
-
-#EXTINF:-1 tvg-name="ATN Music",ATN Music
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Atomic Academy TV",Atomic Academy TV
@@ -156,6 +156,9 @@ https://upcoming-match-no-stream.m3u8
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Belmedia TV",Belmedia TV
+https://upcoming-match-no-stream.m3u8
+
+#EXTINF:-1 tvg-name="Best of Dance TV",Best of Dance TV
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Bibel TV Musik",Bibel TV Musik
@@ -215,7 +218,7 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="Chocolate FM",Chocolate FM
 https://upcoming-match-no-stream.m3u8
 
-#EXTINF:-1 tvg-name="City Eden Classic Music",City Eden Classic Music
+#EXTINF:-1 tvg-name="City Eden Play",City Eden Play
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="City Eden Sirtaki TV",City Eden Sirtaki TV
@@ -269,7 +272,13 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="Dance FM",Dance FM
 https://upcoming-match-no-stream.m3u8
 
+#EXTINF:-1 tvg-name="Dance Television",Dance Television
+https://upcoming-match-no-stream.m3u8
+
 #EXTINF:-1 tvg-name="DanceTV Algorhythm",DanceTV Algorhythm
+https://upcoming-match-no-stream.m3u8
+
+#EXTINF:-1 tvg-name="DanceTV Deep House District",DanceTV Deep House District
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="DanceTV EDM Mainstage",DanceTV EDM Mainstage
@@ -341,6 +350,12 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="Farra Play",Farra Play
 https://upcoming-match-no-stream.m3u8
 
+#EXTINF:-1 tvg-name="Fiesta TV",Fiesta TV
+https://upcoming-match-no-stream.m3u8
+
+#EXTINF:-1 tvg-name="Finest TV",Finest TV
+https://upcoming-match-no-stream.m3u8
+
 #EXTINF:-1 tvg-name="FM ITALIA",FM ITALIA
 https://upcoming-match-no-stream.m3u8
 
@@ -348,9 +363,6 @@ https://upcoming-match-no-stream.m3u8
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="FM Plus TV",FM Plus TV
-https://upcoming-match-no-stream.m3u8
-
-#EXTINF:-1 tvg-name="FMTV",FMTV
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="FMVale975",FMVale975
@@ -392,9 +404,6 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="Genial TV",Genial TV
 https://upcoming-match-no-stream.m3u8
 
-#EXTINF:-1 tvg-name="Gex TV",Gex TV
-https://upcoming-match-no-stream.m3u8
-
 #EXTINF:-1 tvg-name="Gigant FM",Gigant FM
 https://upcoming-match-no-stream.m3u8
 
@@ -431,7 +440,13 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="Imagen FM 105.1",Imagen FM 105.1
 https://upcoming-match-no-stream.m3u8
 
-#EXTINF:-1 tvg-name="Infinita TV",Infinita TV
+#EXTINF:-1 tvg-name="Impact TV Dance",Impact TV Dance
+https://upcoming-match-no-stream.m3u8
+
+#EXTINF:-1 tvg-name="Impact TV Manele",Impact TV Manele
+https://upcoming-match-no-stream.m3u8
+
+#EXTINF:-1 tvg-name="InRating TV",InRating TV
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Interradio TV",Interradio TV
@@ -510,9 +525,6 @@ https://upcoming-match-no-stream.m3u8
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="La Kalle",La Kalle
-https://upcoming-match-no-stream.m3u8
-
-#EXTINF:-1 tvg-name="La Morada Radio TV",La Morada Radio TV
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="La Perla Radio TV",La Perla Radio TV
@@ -596,9 +608,6 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="Maidan",Maidan
 https://upcoming-match-no-stream.m3u8
 
-#EXTINF:-1 tvg-name="Maimon TV Canal 3",Maimon TV Canal 3
-https://upcoming-match-no-stream.m3u8
-
 #EXTINF:-1 tvg-name="Makao TV",Makao TV
 https://upcoming-match-no-stream.m3u8
 
@@ -632,13 +641,7 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="Melodie TV",Melodie TV
 https://upcoming-match-no-stream.m3u8
 
-#EXTINF:-1 tvg-name="Melody FM",Melody FM
-https://upcoming-match-no-stream.m3u8
-
 #EXTINF:-1 tvg-name="Messatida TV",Messatida TV
-https://upcoming-match-no-stream.m3u8
-
-#EXTINF:-1 tvg-name="Metaleitor TV",Metaleitor TV
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Metropoli Medios TV",Metropoli Medios TV
@@ -654,6 +657,9 @@ https://upcoming-match-no-stream.m3u8
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Miel TV",Miel TV
+https://upcoming-match-no-stream.m3u8
+
+#EXTINF:-1 tvg-name="Millenium 109 FM",Millenium 109 FM
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Mohammed Abdo",Mohammed Abdo
@@ -687,9 +693,6 @@ https://upcoming-match-no-stream.m3u8
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Music India",Music India
-https://upcoming-match-no-stream.m3u8
-
-#EXTINF:-1 tvg-name="Music Information Channel",Music Information Channel
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Music TV Granada",Music TV Granada
@@ -902,6 +905,9 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="Radio Capital TiVu",Radio Capital TiVu
 https://upcoming-match-no-stream.m3u8
 
+#EXTINF:-1 tvg-name="Radio Carnaval TV",Radio Carnaval TV
+https://upcoming-match-no-stream.m3u8
+
 #EXTINF:-1 tvg-name="Radio Chalaca",Radio Chalaca
 https://upcoming-match-no-stream.m3u8
 
@@ -993,6 +999,9 @@ https://upcoming-match-no-stream.m3u8
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Radio Tele Hit",Radio Tele Hit
+https://upcoming-match-no-stream.m3u8
+
+#EXTINF:-1 tvg-name="Rádio Temas de Novelas",Rádio Temas de Novelas
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Radio Tropical",Radio Tropical
@@ -1116,6 +1125,9 @@ https://upcoming-match-no-stream.m3u8
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="Shanson TV",Shanson TV
+https://upcoming-match-no-stream.m3u8
+
+#EXTINF:-1 tvg-name="Shemaroo Filmi Gaane",Shemaroo Filmi Gaane
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="ShowVen TV",ShowVen TV
@@ -1319,6 +1331,9 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="TikTok Radio Brasil",TikTok Radio Brasil
 https://upcoming-match-no-stream.m3u8
 
+#EXTINF:-1 tvg-name="Tjil TV",Tjil TV
+https://upcoming-match-no-stream.m3u8
+
 #EXTINF:-1 tvg-name="TMA",TMA
 https://upcoming-match-no-stream.m3u8
 
@@ -1463,9 +1478,6 @@ https://upcoming-match-no-stream.m3u8
 #EXTINF:-1 tvg-name="Ultra TV 4K",Ultra TV 4K
 https://upcoming-match-no-stream.m3u8
 
-#EXTINF:-1 tvg-name="UMAGTV2",UMAGTV2
-https://upcoming-match-no-stream.m3u8
-
 #EXTINF:-1 tvg-name="Urbana Play 104.3 FM",Urbana Play 104.3 FM
 https://upcoming-match-no-stream.m3u8
 
@@ -1539,9 +1551,6 @@ https://upcoming-match-no-stream.m3u8
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="VIP TV",VIP TV
-https://upcoming-match-no-stream.m3u8
-
-#EXTINF:-1 tvg-name="Vision Television",Vision Television
 https://upcoming-match-no-stream.m3u8
 
 #EXTINF:-1 tvg-name="VIVA Russia",VIVA Russia
