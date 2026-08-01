@@ -6,7 +6,7 @@
 # Developer: IreenTechnology
 # Version: 1.0
 # Channels Amount: 346
-# Last Update: 2026-08-01 11:43:57 AM
+# Last Update: 2026-08-01 01:40:03 PM
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co/Gfw89mC/20240804-033102.png" group-title="Relagion Channel" tvg-name="Peace TV Bangla",Peace TV Bangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8
@@ -915,7 +915,7 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF9
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/eptv.stream/playlist.m3u8
 
 #EXTINF:-1 source-playlist="secondary_playlist" playlist-role="new-channel" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3c/Star_Jalsha_HD.png" group-title="Indian-Bangla" tvg-name="Star Jalsha HD",Star Jalsha HD
-http://103.191.99.248:5550/302/index.m3u8
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155770.m3u8
 
 #EXTINF:-1 source-playlist="secondary_playlist" playlist-role="new-channel" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/04/Jalsha_Movies_HD.png" group-title="Indian-Bangla" tvg-name="Jalsha Movies HD",Jalsha Movies HD
 http://103.191.99.248:5550/303/index.m3u8

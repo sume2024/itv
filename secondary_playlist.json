@@ -7,7 +7,7 @@
   "version": "1.0",
   "name": "secondary_playlist",
   "channels_amount": 124,
-  "Last_update": "2026-08-01 11:43:57 AM",
+  "Last_update": "2026-08-01 01:40:03 PM",
   "channels": [
     {
       "name": "G-Series",
@@ -620,9 +620,9 @@
     {
       "name": "Star Jalsha HD",
       "logo": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Star_Jalsha_HD.png",
-      "url": "http://103.191.99.248:5550/302/index.m3u8",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155770.m3u8",
       "group": "Indian-Bangla",
-      "url_raw": "http://103.191.99.248:5550/302/index.m3u8"
+      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155770.m3u8"
     },
     {
       "name": "Jalsha Movies HD",
