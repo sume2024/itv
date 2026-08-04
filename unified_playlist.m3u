@@ -5,8 +5,8 @@
 # Website: https://anamul.pages.dev
 # Developer: IreenTechnology
 # Version: 1.0
-# Channels Amount: 380
-# Last Update: 2026-08-04 02:28:47 PM
+# Channels Amount: 379
+# Last Update: 2026-08-04 02:34:55 PM
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co/Gfw89mC/20240804-033102.png" group-title="Relagion Channel" tvg-name="Peace TV Bangla",Peace TV Bangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8
@@ -1144,7 +1144,4 @@ https://stream.spicefmbd.com/stream.m3u8
 
 #EXTINF:-1 source-playlist="secondary_playlist" playlist-role="new-channel" tvg-logo="https://m.economictimes.com/thumb/msid-71679942,width-1200,height-900,resizemode-4,imgsize-42753/radio-mirchi-agencies.jpg" group-title="FM-Radio" tvg-name="Radio Mirchi",Radio Mirchi
 https://eu8.fastcast4u.com/proxy/clyedupq?mp=%2F1?aw_0_req_lsid=2c0fae177108c9a42a7cf24878625444
-
-#EXTINF:-1 source-playlist="third_playlist" playlist-role="new-channel" tvg-name="3ABN Praise Him Music Network",3ABN Praise Him Music Network
-https://upcoming-match-no-stream.m3u8
 

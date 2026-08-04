@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "unified_playlist",
-  "channels_amount": 380,
-  "Last_update": "2026-08-04 02:28:47 PM",
+  "channels_amount": 379,
+  "Last_update": "2026-08-04 02:34:55 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -4289,17 +4289,6 @@
       "url_raw": "https://eu8.fastcast4u.com/proxy/clyedupq?mp=%2F1?aw_0_req_lsid=2c0fae177108c9a42a7cf24878625444",
       "attrs": {
         "source-playlist": "secondary_playlist",
-        "playlist-role": "new-channel"
-      }
-    },
-    {
-      "name": "3ABN Praise Him Music Network",
-      "logo": "",
-      "url": "https://upcoming-match-no-stream.m3u8",
-      "group": "General",
-      "url_raw": "https://upcoming-match-no-stream.m3u8",
-      "attrs": {
-        "source-playlist": "third_playlist",
         "playlist-role": "new-channel"
       }
     }
