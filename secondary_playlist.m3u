@@ -6,7 +6,7 @@
 # Developer: IreenTechnology
 # Version: 1.0
 # Channels Amount: 128
-# Last Update: 2026-08-04 02:15:47 PM
+# Last Update: 2026-08-04 02:23:47 PM
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/xTxpr24R/1000114119.jpg" group-title="Bangla" tvg-name="G-Series",G-Series
 https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
@@ -197,7 +197,7 @@ https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/tv/T-Sports.png" group-title="Bangla" tvg-name="T Sports HD",T Sports HD
 http://103.158.133.53:8080/viralclub/index.m3u8
 
-#EXTINF:-1 tvg-name="Channel 64",Channel 64
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/tv/T-Sports.png" group-title="Bangla" tvg-name="T Sports HD",T Sports HD
 ✅✅ BANGLADESHI ✅✅
 
 #EXTINF:-1 tvg-logo="https://iili.io/F8gQjJS.png" group-title="BANGLADESHI" tvg-name="ZB Cartun TV",ZB Cartun TV
@@ -248,7 +248,7 @@ http://103.191.99.248:5550/303/index.m3u8
 #EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/8z5yuaoyryedp6l/ZB.jpg" group-title="Indian-Bangla" tvg-name="Zee Bangla HD",Zee Bangla HD
 http://103.159.180.34:5001/live/625.m3u8
 
-#EXTINF:-1 tvg-name="Channel 81",Channel 81
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/8z5yuaoyryedp6l/ZB.jpg" group-title="Indian-Bangla" tvg-name="Zee Bangla HD",Zee Bangla HD
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1531202.m3u8
 
 #EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/44vdhjj6fja02co/CBHD.jpg" group-title="Indian-Bangla" tvg-name="Colors Bangla",Colors Bangla

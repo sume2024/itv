@@ -7,7 +7,7 @@
   "version": "1.0",
   "name": "secondary_playlist",
   "channels_amount": 128,
-  "Last_update": "2026-08-04 02:15:47 PM",
+  "Last_update": "2026-08-04 02:23:47 PM",
   "channels": [
     {
       "name": "G-Series",
@@ -520,10 +520,10 @@
       "url_raw": "http://103.158.133.53:8080/viralclub/index.m3u8"
     },
     {
-      "name": "Channel 64",
-      "logo": "",
+      "name": "T Sports HD",
+      "logo": "https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/tv/T-Sports.png",
       "url": "✅✅ BANGLADESHI ✅✅",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "✅✅ BANGLADESHI ✅✅"
     },
     {
@@ -639,10 +639,10 @@
       "url_raw": "http://103.159.180.34:5001/live/625.m3u8"
     },
     {
-      "name": "Channel 81",
-      "logo": "",
+      "name": "Zee Bangla HD",
+      "logo": "https://dl.dropbox.com/s/8z5yuaoyryedp6l/ZB.jpg",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1531202.m3u8",
-      "group": "General",
+      "group": "Indian-Bangla",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1531202.m3u8"
     },
     {

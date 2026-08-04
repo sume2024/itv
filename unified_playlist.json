@@ -7,7 +7,7 @@
   "version": "1.0",
   "name": "unified_playlist",
   "channels_amount": 380,
-  "Last_update": "2026-08-04 02:15:47 PM",
+  "Last_update": "2026-08-04 02:23:47 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -55,12 +55,13 @@
       }
     },
     {
-      "name": "Channel 5",
-      "logo": "",
+      "name": "T Sports HD bd",
+      "logo": "https://i.ibb.co.com/ymqQ0QZd/T-Sports-HD.png",
       "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
       "attrs": {
+        "tvg-id": "t sports",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -78,12 +79,13 @@
       }
     },
     {
-      "name": "Channel 8",
-      "logo": "",
+      "name": "Jamuna TV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560213832.png",
       "url": "http://103.89.248.130:8082/Jamuna/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/Jamuna/index.m3u8",
       "attrs": {
+        "tvg-id": "97000",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -107,6 +109,7 @@
       "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/DBC-NEWS/index.m3u8",
       "attrs": {
+        "tvg-id": "185000",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -136,12 +139,13 @@
       }
     },
     {
-      "name": "Channel 14",
-      "logo": "",
+      "name": "Independent TV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png",
       "url": "http://103.89.248.130:8082/INDEPENDENT-NEWS/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/INDEPENDENT-NEWS/index.m3u8",
       "attrs": {
+        "tvg-id": "247000",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -202,6 +206,8 @@
       "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/NEWS-24/index.m3u8",
       "attrs": {
+        "tvg-id": "186000",
+        "tvgo": "https://iptvidn.xyz/uploads/tv_image/sm/news24.png",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -281,17 +287,19 @@
       "group": "Bangla",
       "url_raw": "https://bozztv.com/rongo/rongo-DeshTV/tracks-v1a1/mono.m3u8",
       "attrs": {
+        "tvg-id": "deshitv.bd",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
     },
     {
-      "name": "Channel 28",
-      "logo": "",
+      "name": "Desh TV",
+      "logo": "https://i.postimg.cc/wvBbd56q/Desh-TV.jpg",
       "url": "http://103.89.248.130:8082/DESH/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/DESH/index.m3u8",
       "attrs": {
+        "tvg-id": "deshitv.bd",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -315,6 +323,7 @@
       "group": "Bangla",
       "url_raw": "https://mtv.sunplex.live/MAASRANGA/index.m3u8",
       "attrs": {
+        "tvg-id": "MAASRANGA.bd",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -401,12 +410,13 @@
       }
     },
     {
-      "name": "Channel 38",
-      "logo": "",
+      "name": "Channel I HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png",
       "url": "http://103.89.248.130:8082/CHANNAL-I/index.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/CHANNAL-I/index.m3u8",
       "attrs": {
+        "tvg-id": "132000",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -442,6 +452,7 @@
       "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/NTV/index.m3u8",
       "attrs": {
+        "tvg-id": "99000",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -491,10 +502,10 @@
       }
     },
     {
-      "name": "Channel 46",
-      "logo": "",
+      "name": "Ekushey TV",
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png",
       "url": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -601,8 +612,8 @@
       }
     },
     {
-      "name": "ATN BANGLA HD",
-      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/ATN%20Bangla.png",
+      "name": "ATN UK",
+      "logo": "https://i.ytimg.com/vi/GRCWbI5ZSFg/maxresdefault.jpg",
       "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8",
       "group": "Bangla",
       "url_raw": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8",
@@ -943,10 +954,10 @@
       }
     },
     {
-      "name": "Channel 87",
-      "logo": "",
+      "name": "Jalsha Movies",
+      "logo": "https://i.ibb.co.com/XxGdDXJV/JALSHA-MOVIES-HD.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155771.m3u8",
-      "group": "General",
+      "group": "Indian Bangla",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155771.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -976,10 +987,10 @@
       }
     },
     {
-      "name": "Channel 90",
-      "logo": "",
+      "name": "Enter 10 Bangla",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg",
       "url": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8",
-      "group": "General",
+      "group": "Indian Bangla",
       "url_raw": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -998,10 +1009,10 @@
       }
     },
     {
-      "name": "Channel 92",
-      "logo": "",
+      "name": "Sangeet Bangla",
+      "logo": "https://imglink.cc/cdn/LmVOSdl3ku.png",
       "url": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
-      "group": "General",
+      "group": "Indian Bangla Music",
       "url_raw": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1020,10 +1031,10 @@
       }
     },
     {
-      "name": "Channel 94",
-      "logo": "",
+      "name": "Sony Aath",
+      "logo": "https://i.ibb.co.com/FLh8qFS9/Sony-AATH-Logo-2022.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1112197.m3u8",
-      "group": "General",
+      "group": "Indian Bangla",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1112197.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1042,10 +1053,10 @@
       }
     },
     {
-      "name": "Channel 96",
-      "logo": "",
+      "name": "Colors Bangla",
+      "logo": "https://i.ibb.co.com/2p677yw/Colors-Bangla-logo-svg.webp",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8",
-      "group": "General",
+      "group": "Indian Bangla",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1243,10 +1254,10 @@
       }
     },
     {
-      "name": "Channel 115",
-      "logo": "",
+      "name": "Sony KAL Hindi (1080p)",
+      "logo": "https://i.ibb.co.com/HLWLfRZy/Sony-Kal-Logo.webp",
       "url": "https://e77bef9b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctY2FfU29ueUtBTF9ITFM/playlist.m3u8",
-      "group": "General",
+      "group": "Hindi - Entertainment",
       "url_raw": "https://e77bef9b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctY2FfU29ueUtBTF9ITFM/playlist.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1276,10 +1287,10 @@
       }
     },
     {
-      "name": "Channel 118",
-      "logo": "",
+      "name": "9X Tashan",
+      "logo": "https://vignette.wikia.nocookie.net/logopedia/images/5/56/9X_Tashan_Logo.jpg",
       "url": "https://cdn-2.pishow.tv/live/1613/master.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://cdn-2.pishow.tv/live/1613/master.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1463,10 +1474,10 @@
       }
     },
     {
-      "name": "Channel 135",
-      "logo": "",
+      "name": "Zoom (720p)",
+      "logo": "https://i.pinimg.com/originals/45/7e/3a/457e3aaf075e58defea4d9455fd79004.jpg",
       "url": "https://pubads.g.doubleclick.net/ssai/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://pubads.g.doubleclick.net/ssai/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1474,10 +1485,10 @@
       }
     },
     {
-      "name": "TMA",
-      "logo": "",
+      "name": "Zoom (720p)",
+      "logo": "https://i.pinimg.com/originals/45/7e/3a/457e3aaf075e58defea4d9455fd79004.jpg",
       "url": "https://d2esfk1pb9cdob.cloudfront.net/master.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://d2esfk1pb9cdob.cloudfront.net/master.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1663,12 +1674,13 @@
       }
     },
     {
-      "name": "Channel 153",
-      "logo": "",
+      "name": "DELUXE MUSIC DANCE (DE)",
+      "logo": "https://i.ibb.co/Ybt9cyX/Deluxe-Dance.png",
       "url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8",
       "attrs": {
+        "tvg-id": "",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -1696,10 +1708,10 @@
       }
     },
     {
-      "name": "Channel 156",
-      "logo": "",
+      "name": "POWER Dance (TR)",
+      "logo": "https://i.ibb.co/bm2sbh1/POWER-Dance-TR.png",
       "url": "https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8",
-      "group": "General",
+      "group": "Music",
       "url_raw": "https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -1785,12 +1797,13 @@
       }
     },
     {
-      "name": "Channel 164",
-      "logo": "",
+      "name": "AXN Asia Thailand",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
       "url": "http://27.124.71.27/AXN/index.m3u8",
-      "group": "General",
+      "group": "Movies",
       "url_raw": "http://27.124.71.27/AXN/index.m3u8",
       "attrs": {
+        "tvg-id": "197000",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -1826,6 +1839,7 @@
       "group": "Movies",
       "url_raw": "http://103.213.31.111/HBOHD/index.m3u8",
       "attrs": {
+        "tvg-id": "325",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -1837,17 +1851,19 @@
       "group": "Movies",
       "url_raw": "http://27.124.71.27/HBO/index.m3u8",
       "attrs": {
+        "tvg-id": "325",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
     },
     {
-      "name": "Channel 169",
-      "logo": "",
+      "name": "HBO",
+      "logo": "https://i.ibb.co.com/8D4tGtyb/6451.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732928.m3u8",
-      "group": "General",
+      "group": "Movies",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732928.m3u8",
       "attrs": {
+        "tvg-id": "325",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -1873,17 +1889,23 @@
       "group": "Movies",
       "url_raw": "https://cdn01.medialive.one:2096/HBO2FHD/index.m3u8",
       "attrs": {
+        "tvg-id": "55",
+        "tvg-country": "IN",
+        "tvg-chno": "55",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
     },
     {
-      "name": "Channel 172",
-      "logo": "",
+      "name": "HBO 2▶️",
+      "logo": "https://stmify.com/wp-content/uploads/2024/12/370-s.webp",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732927.m3u8",
-      "group": "General",
+      "group": "Movies",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732927.m3u8",
       "attrs": {
+        "tvg-id": "55",
+        "tvg-country": "IN",
+        "tvg-chno": "55",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -1903,12 +1925,15 @@
       }
     },
     {
-      "name": "Channel 174",
-      "logo": "",
+      "name": "HBO 3▶️",
+      "logo": "https://i.ibb.co.com/nqJh4SkK/hbo3hd.jpg",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732926.m3u8",
-      "group": "General",
+      "group": "Movies",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732926.m3u8",
       "attrs": {
+        "tvg-id": "55",
+        "tvg-country": "IN",
+        "tvg-chno": "55",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -2416,10 +2441,10 @@
       }
     },
     {
-      "name": "Channel 220",
-      "logo": "",
+      "name": "PREMIERE LEAGUE 2",
+      "logo": "http://picons.cmshulk.com/picons/1660493.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/132562.m3u8",
-      "group": "General",
+      "group": "SPORTS",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/132562.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2571,10 +2596,10 @@
       }
     },
     {
-      "name": "Channel 234",
-      "logo": "",
+      "name": "Star Sports 1",
+      "logo": "https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809383.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809383.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2593,10 +2618,10 @@
       }
     },
     {
-      "name": "Channel 236",
-      "logo": "",
+      "name": "Star Sports 2",
+      "logo": "https://i.ibb.co.com/kV7KtjH0/star2.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809384.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809384.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2637,10 +2662,10 @@
       }
     },
     {
-      "name": "Channel 240",
-      "logo": "",
+      "name": "Star Sports Select 2",
+      "logo": "https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282676.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282676.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2736,10 +2761,10 @@
       }
     },
     {
-      "name": "Channel 249",
-      "logo": "",
+      "name": "PTV Sports",
+      "logo": "https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png",
       "url": "http://103.89.248.130:8082/PTV/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/PTV/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2747,10 +2772,10 @@
       }
     },
     {
-      "name": "Channel 250",
-      "logo": "",
+      "name": "PTV Sports",
+      "logo": "https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/911324.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/911324.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2791,10 +2816,10 @@
       }
     },
     {
-      "name": "Channel 254",
-      "logo": "",
+      "name": "WILLOW_SPORTS",
+      "logo": "https://i.ibb.co.com/Kcj16KG3/unnamed.png",
       "url": "https://tvsen5.aynascope.net/willowhd/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "https://tvsen5.aynascope.net/willowhd/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2802,10 +2827,10 @@
       }
     },
     {
-      "name": "Channel 255",
-      "logo": "",
+      "name": "WILLOW_SPORTS",
+      "logo": "https://i.ibb.co.com/Kcj16KG3/unnamed.png",
       "url": "https://tvsen7.aynascope.net/rEBp38Ax/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "https://tvsen7.aynascope.net/rEBp38Ax/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2813,10 +2838,10 @@
       }
     },
     {
-      "name": "Channel 256",
-      "logo": "",
+      "name": "WILLOW_SPORTS",
+      "logo": "https://i.ibb.co.com/Kcj16KG3/unnamed.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/809386.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/809386.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2824,10 +2849,10 @@
       }
     },
     {
-      "name": "Channel 257",
-      "logo": "",
+      "name": "WILLOW_SPORTS",
+      "logo": "https://i.ibb.co.com/Kcj16KG3/unnamed.png",
       "url": "http://27.124.71.27/Willow_Extra/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://27.124.71.27/Willow_Extra/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -3214,12 +3239,13 @@
       }
     },
     {
-      "name": "Channel 293",
-      "logo": "",
+      "name": "Nat Geo Wild ru",
+      "logo": "https://iptvx.one/picons/nat-geo-wild.png",
       "url": "http://103.89.248.130:8082/nat-geo-wild/index.m3u8",
-      "group": "General",
+      "group": "Documentary",
       "url_raw": "http://103.89.248.130:8082/nat-geo-wild/index.m3u8",
       "attrs": {
+        "tvg-id": "nat-geo-wild",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -3618,10 +3644,10 @@
       }
     },
     {
-      "name": "Channel 64",
-      "logo": "",
+      "name": "T Sports HD",
+      "logo": "https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/tv/T-Sports.png",
       "url": "✅✅ BANGLADESHI ✅✅",
-      "group": "General",
+      "group": "Bangla",
       "url_raw": "✅✅ BANGLADESHI ✅✅",
       "attrs": {
         "source-playlist": "secondary_playlist",
@@ -3750,10 +3776,10 @@
       }
     },
     {
-      "name": "Channel 81",
-      "logo": "",
+      "name": "Zee Bangla HD",
+      "logo": "https://dl.dropbox.com/s/8z5yuaoyryedp6l/ZB.jpg",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1531202.m3u8",
-      "group": "General",
+      "group": "Indian-Bangla",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1531202.m3u8",
       "attrs": {
         "source-playlist": "secondary_playlist",
