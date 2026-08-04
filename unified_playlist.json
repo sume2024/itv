@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "unified_playlist",
-  "channels_amount": 361,
-  "Last_update": "2026-08-04 06:11:40 AM",
+  "channels_amount": 365,
+  "Last_update": "2026-08-04 09:22:20 AM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -3626,6 +3626,52 @@
       "attrs": {
         "source-playlist": "secondary_playlist",
         "playlist-role": "variant-stream"
+      }
+    },
+    {
+      "name": "COLORS CINEPLEX HD",
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsCineplexHD.png",
+      "url": "http://66.102.126.10:8000/play/a076/index.m3u8",
+      "group": "HINDI",
+      "url_raw": "http://66.102.126.10:8000/play/a076/index.m3u8",
+      "attrs": {
+        "source-playlist": "secondary_playlist",
+        "playlist-role": "new-channel"
+      }
+    },
+    {
+      "name": "Colors Cineplex Bollywood",
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsCineplexBollywood.png",
+      "url": "http://live.balajibroadband.com:3500/live/1763.m3u8",
+      "group": "Movies",
+      "url_raw": "http://live.balajibroadband.com:3500/live/1763.m3u8",
+      "attrs": {
+        "tvg-id": "colorscineplexbollywood",
+        "source-playlist": "secondary_playlist",
+        "playlist-role": "new-channel"
+      }
+    },
+    {
+      "name": "Colors Cineplex Superhit",
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsCineplexSuperhit.png",
+      "url": "http://live.balajibroadband.com:3500/live/1450.m3u8",
+      "group": "BDIX 1",
+      "url_raw": "http://live.balajibroadband.com:3500/live/1450.m3u8",
+      "attrs": {
+        "tvg-id": "colors-cineplex-superhit",
+        "source-playlist": "secondary_playlist",
+        "playlist-role": "new-channel"
+      }
+    },
+    {
+      "name": "Colors Bangla Cinema",
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bangla_Cinema.png",
+      "url": "http://live.balajibroadband.com:3500/live/1657.m3u8",
+      "group": "KOLKATA",
+      "url_raw": "http://live.balajibroadband.com:3500/live/1657.m3u8",
+      "attrs": {
+        "source-playlist": "secondary_playlist",
+        "playlist-role": "new-channel"
       }
     },
     {

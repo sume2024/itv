@@ -5,8 +5,8 @@
 # Website: https://anamul.pages.dev
 # Developer: IreenTechnology
 # Version: 1.0
-# Channels Amount: 124
-# Last Update: 2026-08-04 06:11:40 AM
+# Channels Amount: 128
+# Last Update: 2026-08-04 09:22:20 AM
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/xTxpr24R/1000114119.jpg" group-title="Bangla" tvg-name="G-Series",G-Series
 https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
@@ -259,6 +259,18 @@ http://66.102.126.10:8000/play/a00f/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu_Gxy8ywjMY6_YPX-1uYtUGA56FOfDoBsH62-ekNA=s900-c-k-c0x00ffffff-no-rj" group-title="Islamic" tvg-name="Saudi Quran",Saudi Quran
 https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsCineplexHD.png" group-title="HINDI" tvg-name="COLORS CINEPLEX HD",COLORS CINEPLEX HD
+http://66.102.126.10:8000/play/a076/index.m3u8
+
+#EXTINF:-1 tvg-id="colorscineplexbollywood" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsCineplexBollywood.png" group-title="Movies" tvg-name="Colors Cineplex Bollywood",Colors Cineplex Bollywood
+http://live.balajibroadband.com:3500/live/1763.m3u8
+
+#EXTINF:-1 tvg-id="colors-cineplex-superhit" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsCineplexSuperhit.png" group-title="BDIX 1" tvg-name="Colors Cineplex Superhit",Colors Cineplex Superhit
+http://live.balajibroadband.com:3500/live/1450.m3u8
+
+#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bangla_Cinema.png" group-title="KOLKATA" tvg-name="Colors Bangla Cinema",Colors Bangla Cinema
+http://live.balajibroadband.com:3500/live/1657.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ouAva7k.png" group-title="Sports" tvg-name="beIN sports Xtra HD",beIN sports Xtra HD
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
