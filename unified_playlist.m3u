@@ -5,8 +5,8 @@
 # Website: https://anamul.pages.dev
 # Developer: IreenTechnology
 # Version: 1.0
-# Channels Amount: 379
-# Last Update: 2026-08-04 08:10:05 PM
+# Channels Amount: 387
+# Last Update: 2026-08-04 09:50:20 PM
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co/Gfw89mC/20240804-033102.png" group-title="Relagion Channel" tvg-name="Peace TV Bangla",Peace TV Bangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8
@@ -132,10 +132,10 @@ https://cdn.ghuddi.live/Bangla_TV/Bangla_TV_BD/playlist.m3u8
 http://alvetv.com/moviebanglatv/8080/index.m3u8
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png" group-title="Bangla" tvg-name="Ekushey TV",Ekushey TV
-http://103.89.248.130:8082/EKUSHEY-TV/index.m3u8
+https://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=etv&format=.m3u8
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png" group-title="Bangla" tvg-name="Ekushey TV",Ekushey TV
-http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
+http://103.89.248.130:8082/EKUSHEY-TV/index.m3u8
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://s4.gifyu.com/images/image29282f9d45a183d6.png" group-title="BANGLA" tvg-name="RTV",RTV
 https://tvsen5.aynaott.com/RtvHD/index.m3u8
@@ -253,6 +253,9 @@ https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1118
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.imgur.com/IlufzR5.png" group-title="Indian Bangla" tvg-name="Star Jalsha",Star Jalsha
 http://103.89.248.130:8082/Star_jalsha/index.m3u8
+
+#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co.com/XxGdDXJV/JALSHA-MOVIES-HD.png" group-title="Indian Bangla" tvg-name="Jalsha Movies",Jalsha Movies
+https://live.bdixbd.net/api/proxy/stream.m3u8?url=http%3A%2F%2F103.114.11.37%3A8081%2FJalsha-Movies%2Ftracks-v1a1%2Fmono.m3u8%3Ftoken%3Ddsfsdfsdfsdf
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.ibb.co.com/XxGdDXJV/JALSHA-MOVIES-HD.png" group-title="Indian Bangla" tvg-name="Jalsha Movies",Jalsha Movies
 http://103.89.248.130:8082/JALSHA-MOVIES/index.m3u8
@@ -406,6 +409,15 @@ https://d2esfk1pb9cdob.cloudfront.net/master.m3u8
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://static.vecteezy.com/system/resources/previews/000/579/872/non_2x/music-symbols-logo-and-icons-template-vector.jpg" group-title="Music" tvg-name="HINDI HITS HD",HINDI HITS HD
 http://146.59.253.52:8080/hindihitshd/index.m3u8
+
+#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://iptvx.one/picons/bridge-tv.png" group-title="Music" tvg-name="Bridge TV",Bridge TV
+https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/318/index.m3u8
+
+#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://iptvx.one/picons/bridge-tv-classic.png" group-title="Music" tvg-name="Bridge TV Classic",Bridge TV Classic
+https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/272/index.m3u8
+
+#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://iptvx.one/picons/bridge-hd.png" group-title="Music" tvg-name="Bridge TV Deluxe",Bridge TV Deluxe
+https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/92/index.m3u8
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.imgur.com/Tf0vweF.png" group-title="Music" tvg-name="KpopTV Play",KpopTV Play
 https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
@@ -643,6 +655,15 @@ https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/142/in
 
 #EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://new.matchtv.ru/assets/202507251502/images/channels/140.jpg" group-title="SPORTS" tvg-name="Матч! 3 🇷🇺",Матч! 3 🇷🇺
 https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/185/index.m3u8
+
+#EXTINF:-1 tvg-id="eurosport1" tvg-description="Eurosport 1 — европейский спортивный телеканал. Транслирует широкий спектр соревнований: теннис, велоспорт, лыжи, биатлон и другие виды спорта." source-playlist="default_playlist" playlist-role="default" tvg-logo="https://iptvx.one/picons/eurosport1.png" group-title="SPORTS" tvg-name="Eurosport 1",Eurosport 1
+https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/176/index.m3u8
+
+#EXTINF:-1 tvg-id="eurosport2" tvg-description="Eurosport 2 — второй канал сети Eurosport. Транслирует экстремальные виды спорта, а также дополнительные трансляции из сетки Eurosport." source-playlist="default_playlist" playlist-role="default" tvg-logo="https://iptvx.one/picons/eurosport2.png" group-title="SPORTS" tvg-name="Eurosport 2",Eurosport 2
+https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/192/index.m3u8
+
+#EXTINF:-1 source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.imgur.com/dRVsB89.png" group-title="Sports" tvg-name="5Sport (1080p)",5Sport (1080p)
+https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/41/index.m3u8
 
 #EXTINF:-1 tvg-id="Belarus5.by" source-playlist="default_playlist" playlist-role="default" tvg-logo="https://i.imgur.com/NJsRFud.png" group-title="Sports" tvg-name="Belarus 5",Belarus 5
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8
@@ -955,6 +976,9 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF9
 
 #EXTINF:-1 source-playlist="secondary_playlist" playlist-role="new-channel" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/KECGB54BuUSiBsg_dHyj/posters/58af9c58-ed80-458c-af13-cf381680cec6.png" group-title="Bangla" tvg-name="Rajdhani TV",Rajdhani TV
 https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8
+
+#EXTINF:-1 source-playlist="secondary_playlist" playlist-role="variant-stream" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png" group-title="Bangla" tvg-name="Ekushey TV",Ekushey TV
+http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
 
 #EXTINF:-1 source-playlist="secondary_playlist" playlist-role="variant-stream" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png" group-title="Bangla" tvg-name="Ekhon TV",Ekhon TV
 https://stream.ottplus.live/live/ekhon_tv_abr/index.m3u8
