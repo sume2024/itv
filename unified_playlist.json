@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "unified_playlist",
-  "channels_amount": 365,
-  "Last_update": "2026-08-04 11:40:37 AM",
+  "channels_amount": 380,
+  "Last_update": "2026-08-04 02:15:47 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -45,9 +45,9 @@
     {
       "name": "T Sports HD bd",
       "logo": "https://i.ibb.co.com/ymqQ0QZd/T-Sports-HD.png",
-      "url": "https://flussonic.deltainfonet.com/01_Tsports_HD/tracks-v1a1/mono.m3u8",
+      "url": "https://tvsen3.aynaott.com/Sports1/mono.m3u8",
       "group": "Sports",
-      "url_raw": "https://flussonic.deltainfonet.com/01_Tsports_HD/tracks-v1a1/mono.m3u8",
+      "url_raw": "https://tvsen3.aynaott.com/Sports1/mono.m3u8",
       "attrs": {
         "tvg-id": "t sports",
         "source-playlist": "default_playlist",
@@ -559,9 +559,31 @@
     {
       "name": "ATN BANGLA HD",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/ATN%20Bangla.png",
+      "url": "https://tvsen5.aynaott.com/atnbangla/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://tvsen5.aynaott.com/atnbangla/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "ATN BANGLA HD",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/ATN%20Bangla.png",
       "url": "http://103.89.248.130:8082/ATN-BANGLA/index.m3u8",
       "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/ATN-BANGLA/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "ATN BANGLA HD",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/ATN%20Bangla.png",
+      "url": "https://tvsen5.aynascope.net/atnbangla/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://tvsen5.aynascope.net/atnbangla/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
         "playlist-role": "default"
@@ -921,7 +943,7 @@
       }
     },
     {
-      "name": "Channel 85",
+      "name": "Channel 87",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155771.m3u8",
       "group": "General",
@@ -954,7 +976,7 @@
       }
     },
     {
-      "name": "Channel 88",
+      "name": "Channel 90",
       "logo": "",
       "url": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8",
       "group": "General",
@@ -976,7 +998,7 @@
       }
     },
     {
-      "name": "Channel 90",
+      "name": "Channel 92",
       "logo": "",
       "url": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
       "group": "General",
@@ -998,7 +1020,7 @@
       }
     },
     {
-      "name": "Channel 92",
+      "name": "Channel 94",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1112197.m3u8",
       "group": "General",
@@ -1020,7 +1042,7 @@
       }
     },
     {
-      "name": "Channel 94",
+      "name": "Channel 96",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282063.m3u8",
       "group": "General",
@@ -1221,7 +1243,7 @@
       }
     },
     {
-      "name": "Channel 113",
+      "name": "Channel 115",
       "logo": "",
       "url": "https://e77bef9b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctY2FfU29ueUtBTF9ITFM/playlist.m3u8",
       "group": "General",
@@ -1254,7 +1276,7 @@
       }
     },
     {
-      "name": "Channel 116",
+      "name": "Channel 118",
       "logo": "",
       "url": "https://cdn-2.pishow.tv/live/1613/master.m3u8",
       "group": "General",
@@ -1441,7 +1463,7 @@
       }
     },
     {
-      "name": "Channel 133",
+      "name": "Channel 135",
       "logo": "",
       "url": "https://pubads.g.doubleclick.net/ssai/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8",
       "group": "General",
@@ -1641,7 +1663,7 @@
       }
     },
     {
-      "name": "Channel 151",
+      "name": "Channel 153",
       "logo": "",
       "url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8",
       "group": "General",
@@ -1674,7 +1696,7 @@
       }
     },
     {
-      "name": "Channel 154",
+      "name": "Channel 156",
       "logo": "",
       "url": "https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8",
       "group": "General",
@@ -1763,7 +1785,7 @@
       }
     },
     {
-      "name": "Channel 162",
+      "name": "Channel 164",
       "logo": "",
       "url": "http://27.124.71.27/AXN/index.m3u8",
       "group": "General",
@@ -1788,11 +1810,22 @@
     {
       "name": "HBO",
       "logo": "https://i.ibb.co.com/8D4tGtyb/6451.png",
+      "url": "https://tvsen7.aynascope.net/hbo/index.m3u8",
+      "group": "Movies",
+      "url_raw": "https://tvsen7.aynascope.net/hbo/index.m3u8",
+      "attrs": {
+        "tvg-id": "325",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "HBO",
+      "logo": "https://i.ibb.co.com/8D4tGtyb/6451.png",
       "url": "http://103.213.31.111/HBOHD/index.m3u8",
       "group": "Movies",
       "url_raw": "http://103.213.31.111/HBOHD/index.m3u8",
       "attrs": {
-        "tvg-id": "325",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -1809,7 +1842,7 @@
       }
     },
     {
-      "name": "Channel 166",
+      "name": "Channel 169",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732928.m3u8",
       "group": "General",
@@ -1822,9 +1855,9 @@
     {
       "name": "HBO 2▶️",
       "logo": "https://stmify.com/wp-content/uploads/2024/12/370-s.webp",
-      "url": "https://cdn01.medialive.one:2096/HBO2FHD/index.m3u8",
+      "url": "https://tvsen7.aynascope.net/hbo2/index.m3u8",
       "group": "Movies",
-      "url_raw": "https://cdn01.medialive.one:2096/HBO2FHD/index.m3u8",
+      "url_raw": "https://tvsen7.aynascope.net/hbo2/index.m3u8",
       "attrs": {
         "tvg-id": "55",
         "tvg-country": "IN",
@@ -1834,7 +1867,18 @@
       }
     },
     {
-      "name": "Channel 168",
+      "name": "HBO 2▶️",
+      "logo": "https://stmify.com/wp-content/uploads/2024/12/370-s.webp",
+      "url": "https://cdn01.medialive.one:2096/HBO2FHD/index.m3u8",
+      "group": "Movies",
+      "url_raw": "https://cdn01.medialive.one:2096/HBO2FHD/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Channel 172",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732927.m3u8",
       "group": "General",
@@ -1859,7 +1903,7 @@
       }
     },
     {
-      "name": "Channel 170",
+      "name": "Channel 174",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732926.m3u8",
       "group": "General",
@@ -2240,7 +2284,7 @@
     },
     {
       "name": "Go3 Sport 1",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-kC5wUK1hz4scxebl4K1cfEJEODwjrC6gHx5GGD18Wg&s=10",
+      "logo": "https://raw.githubusercontent.com/AeonCoreX-Lab/streamx-iptv-data/main/logos/ee/Go3Sport1.ee.png",
       "url": "https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/416/index.m3u8",
       "group": "SPORTS",
       "url_raw": "https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/416/index.m3u8",
@@ -2350,7 +2394,7 @@
       }
     },
     {
-      "name": "PREMIERE LEAGUE 1▶️ Mobile+TV",
+      "name": "PREMIERE LEAGUE 1",
       "logo": "http://picons.cmshulk.com/picons/1660493.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1660493.m3u8",
       "group": "SPORTS",
@@ -2361,7 +2405,7 @@
       }
     },
     {
-      "name": "PREMIERE LEAGUE 2▶️ Mobile+TV",
+      "name": "PREMIERE LEAGUE 2",
       "logo": "http://picons.cmshulk.com/picons/1660493.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1660492.m3u8",
       "group": "SPORTS",
@@ -2372,7 +2416,7 @@
       }
     },
     {
-      "name": "Channel 216",
+      "name": "Channel 220",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/132562.m3u8",
       "group": "General",
@@ -2383,7 +2427,7 @@
       }
     },
     {
-      "name": "ASTRO Football▶️ Mobile+TV",
+      "name": "ASTRO Football",
       "logo": "https://i.ibb.co.com/LhJkvnMM/Astro-Football-2024.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571246.m3u8",
       "group": "SPORTS",
@@ -2394,7 +2438,7 @@
       }
     },
     {
-      "name": "CRICKET▶️ Mobile+TV",
+      "name": "CRICKET",
       "logo": "http://picons.cmshulk.com/picons/571244.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/571244.m3u8",
       "group": "SPORTS",
@@ -2427,7 +2471,7 @@
       }
     },
     {
-      "name": "TEN SPORTS ▶️ Mobile+TV",
+      "name": "TEN SPORTS",
       "logo": "http://picon.tivi-ott.net:25461/picon/ASIA/PAKISTAN/tensports.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/373119.m3u8",
       "group": "SPORTS",
@@ -2438,7 +2482,7 @@
       }
     },
     {
-      "name": "GEO Super ▶️ Mobile+TV",
+      "name": "GEO Super",
       "logo": "https://images.seeklogo.com/logo-png/19/1/geo-super-logo-png_seeklogo-198639.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/373118.m3u8",
       "group": "Sports",
@@ -2450,7 +2494,7 @@
       }
     },
     {
-      "name": "PREMIER SPORTS 1▶️ Mobile+TV",
+      "name": "PREMIER SPORTS 1",
       "logo": "http://picon.tivi-ott.net:25461/picon/UK/PREMIERSPORTS.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827990.m3u8",
       "group": "SPORTS",
@@ -2461,7 +2505,7 @@
       }
     },
     {
-      "name": "PREMIER SPORTS 2▶️ Mobile+TV",
+      "name": "PREMIER SPORTS 2",
       "logo": "http://picon.tivi-ott.net:25461/picon/UK/PREMIERSPORTS.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827989.m3u8",
       "group": "SPORTS",
@@ -2472,7 +2516,7 @@
       }
     },
     {
-      "name": "MUTV ▶️ Mobile+TV",
+      "name": "MUTV",
       "logo": "http://picon.tivi-ott.net:25461/picon/UK/MUTV.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/827988.m3u8",
       "group": "SPORTS",
@@ -2483,7 +2527,40 @@
       }
     },
     {
-      "name": "Star Sports 1▶️ Mobile+TV",
+      "name": "Fox Sports 1",
+      "logo": "https://s3.aynaott.com/storage/04d612228fedede6da010e5b163d5ac6",
+      "url": "https://tvsen7.aynascope.net/foxsports1/index.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen7.aynascope.net/foxsports1/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Fox Sports 2",
+      "logo": "https://s3.aynaott.com/storage/da4282cd107cc3d40efadae488b187e5",
+      "url": "https://tvsen7.aynascope.net/foxsports2/index.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen7.aynascope.net/foxsports2/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Espn",
+      "logo": "https://s3.aynaott.com/storage/b46df1959322aa48d270a6b163234c76",
+      "url": "https://tvsen5.aynascope.net/espn/index.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen5.aynascope.net/espn/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Star Sports 1",
       "logo": "https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png",
       "url": "http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8",
       "group": "Sports",
@@ -2494,7 +2571,7 @@
       }
     },
     {
-      "name": "Channel 227",
+      "name": "Channel 234",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809383.m3u8",
       "group": "General",
@@ -2505,10 +2582,21 @@
       }
     },
     {
-      "name": "Star Sports 2▶️ Mobile+TV",
+      "name": "Star Sports 2",
       "logo": "https://i.ibb.co.com/kV7KtjH0/star2.png",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809384.m3u8",
+      "url": "https://tvsen5.aynascope.net/cXPB2LKkErN9/index.m3u8",
       "group": "Sports",
+      "url_raw": "https://tvsen5.aynascope.net/cXPB2LKkErN9/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Channel 236",
+      "logo": "",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809384.m3u8",
+      "group": "General",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809384.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2516,7 +2604,7 @@
       }
     },
     {
-      "name": "StarSports Select 1▶️ Mobile+TV",
+      "name": "StarSports Select 1",
       "logo": "https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282675.m3u8",
       "group": "Sports",
@@ -2527,10 +2615,10 @@
       }
     },
     {
-      "name": "Channel 230",
-      "logo": "",
+      "name": "StarSports Select 1",
+      "logo": "https://i.ibb.co.com/d05Lry8M/Star-sports-select-1.webp",
       "url": "http://103.89.248.130:8082/Star-sports-select-1/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/Star-sports-select-1/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2538,10 +2626,21 @@
       }
     },
     {
-      "name": "Star Sports Select 2▶️ Mobile+TV",
+      "name": "Star Sports Select 2",
       "logo": "https://i.ibb.co.com/2YZM8xyM/Star-sports-select-2-hd.webp",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282676.m3u8",
+      "url": "https://s3.itcnbd.live/channel/ea25a516d781cb1c.m3u8",
       "group": "Sports",
+      "url_raw": "https://s3.itcnbd.live/channel/ea25a516d781cb1c.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Channel 240",
+      "logo": "",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282676.m3u8",
+      "group": "General",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/282676.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2549,7 +2648,7 @@
       }
     },
     {
-      "name": "Sony Ten 1▶️ Mobile+TV",
+      "name": "Sony Ten 1",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156017.m3u8",
       "group": "Sports",
@@ -2560,10 +2659,10 @@
       }
     },
     {
-      "name": "Channel 233",
-      "logo": "",
+      "name": "Sony Ten 1",
+      "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "url": "http://103.89.248.130:8082/Sony-TEN-1/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/Sony-TEN-1/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2571,7 +2670,7 @@
       }
     },
     {
-      "name": "Sony Ten 2▶️ Mobile+TV",
+      "name": "Sony Ten 2",
       "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156010.m3u8",
       "group": "Sports",
@@ -2582,10 +2681,10 @@
       }
     },
     {
-      "name": "Channel 235",
-      "logo": "",
+      "name": "Sony Ten 2",
+      "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
       "url": "http://103.89.248.130:8082/sony-TEN-2/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/sony-TEN-2/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2593,7 +2692,7 @@
       }
     },
     {
-      "name": "Sony Ten 3▶️ Mobile+TV",
+      "name": "Sony Ten 3",
       "logo": "https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156024.m3u8",
       "group": "Sports",
@@ -2604,10 +2703,10 @@
       }
     },
     {
-      "name": "Channel 237",
-      "logo": "",
+      "name": "Sony Ten 3",
+      "logo": "https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp",
       "url": "http://103.89.248.130:8082/sony-ten3/index.m3u8",
-      "group": "General",
+      "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/sony-ten3/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2615,7 +2714,7 @@
       }
     },
     {
-      "name": "Sony Ten 5▶️ Mobile+TV",
+      "name": "Sony Ten 5",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1104671.m3u8",
       "group": "Sports",
@@ -2626,10 +2725,21 @@
       }
     },
     {
-      "name": "PTV Sports ▶️ Mobile+TV",
+      "name": "PTV Sports",
       "logo": "https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png",
-      "url": "http://103.89.248.130:8082/PTV/index.m3u8",
+      "url": "https://s1.itcnbd.live/PTV-Sports/tracks-v1a1/mono.m3u8",
       "group": "Sports",
+      "url_raw": "https://s1.itcnbd.live/PTV-Sports/tracks-v1a1/mono.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Channel 249",
+      "logo": "",
+      "url": "http://103.89.248.130:8082/PTV/index.m3u8",
+      "group": "General",
       "url_raw": "http://103.89.248.130:8082/PTV/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2637,7 +2747,7 @@
       }
     },
     {
-      "name": "Channel 240",
+      "name": "Channel 250",
       "logo": "",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/911324.m3u8",
       "group": "General",
@@ -2648,7 +2758,18 @@
       }
     },
     {
-      "name": "A Sports ▶️ Mobile+TV",
+      "name": "A Sports",
+      "logo": "https://i.ibb.co.com/35GSmGVJ/download.jpg",
+      "url": "https://playztv-apps.pages.dev/asports/index.m3u8",
+      "group": "Sports",
+      "url_raw": "https://playztv-apps.pages.dev/asports/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "A Sports",
       "logo": "https://i.ibb.co.com/35GSmGVJ/download.jpg",
       "url": "http://103.89.248.130:8082/A-SPORTS/index.m3u8",
       "group": "Sports",
@@ -2659,10 +2780,43 @@
       }
     },
     {
-      "name": "WILLOW_SPORTS ▶️ Mobile+TV",
+      "name": "WILLOW_SPORTS",
       "logo": "https://i.ibb.co.com/Kcj16KG3/unnamed.png",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/809386.m3u8",
+      "url": "https://tvsen5.aynaott.com/willowhd/tracks-v1a1/mono.ts.m3u8",
       "group": "Sports",
+      "url_raw": "https://tvsen5.aynaott.com/willowhd/tracks-v1a1/mono.ts.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Channel 254",
+      "logo": "",
+      "url": "https://tvsen5.aynascope.net/willowhd/index.m3u8",
+      "group": "General",
+      "url_raw": "https://tvsen5.aynascope.net/willowhd/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Channel 255",
+      "logo": "",
+      "url": "https://tvsen7.aynascope.net/rEBp38Ax/index.m3u8",
+      "group": "General",
+      "url_raw": "https://tvsen7.aynascope.net/rEBp38Ax/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Channel 256",
+      "logo": "",
+      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/809386.m3u8",
+      "group": "General",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/809386.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
@@ -2670,7 +2824,7 @@
       }
     },
     {
-      "name": "Channel 243",
+      "name": "Channel 257",
       "logo": "",
       "url": "http://27.124.71.27/Willow_Extra/index.m3u8",
       "group": "General",
@@ -2763,6 +2917,17 @@
       "url": "http://103.89.248.130:8082/Eurosports/index.m3u8",
       "group": "Sports",
       "url_raw": "http://103.89.248.130:8082/Eurosports/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Euro Sports HD",
+      "logo": "https://imglink.cc/cdn/SZphbKsSMx.png",
+      "url": "https://s2.itcnbd.live/server-2/stream/euro_sports_hd.m3u8",
+      "group": "Sports",
+      "url_raw": "https://s2.itcnbd.live/server-2/stream/euro_sports_hd.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
         "playlist-role": "default"
@@ -3049,7 +3214,7 @@
       }
     },
     {
-      "name": "Channel 278",
+      "name": "Channel 293",
       "logo": "",
       "url": "http://103.89.248.130:8082/nat-geo-wild/index.m3u8",
       "group": "General",
