@@ -52,6 +52,8 @@ export function parseM3U(m3uContent: string): Channel[] {
       if (Object.keys(attrs).length > 0) {
         currentChannel.attrs = attrs;
       }
+
+      lastExtinfInfo = JSON.parse(JSON.stringify(currentChannel));
     } else if (line.startsWith('#EXTVLCOPT:')) {
       const optContent = line.substring('#EXTVLCOPT:'.length).trim();
       
@@ -84,14 +86,25 @@ export function parseM3U(m3uContent: string): Channel[] {
         currentChannel.vlc_opts = currentChannel.vlc_opts || [];
         currentChannel.vlc_opts.push(optContent);
       }
+
+      if (lastExtinfInfo) {
+        lastExtinfInfo.headers = currentChannel.headers ? { ...currentChannel.headers } : undefined;
+        lastExtinfInfo.vlc_opts = currentChannel.vlc_opts ? [...currentChannel.vlc_opts] : undefined;
+      }
     } else if (line.startsWith('#KODIPROP:')) {
       const propContent = line.substring('#KODIPROP:'.length).trim();
       currentChannel.kodiprops = currentChannel.kodiprops || [];
       currentChannel.kodiprops.push(propContent);
+      if (lastExtinfInfo) {
+        lastExtinfInfo.kodiprops = [...currentChannel.kodiprops];
+      }
     } else if (line.startsWith('#EXTHTTP:')) {
       const httpContent = line.substring('#EXTHTTP:'.length).trim();
       currentChannel.exthttps = currentChannel.exthttps || [];
       currentChannel.exthttps.push(httpContent);
+      if (lastExtinfInfo) {
+        lastExtinfInfo.exthttps = [...currentChannel.exthttps];
+      }
       
       // Also extract headers from EXTHTTP if it is valid JSON
       try {
@@ -109,6 +122,9 @@ export function parseM3U(m3uContent: string): Channel[] {
               currentChannel.headers[k] = String(v);
             }
           }
+          if (lastExtinfInfo) {
+            lastExtinfInfo.headers = { ...currentChannel.headers };
+          }
         }
       } catch (e) {
         // Fallback or ignore parse errors
@@ -117,11 +133,11 @@ export function parseM3U(m3uContent: string): Channel[] {
       // This is the stream URL
       let channelToAdd: Partial<Channel> = {};
       if (currentChannel.name || currentChannel.logo || currentChannel.group) {
-        channelToAdd = { ...currentChannel };
-        lastExtinfInfo = { ...currentChannel };
+        channelToAdd = JSON.parse(JSON.stringify(currentChannel));
+        lastExtinfInfo = JSON.parse(JSON.stringify(currentChannel));
       } else if (lastExtinfInfo) {
         // Reuse metadata from previous EXTINF line for multiple stream URLs under same channel
-        channelToAdd = { ...lastExtinfInfo };
+        channelToAdd = JSON.parse(JSON.stringify(lastExtinfInfo));
       }
 
       channelToAdd.url = line;

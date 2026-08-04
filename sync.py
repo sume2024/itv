@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 import re
@@ -32,6 +33,7 @@ def parse_m3u(content):
     channels = []
     lines = content.splitlines()
     current_channel = {}
+    last_extinf_meta = None
     
     for line in lines:
         line = line.strip()
@@ -66,6 +68,8 @@ def parse_m3u(content):
             
             if attrs:
                 current_channel['attrs'] = attrs
+
+            last_extinf_meta = copy.deepcopy(current_channel)
                 
         elif line.startswith('#EXTVLCOPT:'):
             opt_content = line[len('#EXTVLCOPT:'):].strip()
@@ -101,18 +105,28 @@ def parse_m3u(content):
                 if 'vlc_opts' not in current_channel:
                     current_channel['vlc_opts'] = []
                 current_channel['vlc_opts'].append(opt_content)
+
+            if last_extinf_meta is not None:
+                if 'headers' in current_channel:
+                    last_extinf_meta['headers'] = copy.deepcopy(current_channel['headers'])
+                if 'vlc_opts' in current_channel:
+                    last_extinf_meta['vlc_opts'] = copy.deepcopy(current_channel['vlc_opts'])
                     
         elif line.startswith('#KODIPROP:'):
             prop_content = line[len('#KODIPROP:'):].strip()
             if 'kodiprops' not in current_channel:
                 current_channel['kodiprops'] = []
             current_channel['kodiprops'].append(prop_content)
+            if last_extinf_meta is not None:
+                last_extinf_meta['kodiprops'] = copy.deepcopy(current_channel['kodiprops'])
             
         elif line.startswith('#EXTHTTP:'):
             http_content = line[len('#EXTHTTP:'):].strip()
             if 'exthttps' not in current_channel:
                 current_channel['exthttps'] = []
             current_channel['exthttps'].append(http_content)
+            if last_extinf_meta is not None:
+                last_extinf_meta['exthttps'] = copy.deepcopy(current_channel['exthttps'])
             # Also extract headers from EXTHTTP if it is valid JSON
             try:
                 import json
@@ -129,35 +143,46 @@ def parse_m3u(content):
                             current_channel['headers']['Origin'] = str(v)
                         else:
                             current_channel['headers'][k] = str(v)
+                    if last_extinf_meta is not None:
+                        last_extinf_meta['headers'] = copy.deepcopy(current_channel['headers'])
             except Exception:
                 pass
             
         elif not line.startswith('#'):
-            if 'name' not in current_channel:
-                current_channel['name'] = f"Channel {len(channels) + 1}"
-            if 'logo' not in current_channel:
-                current_channel['logo'] = ""
-            if 'group' not in current_channel:
-                current_channel['group'] = "General"
+            # Stream URL line
+            if current_channel:
+                channel_to_add = copy.deepcopy(current_channel)
+                last_extinf_meta = copy.deepcopy(current_channel)
+            elif last_extinf_meta:
+                channel_to_add = copy.deepcopy(last_extinf_meta)
+            else:
+                channel_to_add = {}
+
+            if 'name' not in channel_to_add or not channel_to_add['name']:
+                channel_to_add['name'] = f"Channel {len(channels) + 1}"
+            if 'logo' not in channel_to_add:
+                channel_to_add['logo'] = ""
+            if 'group' not in channel_to_add or not channel_to_add['group']:
+                channel_to_add['group'] = "General"
                 
-            current_channel['url'] = line
-            current_channel['url_raw'] = line
+            channel_to_add['url'] = line
+            channel_to_add['url_raw'] = line
             
             # Handle inline User-Agent or custom header options like url|User-Agent=... or url|x-forwarded-for:value
             if '|' in line:
                 parts = line.split('|')
-                current_channel['url'] = parts[0]
-                if 'headers' not in current_channel:
-                    current_channel['headers'] = {}
+                channel_to_add['url'] = parts[0]
+                if 'headers' not in channel_to_add:
+                    channel_to_add['headers'] = {}
                 for part in parts[1:]:
                     if '=' in part:
                         k, v = part.split('=', 1)
-                        current_channel['headers'][k.strip()] = v.strip()
+                        channel_to_add['headers'][k.strip()] = v.strip()
                     elif ':' in part:
                         k, v = part.split(':', 1)
-                        current_channel['headers'][k.strip()] = v.strip()
+                        channel_to_add['headers'][k.strip()] = v.strip()
             
-            channels.append(current_channel)
+            channels.append(channel_to_add)
             current_channel = {}
             
     return channels
