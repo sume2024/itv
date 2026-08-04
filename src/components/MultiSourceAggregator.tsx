@@ -56,8 +56,8 @@ export const MultiSourceAggregator: React.FC<MultiSourceAggregatorProps> = ({
   const [inputMode, setInputMode] = useState<'preset' | 'url' | 'upload' | 'text'>('preset');
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Rename variant suffix option
-  const [renameVariantsWithSuffix, setRenameVariantsWithSuffix] = useState(true);
+  // Rename variant suffix option (default false so all stream URLs use the exact same channel name)
+  const [renameVariantsWithSuffix, setRenameVariantsWithSuffix] = useState(false);
 
   // Merged result state
   const [mergeResult, setMergeResult] = useState<MergeResult | null>(null);

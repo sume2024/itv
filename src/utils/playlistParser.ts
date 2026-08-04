@@ -8,6 +8,7 @@ export function parseM3U(m3uContent: string): Channel[] {
   const lines = m3uContent.split(/\r?\n/);
   
   let currentChannel: Partial<Channel> = {};
+  let lastExtinfInfo: Partial<Channel> | null = null;
   
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
@@ -114,42 +115,110 @@ export function parseM3U(m3uContent: string): Channel[] {
       }
     } else if (line && !line.startsWith('#')) {
       // This is the stream URL
-      currentChannel.url = line;
-      currentChannel.url_raw = line;
+      let channelToAdd: Partial<Channel> = {};
+      if (currentChannel.name || currentChannel.logo || currentChannel.group) {
+        channelToAdd = { ...currentChannel };
+        lastExtinfInfo = { ...currentChannel };
+      } else if (lastExtinfInfo) {
+        // Reuse metadata from previous EXTINF line for multiple stream URLs under same channel
+        channelToAdd = { ...lastExtinfInfo };
+      }
+
+      channelToAdd.url = line;
+      channelToAdd.url_raw = line;
       
-      if (!currentChannel.name) {
-        currentChannel.name = `Channel ${channels.length + 1}`;
+      if (!channelToAdd.name) {
+        channelToAdd.name = `Channel ${channels.length + 1}`;
       }
-      if (!currentChannel.logo) {
-        currentChannel.logo = '';
+      if (!channelToAdd.logo) {
+        channelToAdd.logo = '';
       }
-      if (!currentChannel.group) {
-        currentChannel.group = 'General';
+      if (!channelToAdd.group) {
+        channelToAdd.group = 'General';
       }
       
       // Handle inline User-Agent or custom header options
       if (line.includes('|')) {
         const parts = line.split('|');
-        currentChannel.url = parts[0];
-        currentChannel.headers = currentChannel.headers || {};
+        channelToAdd.url = parts[0];
+        channelToAdd.headers = channelToAdd.headers || {};
         for (let p = 1; p < parts.length; p++) {
           const part = parts[p];
           if (part.includes('=')) {
             const [k, v] = part.split('=');
-            currentChannel.headers[k.trim()] = v.trim();
+            channelToAdd.headers[k.trim()] = v.trim();
           } else if (part.includes(':')) {
             const [k, v] = part.split(':');
-            currentChannel.headers[k.trim()] = v.trim();
+            channelToAdd.headers[k.trim()] = v.trim();
           }
         }
       }
       
-      channels.push(currentChannel as Channel);
+      channels.push(channelToAdd as Channel);
       currentChannel = {};
     }
   }
   
   return channels;
+}
+
+/**
+  * Helper to extract all stream URLs from a JSON item (arrays, objects, or strings)
+  */
+function extractStreamUrls(item: any): string[] {
+  const urls: string[] = [];
+  const priorityKeys = [
+    'video_url', 'videoUrl', 'video_urls', 'videoUrls',
+    'pub_url', 'pubUrl', 'dai_url', 'daiUrl',
+    'url', 'urls', 'link', 'links', 'stream', 'streams',
+    'stream_url', 'stream_link', 'source', 'sources',
+    'uri', 'uris', 'm3u8', 'm3u8_url', 'streamUrl', 'streamLink',
+    'play_url', 'playUrl'
+  ];
+
+  for (const k of priorityKeys) {
+    if (!item[k]) continue;
+    const val = item[k];
+    
+    if (Array.isArray(val)) {
+      for (const elem of val) {
+        if (typeof elem === 'string' && elem.trim()) {
+          urls.push(elem.trim());
+        } else if (elem && typeof elem === 'object') {
+          const subKeys = ['url', 'stream', 'link', 'source', 'uri', 'video_url', 'm3u8', 'pub_url', 'dai_url'];
+          for (const sk of subKeys) {
+            if (elem[sk] && typeof elem[sk] === 'string' && elem[sk].trim()) {
+              urls.push(elem[sk].trim());
+              break;
+            }
+          }
+        }
+      }
+    } else if (typeof val === 'string' && val.trim()) {
+      const trimmed = val.trim();
+      if (trimmed.includes('\n')) {
+        for (const line of trimmed.split(/\r?\n/)) {
+          if (line.trim()) urls.push(line.trim());
+        }
+      } else {
+        urls.push(trimmed);
+      }
+    }
+  }
+
+  // Deduplicate preserving order
+  const uniqueUrls: string[] = [];
+  for (const u of urls) {
+    if (u && !uniqueUrls.includes(u)) {
+      uniqueUrls.push(u);
+    }
+  }
+
+  if (uniqueUrls.length === 0) {
+    uniqueUrls.push('https://upcoming-match-no-stream.m3u8');
+  }
+
+  return uniqueUrls;
 }
 
 /**
@@ -214,20 +283,8 @@ export function parseJSONPlaylist(jsonObj: any): Channel[] {
       }
     }
     
-    // Find stream URL
-    const urlKeys = ['video_url', 'videoUrl', 'pub_url', 'pubUrl', 'dai_url', 'daiUrl', 'url', 'link', 'stream', 'stream_url', 'stream_link', 'source', 'uri', 'm3u8', 'm3u8_url', 'streamUrl', 'streamLink'];
-    let url = '';
-    for (const k of urlKeys) {
-      if (item[k]) {
-        url = String(item[k]);
-        break;
-      }
-    }
-    
-    // Fallback if URL is empty (e.g. upcoming event)
-    if (!url) {
-      url = 'https://upcoming-match-no-stream.m3u8';
-    }
+    // Extract stream URLs (may be multiple URLs in array, objects or string)
+    const streamUrls = extractStreamUrls(item);
     
     // Find logo
     const logoKeys = ['logo', 'image', 'logo_url', 'thumbnail', 'img', 'icon', 'channel_logo', 'poster', 'logoUrl', 'imageUrl', 'src'];
@@ -272,10 +329,12 @@ export function parseJSONPlaylist(jsonObj: any): Channel[] {
       }
     }
     
-    // If we have a URL, add it
-    if (url) {
+    // For every stream URL found in this item, add an entry with the EXACT SAME channel name
+    const channelName = name || `Channel ${channels.length + 1}`;
+    for (const url of streamUrls) {
+      if (!url) continue;
       channels.push({
-        name: name || `Channel ${channels.length + 1}`,
+        name: channelName,
         logo: logo || '',
         url,
         group: group || 'General',
