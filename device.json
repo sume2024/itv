@@ -10,7 +10,7 @@
     },
     {
       "name": "third_playlist",
-      "url": "https://raw.githubusercontent.com/famelack/famelack-data/main/tv/raw/categories/music.json"
+      "url": "#"
     }
   ]
 }
