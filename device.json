@@ -10,7 +10,7 @@
     },
     {
       "name": "third_playlist",
-      "url": "https://raw.githubusercontent.com/ireentv/IreenTv-Auto-Update-Json-M3u-Playlist/main/Live_TV.m3u"
+      "url": "#"
     }
   ]
 }
