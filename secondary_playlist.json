@@ -7,7 +7,7 @@
   "version": "1.0",
   "name": "secondary_playlist",
   "channels_amount": 128,
-  "Last_update": "2026-08-05 04:16:43 AM",
+  "Last_update": "2026-08-05 07:16:39 AM",
   "channels": [
     {
       "name": "G-Series",
@@ -19,9 +19,9 @@
     {
       "name": "BTV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778082545894.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1725/output/index.m3u8",
+      "url": "http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=btv_news&format=.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1725/output/index.m3u8",
+      "url_raw": "http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=btv_news&format=.m3u8",
       "attrs": {
         "tvg-id": "240000"
       }
@@ -29,16 +29,16 @@
     {
       "name": "BTV National",
       "logo": "https://d38ll44lbmt52p.cloudfront.net/cms/channel_poster/1677040358634_BTVogo.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8",
+      "url": "http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=btv_national_hd&format=.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8"
+      "url_raw": "http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=btv_national_hd&format=.m3u8"
     },
     {
       "name": "Channel 1",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/%E0%A6%9A%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B2_%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8",
+      "url": "https://sm-monirul.top/@monirul_Islam_SM/play/jamuna_tv.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8",
+      "url_raw": "https://sm-monirul.top/@monirul_Islam_SM/play/jamuna_tv.m3u8",
       "attrs": {
         "tvg-id": "98000"
       }
@@ -46,16 +46,16 @@
     {
       "name": "Somoy TV",
       "logo": "https://assets-prod.services.toffeelive.com//Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png",
-      "url": "https://live.thebosstv.com:30443/dwlive/Somoy-TV/chunks.m3u8",
+      "url": "https://sm-monirul.top/@monirul_Islam_SM/play/somoy_tv.m3u8",
       "group": "Bangla",
-      "url_raw": "https://live.thebosstv.com:30443/dwlive/Somoy-TV/chunks.m3u8"
+      "url_raw": "https://sm-monirul.top/@monirul_Islam_SM/play/somoy_tv.m3u8"
     },
     {
       "name": "Jamuna TV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560213832.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8",
+      "url": "https://sm-monirul.top/@monirul_Islam_SM/play/jamuna_tv.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8",
+      "url_raw": "https://sm-monirul.top/@monirul_Islam_SM/play/jamuna_tv.m3u8",
       "attrs": {
         "tvg-id": "97000"
       }
@@ -63,9 +63,9 @@
     {
       "name": "DBC News HD",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186306600.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/index.m3u8",
+      "url": "http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=dbc_news&format=.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/index.m3u8",
+      "url_raw": "http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=dbc_news&format=.m3u8",
       "attrs": {
         "tvg-id": "185000"
       }
@@ -83,9 +83,9 @@
     {
       "name": "Ekattor HD",
       "logo": "https://cdn.ekattorbd.com/contents/cache/images/1200x630x1/uploads/media/2023/08/13/default-f5a63c8327b98eafee564f28c3a9ebdb.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8",
+      "url": "https://sm-monirul.top/@monirul_Islam_SM/play/ekattor_tv.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8",
+      "url_raw": "https://sm-monirul.top/@monirul_Islam_SM/play/ekattor_tv.m3u8",
       "attrs": {
         "tvg-id": "102000"
       }
@@ -93,9 +93,9 @@
     {
       "name": "Channel 24 HD",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8",
+      "url": "https://stream.ottplus.live/live/channel_24_abr/index.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8",
+      "url_raw": "https://stream.ottplus.live/live/channel_24_abr/index.m3u8",
       "attrs": {
         "tvg-id": "94000"
       }
@@ -103,9 +103,9 @@
     {
       "name": "ATN News",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1739962961772.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnws-sg.stream/tracks-v1a1/mono.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnws-sg.stream/tracks-v1a1/mono.m3u8",
       "attrs": {
         "tvg-id": "93000"
       }
@@ -123,9 +123,9 @@
     {
       "name": "News 24 HD",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186895850.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8",
+      "url": "http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=news_24_bd&format=.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8",
+      "url_raw": "http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=news_24_bd&format=.m3u8",
       "attrs": {
         "tvg-id": "186000"
       }
@@ -133,9 +133,9 @@
     {
       "name": "Star News",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189826301.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/index.m3u8",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/starnewsbd.stream/tracks-v1a1/mono.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/index.m3u8",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/starnewsbd.stream/tracks-v1a1/mono.m3u8",
       "attrs": {
         "tvg-id": "191000"
       }
@@ -193,9 +193,9 @@
     {
       "name": "Bangla Vision",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735561344354.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8",
+      "url": "http://playshare.co:8080/live/9585959/969659955/426.ts",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8",
+      "url_raw": "http://playshare.co:8080/live/9585959/969659955/426.ts",
       "attrs": {
         "tvg-id": "100000"
       }
@@ -203,9 +203,9 @@
     {
       "name": "NTV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8",
+      "url": "https://sm-monirul.top/@monirul_Islam_SM/play/n_tv.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8",
+      "url_raw": "https://sm-monirul.top/@monirul_Islam_SM/play/n_tv.m3u8",
       "attrs": {
         "tvg-id": "99000"
       }
@@ -213,9 +213,9 @@
     {
       "name": "Al Jazeera",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1777454219313.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1721/output/index.m3u8",
+      "url": "http://103.175.73.12:8080/live/318/318_0.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1721/output/index.m3u8",
+      "url_raw": "http://103.175.73.12:8080/live/318/318_0.m3u8",
       "attrs": {
         "tvg-id": "169000"
       }
@@ -233,9 +233,9 @@
     {
       "name": "Independent TV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8",
+      "url": "https://sm-monirul.top/@monirul_Islam_SM/play/independent_tv.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8",
+      "url_raw": "https://sm-monirul.top/@monirul_Islam_SM/play/independent_tv.m3u8",
       "attrs": {
         "tvg-id": "247000"
       }
