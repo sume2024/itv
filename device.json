@@ -6,11 +6,11 @@
     },
     {
       "name": "secondary_playlist",
-      "url": "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/SM%20All%20TV.m3u"
+      "url": "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Combined_Live_TV.m3u"
     },
     {
       "name": "third_playlist",
-      "url": "#"
+      "url": "https://raw.githubusercontent.com/ireentv/IreenTv-Auto-Update-Json-M3u-Playlist/main/Live_TV.m3u"
     }
   ]
 }
