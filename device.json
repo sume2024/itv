@@ -12,21 +12,5 @@
       "name": "third_playlist",
       "url": "https://raw.githubusercontent.com/Kkbrothers8795/world_ip_tv/master/output/sports.m3u"
     }
-    {
-      "name": "muc_playlist",
-      "url": "https://raw.githubusercontent.com/Kkbrothers8795/world_ip_tv/master/output/music.m3u"
-    },
-    {
-      "name": "mov_playlist",
-      "url": "https://raw.githubusercontent.com/Kkbrothers8795/world_ip_tv/master/output/movies.m3u"
-    },
-    {
-      "name": "dec_playlist",
-      "url": "https://raw.githubusercontent.com/Kkbrothers8795/world_ip_tv/master/output/documentary.m3u"
-    },
-    {
-      "name": "kid_playlist",
-      "url": "https://raw.githubusercontent.com/Kkbrothers8795/world_ip_tv/master/output/kids.m3u"
-    }
   ]
 }
