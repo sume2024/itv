@@ -6,8 +6,8 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "unified_playlist",
-  "channels_amount": 277,
-  "Last_update": "2026-08-07 12:59:30 PM",
+  "channels_amount": 286,
+  "Last_update": "2026-08-07 06:54:07 PM",
   "channels": [
     {
       "name": "Peace TV Bangla",
@@ -60,6 +60,18 @@
       "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
       "group": "Sports",
       "url_raw": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
+      "attrs": {
+        "tvg-id": "t sports",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "T Sports HD bd",
+      "logo": "https://i.ibb.co.com/ymqQ0QZd/T-Sports-HD.png",
+      "url": "https://tvsen7.aynascope.net/Sports1/index.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen7.aynascope.net/Sports1/index.m3u8",
       "attrs": {
         "tvg-id": "t sports",
         "source-playlist": "default_playlist",
@@ -186,6 +198,18 @@
     {
       "name": "MAASRANGA HD",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png",
+      "url": "https://tvsen5.aynascope.net/maasrangatv/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://tvsen5.aynascope.net/maasrangatv/index.m3u8",
+      "attrs": {
+        "tvg-id": "MAASRANGA.bd",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "MAASRANGA HD",
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png",
       "url": "https://mtv.sunplex.live/MAASRANGA/index.m3u8",
       "group": "Bangla",
       "url_raw": "https://mtv.sunplex.live/MAASRANGA/index.m3u8",
@@ -260,6 +284,18 @@
       "url_raw": "https://tvsen5.aynaott.com/banglavision/index.m3u8",
       "attrs": {
         "tvg-id": "100000",
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "NTV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
+      "url": "https://tvsen5.aynascope.net/xV4jEKf3D9zc/index.fmp4.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://tvsen5.aynascope.net/xV4jEKf3D9zc/index.fmp4.m3u8",
+      "attrs": {
+        "tvg-id": "99000",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -2285,6 +2321,72 @@
       }
     },
     {
+      "name": "TSN 1",
+      "logo": "https://s3.aynaott.com/storage/59fe7ff434fed04ecec29b4d737ebc95",
+      "url": "https://tvsen7.aynascope.net/tsn1/index.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen7.aynascope.net/tsn1/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "TSN 1",
+      "logo": "https://s3.aynaott.com/storage/59fe7ff434fed04ecec29b4d737ebc95",
+      "url": "https://tvsen5.aynaott.com/tsn1/tracks-v1a1/mono.ts.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen5.aynaott.com/tsn1/tracks-v1a1/mono.ts.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "TSN 2",
+      "logo": "https://s3.aynaott.com/storage/17642cb60c2af7fc36ca1e08cc54fdae",
+      "url": "https://tvsen7.aynascope.net/tsn2/index.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen7.aynascope.net/tsn2/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "TSN 2",
+      "logo": "https://s3.aynaott.com/storage/17642cb60c2af7fc36ca1e08cc54fdae",
+      "url": "https://tvsen5.aynaott.com/tsn2/tracks-v1a1/mono.ts.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen5.aynaott.com/tsn2/tracks-v1a1/mono.ts.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "TSN 3",
+      "logo": "https://s3.aynaott.com/storage/1cb10107a47db353e35ad78d3160eda7",
+      "url": "https://tvsen7.aynascope.net/tsn3/index.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen7.aynascope.net/tsn3/index.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "TSN 3",
+      "logo": "https://s3.aynaott.com/storage/1cb10107a47db353e35ad78d3160eda7",
+      "url": "https://tvsen5.aynaott.com/tsn3/tracks-v1a1/mono.ts.m3u8",
+      "group": "Sports",
+      "url_raw": "https://tvsen5.aynaott.com/tsn3/tracks-v1a1/mono.ts.m3u8",
+      "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
       "name": "5Sport (1080p)",
       "logo": "https://i.imgur.com/dRVsB89.png",
       "url": "https://davidhzhdhd-my-telegram-bot.hf.space/hls-relay/stream.mcquack.net/41/index.m3u8",
@@ -2465,9 +2567,9 @@
     {
       "name": "Star Sports 1",
       "logo": "https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png",
-      "url": "http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8",
+      "url": "https://tvsen7.aynascope.net/sspts1/index.m3u8",
       "group": "Sports",
-      "url_raw": "http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8",
+      "url_raw": "https://tvsen7.aynascope.net/sspts1/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
         "playlist-role": "default"
@@ -2476,9 +2578,9 @@
     {
       "name": "Star Sports 1",
       "logo": "https://i.ibb.co.com/YFbPQ6dN/Star-Sports-1-HD.png",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809383.m3u8",
+      "url": "http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8",
       "group": "Sports",
-      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809383.m3u8",
+      "url_raw": "http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
         "playlist-role": "default"
@@ -2498,9 +2600,9 @@
     {
       "name": "Star Sports 2",
       "logo": "https://i.ibb.co.com/kV7KtjH0/star2.png",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809384.m3u8",
+      "url": "https://tvsen7.aynascope.net/ssport2hd/index.m3u8",
       "group": "Sports",
-      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/cha-spr7/809384.m3u8",
+      "url_raw": "https://tvsen7.aynascope.net/ssport2hd/index.m3u8",
       "attrs": {
         "source-playlist": "default_playlist",
         "playlist-role": "default"
