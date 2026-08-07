@@ -6,29 +6,22 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "default_playlist",
-  "channels_amount": 290,
-  "Last_update": "2026-08-07 06:54:07 PM",
+  "channels_amount": 317,
+  "Last_update": "2026-08-07 08:29:04 PM",
   "channels": [
-    {
-      "name": "Peace TV Bangla",
-      "logo": "https://i.ibb.co/Gfw89mC/20240804-033102.png",
-      "url": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8",
-      "group": "Relagion Channel",
-      "url_raw": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8"
-    },
-    {
-      "name": "Peace TV Bangla",
-      "logo": "https://i.ibb.co/Gfw89mC/20240804-033102.png",
-      "url": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v1a1/mono.m3u8",
-      "group": "Relagion Channel",
-      "url_raw": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v1a1/mono.m3u8"
-    },
     {
       "name": "Saudi Quran",
       "logo": "https://yt3.ggpht.com/ytc/AMLnZu_Gxy8ywjMY6_YPX-1uYtUGA56FOfDoBsH62-ekNA=s900-c-k-c0x00ffffff-no-rj",
       "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8",
       "group": "Islamic",
       "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8"
+    },
+    {
+      "name": "BTV National",
+      "logo": "https://d38ll44lbmt52p.cloudfront.net/cms/channel_poster/1677040358634_BTVogo.png",
+      "url": "https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8"
     },
     {
       "name": "T Sports HD bd",
@@ -63,9 +56,19 @@
     {
       "name": "Somoy TV",
       "logo": "https://ah-media-eug.pages.dev/logos/SomoyTV.png",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8",
+      "url": "https://tvsen6.aynaott.com/4XcqdovJzbbC9WdJA9gk/index.m3u8",
       "group": "Bangla",
-      "url_raw": "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8"
+      "url_raw": "https://tvsen6.aynaott.com/4XcqdovJzbbC9WdJA9gk/index.m3u8"
+    },
+    {
+      "name": "Jamuna TV",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560213832.png",
+      "url": "https://stream.ottplus.live/live/jamuna_tv_abr/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://stream.ottplus.live/live/jamuna_tv_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": "97000"
+      }
     },
     {
       "name": "Jamuna TV",
@@ -98,6 +101,26 @@
       }
     },
     {
+      "name": "Ekattor HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1739963327549.png",
+      "url": "https://stream.ottplus.live/live/ekattor_tv_abr/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://stream.ottplus.live/live/ekattor_tv_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": "102000"
+      }
+    },
+    {
+      "name": "Channel 24 HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
+      "url": "https://stream.ottplus.live/live/channel_24_abr/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://stream.ottplus.live/live/channel_24_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": "94000"
+      }
+    },
+    {
       "name": "News 24 HD",
       "logo": "",
       "url": "http://103.89.248.130:8082/NEWS-24/index.m3u8",
@@ -111,9 +134,30 @@
     {
       "name": "Ekhon TV",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png",
+      "url": "https://stream.ottplus.live/live/ekhon_tv_abr/live/ekhon_tv_hd_720/chunks.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://stream.ottplus.live/live/ekhon_tv_abr/live/ekhon_tv_hd_720/chunks.m3u8"
+    },
+    {
+      "name": "Ekhon TV",
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png",
       "url": "http://103.89.248.130:8082/EKHON-TV/index.m3u8",
       "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/EKHON-TV/index.m3u8"
+    },
+    {
+      "name": "Asian TV",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg",
+      "url": "https://stream.ottplus.live/live/asian_tv_abr/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://stream.ottplus.live/live/asian_tv_abr/index.m3u8"
+    },
+    {
+      "name": "Asian TV",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg",
+      "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/tracks-v1a1/mono.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/tracks-v1a1/mono.m3u8"
     },
     {
       "name": "Green tv",
@@ -135,6 +179,16 @@
       "url": "https://boishakhi.sonarbanglatv.com/boishakhi/boishakhitv/index.m3u8",
       "group": "BANGLA",
       "url_raw": "https://boishakhi.sonarbanglatv.com/boishakhi/boishakhitv/index.m3u8"
+    },
+    {
+      "name": "Desh TV",
+      "logo": "https://i.postimg.cc/wvBbd56q/Desh-TV.jpg",
+      "url": "https://stream.ottplus.live/live/desh_tv_abr/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://stream.ottplus.live/live/desh_tv_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": "deshitv.bd"
+      }
     },
     {
       "name": "Desh TV",
@@ -198,6 +252,36 @@
       "url_raw": "http://103.89.248.130:8082/MY-TV/index.m3u8"
     },
     {
+      "name": "NEXUS TV",
+      "logo": "https://i.imgur.com/sqeIrMo.jpeg",
+      "url": "https://stream.ottplus.live/live/nexus_tv_abr/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://stream.ottplus.live/live/nexus_tv_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": "NEXUS TV"
+      }
+    },
+    {
+      "name": "Deepto TV HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
+      "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
+      "attrs": {
+        "tvg-id": "134000"
+      }
+    },
+    {
+      "name": "Deepto TV HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
+      "url": "http://103.165.93.31:8095/deepto/tracks-v1a1/mono.m3u8",
+      "group": "Bangla",
+      "url_raw": "http://103.165.93.31:8095/deepto/tracks-v1a1/mono.m3u8",
+      "attrs": {
+        "tvg-id": "134000"
+      }
+    },
+    {
       "name": "SRK TV",
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1746005940155.png",
       "url": "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8",
@@ -205,6 +289,16 @@
       "url_raw": "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8",
       "attrs": {
         "tvg-id": "141000"
+      }
+    },
+    {
+      "name": "Channel I HD",
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png",
+      "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8",
+      "attrs": {
+        "tvg-id": "132000"
       }
     },
     {
@@ -306,6 +400,13 @@
     {
       "name": "Bijoy TV",
       "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
+      "url": "https://stream.ottplus.live/live/bijoy_tv_abr/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://stream.ottplus.live/live/bijoy_tv_abr/index.m3u8"
+    },
+    {
+      "name": "Bijoy TV",
+      "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
       "url": "http://103.89.248.130:8082/BIJOY-TV/index.m3u8",
       "group": "Bangla",
       "url_raw": "http://103.89.248.130:8082/BIJOY-TV/index.m3u8"
@@ -369,9 +470,9 @@
     {
       "name": "Global TV",
       "logo": "https://i.ibb.co.com/Q7Q7X64N/Global-TV.png",
-      "url": "http://103.89.248.130:8082/GLOBAL-TV/index.m3u8",
+      "url": "https://stream.ottplus.live/live/global_tv_abr/index.m3u8",
       "group": "Bangla",
-      "url_raw": "http://103.89.248.130:8082/GLOBAL-TV/index.m3u8"
+      "url_raw": "https://stream.ottplus.live/live/global_tv_abr/index.m3u8"
     },
     {
       "name": "Global TV",
@@ -379,6 +480,20 @@
       "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/Global-tv.stream/tracks-v1a1/mono.m3u8",
       "group": "Bangla",
       "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/Global-tv.stream/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "Global TV",
+      "logo": "https://i.ibb.co.com/Q7Q7X64N/Global-TV.png",
+      "url": "http://103.89.248.130:8082/GLOBAL-TV/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "http://103.89.248.130:8082/GLOBAL-TV/index.m3u8"
+    },
+    {
+      "name": "Mohona TV",
+      "logo": "https://i.ibb.co.com/Ndvm37Vr/Mohona-TV.png",
+      "url": "https://stream.ottplus.live/live/mohona_tv_abr/index.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://stream.ottplus.live/live/mohona_tv_abr/index.m3u8"
     },
     {
       "name": "Mohona TV",
@@ -414,6 +529,16 @@
       "url": "https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8",
       "group": "Bangla",
       "url_raw": "https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "name": "NRB HD",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctL8rD_FYfZ1rHUDhs_Q3rJwRYGSDbMX0-XHpHFXLjeTC2D9iYwo8Gq3J&s=10",
+      "url": "https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8",
+      "group": "Bangla",
+      "url_raw": "https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8",
+      "attrs": {
+        "tvg-server": "Server 1"
+      }
     },
     {
       "name": "DesheBideshe TV",
@@ -489,11 +614,32 @@
       "url_raw": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel16bd.stream/tracks-v1a1/mono.m3u8"
     },
     {
+      "name": "Peace TV Bangla",
+      "logo": "https://i.ibb.co/Gfw89mC/20240804-033102.png",
+      "url": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8",
+      "group": "Relagion Channel",
+      "url_raw": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8"
+    },
+    {
+      "name": "Peace TV Bangla",
+      "logo": "https://i.ibb.co/Gfw89mC/20240804-033102.png",
+      "url": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v1a1/mono.m3u8",
+      "group": "Relagion Channel",
+      "url_raw": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v1a1/mono.m3u8"
+    },
+    {
       "name": "BENGLAI| TATA SKY BANGLA HD",
       "logo": "http://103.176.90.118/picons/logos/logos/TATA-SKY.png",
       "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155775.m3u8",
       "group": "Indian Bangla",
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155775.m3u8"
+    },
+    {
+      "name": "Zee Bangla Cinema",
+      "logo": "https://i.ibb.co.com/LzpTBRRn/zee-bangla-sonar-in.png",
+      "url": "https://stream.ottplus.live/live/zee_bangla_cinema_abr/live/zee_bangla_cinema_720/chunks.m3u8",
+      "group": "Indian Bangla",
+      "url_raw": "https://stream.ottplus.live/live/zee_bangla_cinema_abr/live/zee_bangla_cinema_720/chunks.m3u8"
     },
     {
       "name": "Zee Bangla Cinema",
@@ -617,9 +763,9 @@
     {
       "name": "Sony Aath",
       "logo": "https://i.ibb.co.com/FLh8qFS9/Sony-AATH-Logo-2022.png",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1112197.m3u8",
+      "url": "https://stream.ottplus.live/live/sony_aath_abr/index.m3u8",
       "group": "Indian Bangla",
-      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1112197.m3u8"
+      "url_raw": "https://stream.ottplus.live/live/sony_aath_abr/index.m3u8"
     },
     {
       "name": "Colors Bangla HD",
@@ -666,16 +812,57 @@
     {
       "name": "Zee Cinema HD",
       "logo": "https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/list/09zeecinemahdzeecinemahd.jpg",
+      "url": "https://stream.ottplus.live/live/zee_cinema_hd_abr/index.m3u8",
+      "group": "Hindi Movies",
+      "url_raw": "https://stream.ottplus.live/live/zee_cinema_hd_abr/index.m3u8"
+    },
+    {
+      "name": "Zee Cinema",
+      "logo": "https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/list/09zeecinemahdzeecinemahd.jpg",
       "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8",
       "group": "Hindi Movies",
       "url_raw": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8"
     },
     {
-      "name": "Zee Cinema",
-      "logo": "https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/list/09zeecinemahdzeecinemahd.jpg",
-      "url": "https://stream.ottplus.bd/live/zee_cinema_hd_abr/live/zee_cinema_hd_720/chunks.m3u8",
+      "name": "Zee Bollywood",
+      "logo": "https://i.postimg.cc/52SzwQF1/20251222_220548.png",
+      "url": "https://stream.ottplus.live/live/zee_bollywood_abr/index.m3u8",
       "group": "Hindi Movies",
-      "url_raw": "https://stream.ottplus.bd/live/zee_cinema_hd_abr/live/zee_cinema_hd_720/chunks.m3u8"
+      "url_raw": "https://stream.ottplus.live/live/zee_bollywood_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": ""
+      }
+    },
+    {
+      "name": "Zee Action",
+      "logo": "https://i.ibb.co/39yLXH2v/unnamed.png",
+      "url": "https://stream.ottplus.live/live/zee_action_abr/index.m3u8",
+      "group": "Hindi Movies",
+      "url_raw": "https://stream.ottplus.live/live/zee_action_abr/index.m3u8"
+    },
+    {
+      "name": "Zing",
+      "logo": "https://i.ibb.co/39yLXH2v/unnamed.png",
+      "url": "https://stream.ottplus.live/live/zing_sd_abr/index.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://stream.ottplus.live/live/zing_sd_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": "585",
+        "tvg-type": "Music",
+        "tvg-language": "Hindi"
+      }
+    },
+    {
+      "name": "Zee Anmol",
+      "logo": "https://i.ibb.co/39yLXH2v/unnamed.png",
+      "url": "https://stream.ottplus.live/live/zee_anmol_abr/index.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://stream.ottplus.live/live/zee_anmol_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": "473",
+        "tvg-type": "Entertainment",
+        "tvg-language": "Hindi"
+      }
     },
     {
       "name": "Sony Max HD",
@@ -713,6 +900,13 @@
       "url_raw": "https://stream.ottplus.bd/live/zee_action_abr/index.m3u8"
     },
     {
+      "name": "& Pictures HD",
+      "logo": "https://images.toffeelive.com/images/program/4570/logo/240x240/mobile_logo_000080001675856893.png",
+      "url": "https://stream.ottplus.bd/live/and_picture_hd_abr/index.m3u8",
+      "group": "MOVIE",
+      "url_raw": "https://stream.ottplus.bd/live/and_picture_hd_abr/index.m3u8"
+    },
+    {
       "name": "Star Gold HD",
       "logo": "https://imgur.com/56bLnJP.png",
       "url": "http://103.89.248.130:8082/star-gold/index.m3u8",
@@ -722,9 +916,9 @@
     {
       "name": "Hum TV HD",
       "logo": "https://i.ibb.co.com/Z6HYNVsD/download.jpg",
-      "url": "https://g4wlkwx8l23a-hls-live.5centscdn.com/HUM/271ddf829afeece44d8732757fba1a66.sdp/HUM/TV1/chunks.m3u8",
+      "url": "https://stream.ottplus.live/live/hum_tv_abr/index.m3u8",
       "group": "Hindi",
-      "url_raw": "https://g4wlkwx8l23a-hls-live.5centscdn.com/HUM/271ddf829afeece44d8732757fba1a66.sdp/HUM/TV1/chunks.m3u8",
+      "url_raw": "https://stream.ottplus.live/live/hum_tv_abr/index.m3u8",
       "attrs": {
         "tvg-id": "207"
       }
@@ -745,6 +939,20 @@
       "url": "https://stream.ottplus.bd/live/sony_ent_sd_abr/index.m3u8",
       "group": "Hindi",
       "url_raw": "https://stream.ottplus.bd/live/sony_ent_sd_abr/index.m3u8"
+    },
+    {
+      "name": "ZEE TV",
+      "logo": "https://ah-media-eug.pages.dev/logos/ZeeTV.png",
+      "url": "https://stream.ottplus.live/live/zee_tv_hd_abr/index.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://stream.ottplus.live/live/zee_tv_hd_abr/index.m3u8"
+    },
+    {
+      "name": "& TV",
+      "logo": "https://ah-media-eug.pages.dev/logos/%26TV.png",
+      "url": "https://stream.ottplus.live/live/and_tv_hd_abr/index.m3u8",
+      "group": "Hindi",
+      "url_raw": "https://stream.ottplus.live/live/and_tv_hd_abr/index.m3u8"
     },
     {
       "name": "&TV International (1080p)",
@@ -1709,11 +1917,14 @@
       "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1104668.m3u8"
     },
     {
-      "name": "TEN SPORTS",
-      "logo": "http://picon.tivi-ott.net:25461/picon/ASIA/PAKISTAN/tensports.png",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/373119.m3u8",
-      "group": "SPORTS",
-      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/spo-s5-n/373119.m3u8"
+      "name": "Ten Cricket",
+      "logo": "https://i.postimg.cc/0yzwt46Q/20241126-220214.png",
+      "url": "https://s2.itcnbd.live/server-2/stream/ten_cricket.m3u8",
+      "group": "𝐒𝐩𝐨𝐫𝐭𝐬",
+      "url_raw": "https://s2.itcnbd.live/server-2/stream/ten_cricket.m3u8",
+      "attrs": {
+        "tvg-id": ""
+      }
     },
     {
       "name": "GEO Super",
@@ -1812,9 +2023,9 @@
     {
       "name": "Sony Ten 1",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156017.m3u8",
+      "url": "https://stream.ottplus.live/live/ten_1_hd_abr/live/ten_1_hd_720/chunks.m3u8",
       "group": "Sports",
-      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156017.m3u8"
+      "url_raw": "https://stream.ottplus.live/live/ten_1_hd_abr/live/ten_1_hd_720/chunks.m3u8"
     },
     {
       "name": "Sony Ten 1",
@@ -1826,9 +2037,9 @@
     {
       "name": "Sony Ten 2",
       "logo": "https://i.ibb.co.com/WNn9Nb8Q/Sony-Sports-Ten-2.webp",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156010.m3u8",
+      "url": "https://stream.ottplus.live/live/ten_2_hd_abr/live/ten_2_hd_720/chunks.m3u8",
       "group": "Sports",
-      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156010.m3u8"
+      "url_raw": "https://stream.ottplus.live/live/ten_2_hd_abr/live/ten_2_hd_720/chunks.m3u8"
     },
     {
       "name": "Sony Ten 2",
@@ -1840,9 +2051,9 @@
     {
       "name": "Sony Ten 3",
       "logo": "https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156024.m3u8",
+      "url": "https://stream.ottplus.live/live/ten_3_hd_abr/live/ten_3_hd_720/chunks.m3u8",
       "group": "Sports",
-      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/156024.m3u8"
+      "url_raw": "https://stream.ottplus.live/live/ten_3_hd_abr/live/ten_3_hd_720/chunks.m3u8"
     },
     {
       "name": "Sony Ten 3",
@@ -1854,9 +2065,9 @@
     {
       "name": "Sony Ten 5",
       "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1104671.m3u8",
+      "url": "https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8",
       "group": "Sports",
-      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/1104671.m3u8"
+      "url_raw": "https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8"
     },
     {
       "name": "PTV Sports",
@@ -1983,6 +2194,36 @@
       "url": "https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/b2048bb8-1686-4432-aa50-647245383e0c/bfc6a36e-c250-4afe-b6c9-2bc57855bb7d/4.m3u8",
       "group": "Sports",
       "url_raw": "https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/b2048bb8-1686-4432-aa50-647245383e0c/bfc6a36e-c250-4afe-b6c9-2bc57855bb7d/4.m3u8"
+    },
+    {
+      "name": "Sony YaY",
+      "logo": "https://i.postimg.cc/jSBDsbBX/20240823_021324.png",
+      "url": "https://stream.ottplus.live/live/sony_yay_abr/live/sony_yay_720/chunks.m3u8",
+      "group": "𝐊𝐢𝐝𝐬",
+      "url_raw": "https://stream.ottplus.live/live/sony_yay_abr/live/sony_yay_720/chunks.m3u8",
+      "attrs": {
+        "tvg-id": ""
+      }
+    },
+    {
+      "name": "Discovery Kids",
+      "logo": "https://i.postimg.cc/wTvMLMp2/20240823_021706.png",
+      "url": "https://stream.ottplus.live/live/discovery_kids_abr/index.m3u8",
+      "group": "𝐊𝐢𝐝𝐬",
+      "url_raw": "https://stream.ottplus.live/live/discovery_kids_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": ""
+      }
+    },
+    {
+      "name": "Pogo",
+      "logo": "https://i.postimg.cc/C1s5Hf5P/20240823_021444.png",
+      "url": "https://stream.ottplus.live/live/pogo_sd_abr/index.m3u8",
+      "group": "𝐊𝐢𝐝𝐬",
+      "url_raw": "https://stream.ottplus.live/live/pogo_sd_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": ""
+      }
     },
     {
       "name": "Rongeen TV",
