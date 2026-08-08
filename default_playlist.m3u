@@ -6,7 +6,7 @@
 # Developer: IreenTechnology
 # Version: 1.0
 # Channels Amount: 331
-# Last Update: 2026-08-07 09:45:09 PM
+# Last Update: 2026-08-08 01:25:06 AM
 
 #EXTINF:-1 tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu_Gxy8ywjMY6_YPX-1uYtUGA56FOfDoBsH62-ekNA=s900-c-k-c0x00ffffff-no-rj" group-title="Islamic" tvg-name="Quran TV",Quran TV
 https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/sharjahtvquranpublish/shqurantv_source/chunks.m3u8
@@ -128,7 +128,7 @@ https://stream.ottplus.bd/live/bangla_tv_hd_abr/index.m3u8
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/5b22893ae4e816ef2cf87e63c96e9e08" group-title="Bangla" tvg-name="Bangla TV",Bangla TV
 https://cdn.ghuddi.live/Bangla_TV/Bangla_TV_BD/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://moviebangla.tv/wp-content/uploads/2024/06/moviebanglatv-logo-2.png" group-title="Bangla" tvg-name="Movie Bangla",Movie Bangla
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png" group-title="Bangla" tvg-name="Movie Bangla",Movie Bangla
 http://alvetv.com/moviebanglatv/8080/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png" group-title="Bangla" tvg-name="Ekushey TV",Ekushey TV
@@ -332,16 +332,13 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/52SzwQF1/20251222_220548.png" group-title="Hindi Movies" tvg-name="Zee Bollywood",Zee Bollywood
 https://stream.ottplus.live/live/zee_bollywood_abr/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/39yLXH2v/unnamed.png" group-title="Hindi Movies" tvg-name="Zee Action",Zee Action
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png" group-title="Hindi Movies" tvg-name="Zee Action",Zee Action
 https://stream.ottplus.live/live/zee_action_abr/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/39yLXH2v/unnamed.png" group-title="Hindi Movies" tvg-name="Zee Action",Zee Action
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png" group-title="Hindi Movies" tvg-name="Zee Action",Zee Action
 https://s2.itcnbd.live/server-2/stream/zee_action.m3u8
 
-#EXTINF:-1 tvg-id="585" tvg-type="Music" tvg-language="Hindi" tvg-logo="https://i.ibb.co/39yLXH2v/unnamed.png" group-title="Hindi" tvg-name="Zing",Zing
-https://stream.ottplus.live/live/zing_sd_abr/index.m3u8
-
-#EXTINF:-1 tvg-id="473" tvg-type="Entertainment" tvg-language="Hindi" tvg-logo="https://i.ibb.co/39yLXH2v/unnamed.png" group-title="Hindi" tvg-name="Zee Anmol",Zee Anmol
+#EXTINF:-1 tvg-id="473" tvg-type="Entertainment" tvg-logo="https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f630a176-73cc-48d7-94cf-69ba0d201b36.png" group-title="Hindi" tvg-name="Zee Anmol",Zee Anmol
 https://stream.ottplus.live/live/zee_anmol_abr/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp" group-title="Hindi Movies" tvg-name="Sony Max HD",Sony Max HD
@@ -436,6 +433,9 @@ https://b.jsrdn.com/strm/channels/9xm/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/PWs3RPy/20240803-105114.png" group-title="Music" tvg-name="9XM HD",9XM HD
 http://103.89.248.130:8082/9XM/index.m3u8
+
+#EXTINF:-1 tvg-id="585" tvg-type="Music" tvg-logo="https://assets-prod.services.toffeelive.com/DK8dd5YBrjBfS2_Ru22e/posters/a89a1e2e-677c-4a8a-9a66-dff5e0b921c8.png" group-title="Music" tvg-name="Zing",Zing
+https://stream.ottplus.live/live/zing_sd_abr/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/E3Mw-3r_cEYc29ivD-rRlhF9RkpgfhZ5BLgi9uFdnyImiUGLNVBv2s8rOxC3ig4iVfxrtxSE=s900-c-k-c0x00ffffff-no-rj" group-title="Music" tvg-name="Saga Music Hindi",Saga Music Hindi
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-sagamusic-xiaomi/playlist.m3u8

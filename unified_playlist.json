@@ -7,7 +7,7 @@
   "version": "1.0",
   "name": "unified_playlist",
   "channels_amount": 329,
-  "Last_update": "2026-08-07 09:45:09 PM",
+  "Last_update": "2026-08-08 01:25:06 AM",
   "channels": [
     {
       "name": "Quran TV",
@@ -476,7 +476,7 @@
     },
     {
       "name": "Movie Bangla",
-      "logo": "https://moviebangla.tv/wp-content/uploads/2024/06/moviebanglatv-logo-2.png",
+      "logo": "https://assets-prod.services.toffeelive.com/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png",
       "url": "http://alvetv.com/moviebanglatv/8080/index.m3u8",
       "group": "Bangla",
       "url_raw": "http://alvetv.com/moviebanglatv/8080/index.m3u8",
@@ -1227,7 +1227,7 @@
     },
     {
       "name": "Zee Action",
-      "logo": "https://i.ibb.co/39yLXH2v/unnamed.png",
+      "logo": "https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png",
       "url": "https://stream.ottplus.live/live/zee_action_abr/index.m3u8",
       "group": "Hindi Movies",
       "url_raw": "https://stream.ottplus.live/live/zee_action_abr/index.m3u8",
@@ -1238,7 +1238,7 @@
     },
     {
       "name": "Zee Action",
-      "logo": "https://i.ibb.co/39yLXH2v/unnamed.png",
+      "logo": "https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png",
       "url": "https://s2.itcnbd.live/server-2/stream/zee_action.m3u8",
       "group": "Hindi Movies",
       "url_raw": "https://s2.itcnbd.live/server-2/stream/zee_action.m3u8",
@@ -1248,29 +1248,14 @@
       }
     },
     {
-      "name": "Zing",
-      "logo": "https://i.ibb.co/39yLXH2v/unnamed.png",
-      "url": "https://stream.ottplus.live/live/zing_sd_abr/index.m3u8",
-      "group": "Hindi",
-      "url_raw": "https://stream.ottplus.live/live/zing_sd_abr/index.m3u8",
-      "attrs": {
-        "tvg-id": "585",
-        "tvg-type": "Music",
-        "tvg-language": "Hindi",
-        "source-playlist": "default_playlist",
-        "playlist-role": "default"
-      }
-    },
-    {
       "name": "Zee Anmol",
-      "logo": "https://i.ibb.co/39yLXH2v/unnamed.png",
+      "logo": "https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f630a176-73cc-48d7-94cf-69ba0d201b36.png",
       "url": "https://stream.ottplus.live/live/zee_anmol_abr/index.m3u8",
       "group": "Hindi",
       "url_raw": "https://stream.ottplus.live/live/zee_anmol_abr/index.m3u8",
       "attrs": {
         "tvg-id": "473",
         "tvg-type": "Entertainment",
-        "tvg-language": "Hindi",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
@@ -1616,6 +1601,19 @@
       "group": "Music",
       "url_raw": "http://103.89.248.130:8082/9XM/index.m3u8",
       "attrs": {
+        "source-playlist": "default_playlist",
+        "playlist-role": "default"
+      }
+    },
+    {
+      "name": "Zing",
+      "logo": "https://assets-prod.services.toffeelive.com/DK8dd5YBrjBfS2_Ru22e/posters/a89a1e2e-677c-4a8a-9a66-dff5e0b921c8.png",
+      "url": "https://stream.ottplus.live/live/zing_sd_abr/index.m3u8",
+      "group": "Music",
+      "url_raw": "https://stream.ottplus.live/live/zing_sd_abr/index.m3u8",
+      "attrs": {
+        "tvg-id": "585",
+        "tvg-type": "Music",
         "source-playlist": "default_playlist",
         "playlist-role": "default"
       }
