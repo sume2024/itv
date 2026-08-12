@@ -6,9 +6,16 @@
   "developer": "IreenTechnology",
   "version": "1.0",
   "name": "default_playlist",
-  "channels_amount": 331,
-  "Last_update": "2026-08-12 01:54:08 PM",
+  "channels_amount": 326,
+  "Last_update": "2026-08-12 03:09:11 PM",
   "channels": [
+    {
+      "name": "IreenTV",
+      "logo": "https://i.ibb.co.com/XkDv6gpS/ireenTV.png",
+      "url": "https://ireentv.pages.dev/promo/intro.mp4",
+      "group": "entertainment",
+      "url_raw": "https://ireentv.pages.dev/promo/intro.mp4"
+    },
     {
       "name": "Quran TV",
       "logo": "https://yt3.ggpht.com/ytc/AMLnZu_Gxy8ywjMY6_YPX-1uYtUGA56FOfDoBsH62-ekNA=s900-c-k-c0x00ffffff-no-rj",
@@ -628,13 +635,6 @@
       "url_raw": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v1a1/mono.m3u8"
     },
     {
-      "name": "BENGLAI| TATA SKY BANGLA HD",
-      "logo": "http://103.176.90.118/picons/logos/logos/TATA-SKY.png",
-      "url": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155775.m3u8",
-      "group": "Indian Bangla",
-      "url_raw": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155775.m3u8"
-    },
-    {
       "name": "Zee Bangla Cinema",
       "logo": "https://i.ibb.co.com/LzpTBRRn/zee-bangla-sonar-in.png",
       "url": "https://stream.ottplus.live/live/zee_bangla_cinema_abr/live/zee_bangla_cinema_720/chunks.m3u8",
@@ -848,17 +848,17 @@
       }
     },
     {
-      "name": "Zee Action",
-      "logo": "https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png",
+      "name": "ZEE ACTION",
+      "logo": "https://ah-media-eug.pages.dev/logos/ZeeAction.png",
       "url": "https://stream.ottplus.live/live/zee_action_abr/index.m3u8",
-      "group": "Hindi Movies",
+      "group": "MOVIE",
       "url_raw": "https://stream.ottplus.live/live/zee_action_abr/index.m3u8"
     },
     {
-      "name": "Zee Action",
-      "logo": "https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png",
+      "name": "ZEE ACTION",
+      "logo": "https://ah-media-eug.pages.dev/logos/ZeeAction.png",
       "url": "https://s2.itcnbd.live/server-2/stream/zee_action.m3u8",
-      "group": "Hindi Movies",
+      "group": "MOVIE",
       "url_raw": "https://s2.itcnbd.live/server-2/stream/zee_action.m3u8"
     },
     {
@@ -920,13 +920,6 @@
       "url": "https://cc-r5hupcym5oehh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-r5hupcym5oehh/SBUM/RunnTV/BollyFlix_IN/BollyFlix_IN.m3u8",
       "group": "Hindi Movies",
       "url_raw": "https://cc-r5hupcym5oehh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-r5hupcym5oehh/SBUM/RunnTV/BollyFlix_IN/BollyFlix_IN.m3u8"
-    },
-    {
-      "name": "ZEE ACTION",
-      "logo": "https://ah-media-eug.pages.dev/logos/ZeeAction.png",
-      "url": "https://stream.ottplus.bd/live/zee_action_abr/index.m3u8",
-      "group": "MOVIE",
-      "url_raw": "https://stream.ottplus.bd/live/zee_action_abr/index.m3u8"
     },
     {
       "name": "& Pictures HD",
@@ -1546,46 +1539,6 @@
       }
     },
     {
-      "name": "Cineedge HD",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770347851305.png",
-      "url": "https://nomawnoijl.gpcdn.net/akash/cineedge/playlist.m3u8",
-      "group": "Movies",
-      "url_raw": "https://nomawnoijl.gpcdn.net/akash/cineedge/playlist.m3u8",
-      "attrs": {
-        "tvg-id": "197000"
-      }
-    },
-    {
-      "name": "Uniques HD",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770347327658.png",
-      "url": "https://nomawnoijl.gpcdn.net/akash/uniques/playlist.m3u8",
-      "group": "Movies",
-      "url_raw": "https://nomawnoijl.gpcdn.net/akash/uniques/playlist.m3u8",
-      "attrs": {
-        "tvg-id": "196000"
-      }
-    },
-    {
-      "name": "Superrix HD",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770348388925.png",
-      "url": "https://nomawnoijl.gpcdn.net/akash/superrix/playlist.m3u8",
-      "group": "Movies",
-      "url_raw": "https://nomawnoijl.gpcdn.net/akash/superrix/playlist.m3u8",
-      "attrs": {
-        "tvg-id": "198000"
-      }
-    },
-    {
-      "name": "Originals",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778085327477.png",
-      "url": "https://nomawnoijl.gpcdn.net/akash/originals/playlist.m3u8",
-      "group": "Movies",
-      "url_raw": "https://nomawnoijl.gpcdn.net/akash/originals/playlist.m3u8",
-      "attrs": {
-        "tvg-id": "243000"
-      }
-    },
-    {
       "name": "MovieSphere",
       "logo": "https://s3.aynaott.com/storage/4d343b446b1e7164bb7239bbe822a570",
       "url": "https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8",
@@ -2149,7 +2102,7 @@
     },
     {
       "name": "Sony Ten 5",
-      "logo": "https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp",
+      "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
       "url": "https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8",
       "group": "Sports",
       "url_raw": "https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8"
@@ -2311,13 +2264,6 @@
       }
     },
     {
-      "name": "Rongeen TV",
-      "logo": "https://i.postimg.cc/zBCLNtGZ/Duronto.jpg",
-      "url": "https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8",
-      "group": "Kids",
-      "url_raw": "https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8"
-    },
-    {
       "name": "PBS Kids",
       "logo": "https://i.imgur.com/ubZMeQv.jpg",
       "url": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8",
@@ -2365,6 +2311,13 @@
       "url": "https://live20.bozztv.com/giatvplayout7/giatv-209869/tracks-v1a1/mono.ts.m3u8",
       "group": "Kids",
       "url_raw": "https://live20.bozztv.com/giatvplayout7/giatv-209869/tracks-v1a1/mono.ts.m3u8"
+    },
+    {
+      "name": "Cartoon Network",
+      "logo": "https://otapp.store/uploads/tv_image/sm/cartoon-network-hindi.png",
+      "url": "https://vodzong.mjunoon.tv:8087/streamtest/cartoon-network-87/playlist.m3u8",
+      "group": "Kids",
+      "url_raw": "https://vodzong.mjunoon.tv:8087/streamtest/cartoon-network-87/playlist.m3u8"
     },
     {
       "name": "Nickelodeon",

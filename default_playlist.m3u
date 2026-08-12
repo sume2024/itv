@@ -5,8 +5,11 @@
 # Website: https://anamul.pages.dev
 # Developer: IreenTechnology
 # Version: 1.0
-# Channels Amount: 331
-# Last Update: 2026-08-12 01:54:08 PM
+# Channels Amount: 326
+# Last Update: 2026-08-12 03:09:11 PM
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/XkDv6gpS/ireenTV.png" group-title="entertainment" tvg-name="IreenTV",IreenTV
+https://ireentv.pages.dev/promo/intro.mp4
 
 #EXTINF:-1 tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu_Gxy8ywjMY6_YPX-1uYtUGA56FOfDoBsH62-ekNA=s900-c-k-c0x00ffffff-no-rj" group-title="Islamic" tvg-name="Quran TV",Quran TV
 https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/sharjahtvquranpublish/shqurantv_source/chunks.m3u8
@@ -239,9 +242,6 @@ https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v2a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/Gfw89mC/20240804-033102.png" group-title="Relagion Channel" tvg-name="Peace TV Bangla",Peace TV Bangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="http://103.176.90.118/picons/logos/logos/TATA-SKY.png" group-title="Indian Bangla" tvg-name="BENGLAI| TATA SKY BANGLA HD",BENGLAI| TATA SKY BANGLA HD
-https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/bn-ch-1/155775.m3u8
-
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzpTBRRn/zee-bangla-sonar-in.png" group-title="Indian Bangla" tvg-name="Zee Bangla Cinema",Zee Bangla Cinema
 https://stream.ottplus.live/live/zee_bangla_cinema_abr/live/zee_bangla_cinema_720/chunks.m3u8
 
@@ -332,10 +332,10 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/52SzwQF1/20251222_220548.png" group-title="Hindi Movies" tvg-name="Zee Bollywood",Zee Bollywood
 https://stream.ottplus.live/live/zee_bollywood_abr/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png" group-title="Hindi Movies" tvg-name="Zee Action",Zee Action
+#EXTINF:-1 tvg-logo="https://ah-media-eug.pages.dev/logos/ZeeAction.png" group-title="MOVIE" tvg-name="ZEE ACTION",ZEE ACTION
 https://stream.ottplus.live/live/zee_action_abr/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png" group-title="Hindi Movies" tvg-name="Zee Action",Zee Action
+#EXTINF:-1 tvg-logo="https://ah-media-eug.pages.dev/logos/ZeeAction.png" group-title="MOVIE" tvg-name="ZEE ACTION",ZEE ACTION
 https://s2.itcnbd.live/server-2/stream/zee_action.m3u8
 
 #EXTINF:-1 tvg-id="473" tvg-type="Entertainment" tvg-logo="https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f630a176-73cc-48d7-94cf-69ba0d201b36.png" group-title="Hindi" tvg-name="Zee Anmol",Zee Anmol
@@ -361,9 +361,6 @@ https://s2.itcnbd.live/server-2/stream/sonypix_hd.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/CLPr6gq6/IMG-20220828-165715.jpg" group-title="Hindi Movies" tvg-name="NH Bolly Flix",NH Bolly Flix
 https://cc-r5hupcym5oehh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-r5hupcym5oehh/SBUM/RunnTV/BollyFlix_IN/BollyFlix_IN.m3u8
-
-#EXTINF:-1 tvg-logo="https://ah-media-eug.pages.dev/logos/ZeeAction.png" group-title="MOVIE" tvg-name="ZEE ACTION",ZEE ACTION
-https://stream.ottplus.bd/live/zee_action_abr/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://images.toffeelive.com/images/program/4570/logo/240x240/mobile_logo_000080001675856893.png" group-title="MOVIE" tvg-name="& Pictures HD",& Pictures HD
 https://stream.ottplus.bd/live/and_picture_hd_abr/index.m3u8
@@ -599,18 +596,6 @@ https://cdn01.medialive.one:2096/HBO3FHD/index.m3u8
 #EXTINF:-1 tvg-id="55" tvg-country="IN" tvg-chno="55" tvg-logo="https://i.ibb.co.com/nqJh4SkK/hbo3hd.jpg" group-title="Movies" tvg-name="HBO 3",HBO 3
 https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/world/1732926.m3u8
 
-#EXTINF:-1 tvg-id="197000" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770347851305.png" group-title="Movies" tvg-name="Cineedge HD",Cineedge HD
-https://nomawnoijl.gpcdn.net/akash/cineedge/playlist.m3u8
-
-#EXTINF:-1 tvg-id="196000" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770347327658.png" group-title="Movies" tvg-name="Uniques HD",Uniques HD
-https://nomawnoijl.gpcdn.net/akash/uniques/playlist.m3u8
-
-#EXTINF:-1 tvg-id="198000" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770348388925.png" group-title="Movies" tvg-name="Superrix HD",Superrix HD
-https://nomawnoijl.gpcdn.net/akash/superrix/playlist.m3u8
-
-#EXTINF:-1 tvg-id="243000" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1778085327477.png" group-title="Movies" tvg-name="Originals",Originals
-https://nomawnoijl.gpcdn.net/akash/originals/playlist.m3u8
-
 #EXTINF:-1 tvg-id="130" tvg-logo="https://s3.aynaott.com/storage/4d343b446b1e7164bb7239bbe822a570" group-title="Movies" tvg-name="MovieSphere",MovieSphere
 https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
 
@@ -842,7 +827,7 @@ https://stream.ottplus.live/live/ten_3_hd_abr/live/ten_3_hd_720/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/rfbqJxMh/Sony-Sports-Ten-3.webp" group-title="Sports" tvg-name="Sony Ten 3",Sony Ten 3
 http://103.89.248.130:8082/sony-ten3/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/LzLSWTDq/Sony-Sports-Ten-1.webp" group-title="Sports" tvg-name="Sony Ten 5",Sony Ten 5
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png" group-title="Sports" tvg-name="Sony Ten 5",Sony Ten 5
 https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/WWrnXpb5/PTV-Sports.png" group-title="Sports" tvg-name="PTV Sports",PTV Sports
@@ -908,9 +893,6 @@ https://stream.ottplus.live/live/discovery_kids_abr/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/C1s5Hf5P/20240823_021444.png" group-title="𝐊𝐢𝐝𝐬" tvg-name="Pogo",Pogo
 https://stream.ottplus.live/live/pogo_sd_abr/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/zBCLNtGZ/Duronto.jpg" group-title="Kids" tvg-name="Rongeen TV",Rongeen TV
-https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ubZMeQv.jpg" group-title="Kids" tvg-name="PBS Kids",PBS Kids
 https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8
 
@@ -931,6 +913,9 @@ https://live20.bozztv.com/giatvplayout7/giatv-208314/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/a1/Bantul_The_Great_logo.jpeg" group-title="Kids" tvg-name="Bantul The Great",Bantul The Great
 https://live20.bozztv.com/giatvplayout7/giatv-209869/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-logo="https://otapp.store/uploads/tv_image/sm/cartoon-network-hindi.png" group-title="Kids" tvg-name="Cartoon Network",Cartoon Network
+https://vodzong.mjunoon.tv:8087/streamtest/cartoon-network-87/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/bb2375af2d1ff8666f2c24fbcec3c541" group-title="Kids" tvg-name="Nickelodeon",Nickelodeon
 https://tvsen7.aynascope.net/nicklodean/index.m3u8
