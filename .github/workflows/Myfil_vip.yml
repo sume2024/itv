@@ -1,0 +1,93 @@
+name: Update IreenTV VIP Playlist
+
+on:
+  schedule:
+    # প্রতি ২৪ ঘণ্টা পর পর অটোমেটিক রান হবে (UTC 00:00 বা বাংলাদেশ সময় সকাল ৬:০০ টায়)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+
+permissions:
+  contents: write
+
+jobs:
+  filter-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Filter HTTPS Channels and Generate Playlist with Header
+        run: |
+          python - << 'EOF'
+          import urllib.request
+          from datetime import datetime, timezone, timedelta
+
+          source_url = "https://raw.githubusercontent.com/sume2024/itv/refs/heads/main/unified_playlist.m3u"
+          output_file = "Myfil_vip.m3u"
+
+          # প্লেলিস্ট ডাউনলোড করা
+          req = urllib.request.Request(source_url, headers={'User-Agent': 'Mozilla/5.0'})
+          try:
+              content = urllib.request.urlopen(req).read().decode('utf-8', errors='ignore')
+          except Exception as e:
+              print(f"Error downloading playlist: {e}")
+              exit(1)
+
+          lines = content.splitlines()
+          valid_channels = []
+          buffer_meta = []
+          channel_count = 0
+
+          # চ্যানেল ফিল্টারিং (শুধু https:// রাখবে)
+          for line in lines:
+              line_clean = line.strip()
+              if not line_clean:
+                  continue
+              if line_clean.startswith("#EXTM3U"):
+                  continue
+              elif line_clean.startswith("#"):
+                  buffer_meta.append(line_clean)
+              else:
+                  if line_clean.startswith("https://"):
+                      valid_channels.extend(buffer_meta)
+                      valid_channels.append(line_clean)
+                      channel_count += 1
+                  buffer_meta = []
+
+          # বাংলাদেশ সময় (BST / UTC+6) বের করা
+          bd_time = datetime.now(timezone(timedelta(hours=6))).strftime("%d-%m-%Y | %I:%M:%S %p (BST)")
+
+          # হেডারের তথ্য সাজানো
+          header = [
+              "#EXTM3U",
+              "# Playlist Name: IreenTV vip",
+              "# Owner: MD ANAMUL HOQUE",
+              "# Telegram: https://t.me/ireentv",
+              "# Website: https://anamul.pages.dev",
+              "# Developer: IreenTechnology",
+              "# Version: 1.0",
+              f"# Channels Amount: {channel_count}",
+              f"# Last Update: {bd_time}",
+              ""
+          ]
+
+          # সম্পূর্ণ ফাইল তৈরি ও সেভ করা
+          final_content = header + valid_channels
+          with open(output_file, "w", encoding="utf-8") as f:
+              f.write("\n".join(final_content) + "\n")
+
+          print(f"Playlist generated with {channel_count} HTTPS channels.")
+          EOF
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add IreenTV_vip.m3u
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update IreenTV vip playlist [skip ci]" && git push)
