@@ -28,7 +28,7 @@ jobs:
           import urllib.request
           from datetime import datetime, timezone, timedelta
 
-          source_url = "https://raw.githubusercontent.com/sume2024/itv/refs/heads/main/unified_playlist.m3u"
+          source_url = "https://raw.githubusercontent.com/Romancecity/channel-filter/refs/heads/main/working_playlist.m3u"
           output_file = "IreenTV_vip.m3u"
 
           # প্লেলিস্ট ডাউনলোড করা
