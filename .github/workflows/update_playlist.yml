@@ -1,0 +1,33 @@
+name: IPTV Auto Updater & Verifier
+
+on:
+  schedule:
+    # প্রতি ৬ ঘণ্টা পর পর অটোমেটিক রান হবে
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run IPTV Verification Script
+        run: |
+          python update_playlist.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add working_playlist.m3u all_channels_status.m3u channels_status.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update IPTV playlist [skip ci]" && git push)
