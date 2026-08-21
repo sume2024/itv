@@ -17,7 +17,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
 # আপনার মূল M3U ও JSON সোর্স লিংক
-M3U_URL = "https://raw.githubusercontent.com/Romancecity/pl_vip/refs/heads/main/playlist_vip.m3u"
+M3U_URL = "#"
 JSON_URL = "#"
 
 # অতিরিক্ত কোনো সোর্স থাকলে এখানে যোগ করুন
